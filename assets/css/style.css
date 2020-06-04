@@ -39,6 +39,9 @@
 .icon-podcast:before { content: '\f2ce'; }
 
 /* '' */
+.icon-codepen:before { content: '\f32c'; }
+
+/* '' */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 

@@ -365,6 +365,12 @@
       "css": "vimeo",
       "code": 62077,
       "src": "fontawesome"
+    },
+    {
+      "uid": "155970c9f52b23f31026bab7163caa63",
+      "css": "codepen",
+      "code": 62252,
+      "src": "brandico"
     }
   ]
 }
