@@ -20,6 +20,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Resultado:</h5>
+        <hr />
         <p id="resultado" class="card-text"></p>
       </div>
     </div>
@@ -36,22 +37,20 @@
         experiencia = "Avançado";
       } else if (anos <= 3 && anos > 1) {
         experiencia = "Intermediário";
-      } else if (anos <= 1 && anos > 0) {
-        experiencia = "Iniciante";
       } else {
-        experiencia = "Desinteressado";
+        experiencia = "Iniciante";
       }
 
       return experiencia;
     }
 
 
-    var anos = [-1, 0, 1, 2, 3, 4, 5, 6, 7];
+    var anos = [0, 1, 2, 3, 4, 5, 6, 7];
     var counter = anos.length;
     var resultado = "";
 
     for(i=0; i<counter; i++){
-      resultado += "Tempo: " + anos[i] + " = Resultado: " + experiencia(i) + "<br />";
+      resultado += "Tempo: " + anos[i] + " = Resultado: " + experiencia(i) + "<hr />";
     }
 
     document.getElementById("resultado").innerHTML = resultado;
