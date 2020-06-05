@@ -73,11 +73,15 @@
       var itemElement = document.createElement("li");
 
       itemElement.setAttribute("class", "list-group-item");
-      itemElement.innerText = inputElement.value;
-
-      listElement.appendChild(itemElement);
-      inputElement.value = "";
       
+      var nome = inputElement.value;
+      
+      if(nome.length > 1){
+        itemElement.innerText = nome;
+        listElement.appendChild(nome);
+        inputElement.value = "";
+      }
+
     }
 
   </script>
