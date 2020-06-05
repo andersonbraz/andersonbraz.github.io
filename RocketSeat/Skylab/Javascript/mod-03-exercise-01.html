@@ -26,16 +26,16 @@
           <div class="form-row">
             <div class="col-12">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Novo Nome">
+                <input id="campoTodo" type="text" class="form-control" placeholder="Novo Nome">
                 <div class="input-group-append">
-                  <button class="btn btn-primary" type="button" onClick="adicionar()">+</button>
+                  <button id="adicionaTodo" class="btn btn-primary" type="button">Adicionar</button>
                 </div>
               </div>
             </div>
           </div>
         </form>
       </div>
-      <ul class="list-group list-group-flush">
+      <ul id="listaTodos" class="list-group list-group-flush">
       </ul>
     </div>
   </div>
@@ -51,11 +51,8 @@
     crossorigin="anonymous"></script>
 
   <!-- Resultado do Exercício -->
-  <script>
+  <script src="todos.js"></script>
 
-
-  </script>
-  
 </body>
 
 </html>
