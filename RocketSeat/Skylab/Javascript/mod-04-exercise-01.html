@@ -34,10 +34,7 @@
         <div class="card-header">
           Resultado:
         </div>
-        <div class="card-body">
-          
-        </div>
-        <ul id="listaTodos" class="list-group list-group-flush"></ul>
+        <div class="card-body"></div>
       </div>
     </div>
 
@@ -59,10 +56,20 @@
 
     <!-- Resultado do Exercício -->
     <script>
-      function checaIdade(idade) {
-        // Retornar uma promise
-      }
-      checaIdade(20)
+      var checaIdade = function (idade) {
+        return new Promise(function (resolve, reject) {
+          if (idade >= 18) {
+            setTimeout(function () {
+              resolve("Okay");
+            }, 2000);
+          } else {
+            reject("Problem");
+          }
+        });
+      };
+      //var resultado = checaIdade(18);
+      //console.log(resultado);
+      checaIdade(18)
         .then(function () {
           console.log("Maior que 18");
         })
