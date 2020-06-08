@@ -31,10 +31,11 @@
 
     <div class="container p-5">
       <div class="card">
-        <div class="card-header">
-          Resultado:
+        <div class="card-body">
+          <h5 class="card-title">Resultado:</h5>
+          <hr />
+          <p id="resultado"></p>
         </div>
-        <div class="card-body"></div>
       </div>
     </div>
 
@@ -69,12 +70,19 @@
       };
       //var resultado = checaIdade(18);
       //console.log(resultado);
+
+      var boxResultado = document.querySelector("#resultado");
+
       checaIdade(18)
         .then(function () {
           console.log("Maior que 18");
+          boxResultado.setAttribute("class", "card-text text-success");
+          boxResultado.innerHTML = "Maior que 18";
         })
         .catch(function () {
           console.log("Menor que 18");
+          boxResultado.setAttribute("class", "card-text text-danger");
+          boxResultado.innerHTML = "Menor que 18";
         });
     </script>
   </body>
