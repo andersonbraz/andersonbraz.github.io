@@ -43,8 +43,21 @@ var Admin = /*#__PURE__*/function (_Usuario) {
 
   return Admin;
 }(Usuario);
-/* Example Create User and Admin */
 
+var usuarios = [{
+  nome: 'Diego',
+  idade: 23,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Gabriel',
+  idade: 15,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Lucas',
+  idade: 30,
+  empresa: 'Facebook'
+}];
+/*  */
 
 document.querySelector("#button-01").onclick = function () {
   var usuario = new Usuario();
