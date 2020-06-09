@@ -17,14 +17,6 @@ class Admin extends Usuario{
 
 }
 
-const usuarios = [
-    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
-    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
-    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
-   ];
-
-/*  */
-
 document.querySelector("#button-01").onclick = function(){
 
     var usuario =  new Usuario();
@@ -51,4 +43,23 @@ function appendItem(item, idList){
     itemElement.innerText = item;
     listElement.appendChild(itemElement);
   
+}
+
+const usuarios = [
+    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
+    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
+    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
+   ];
+
+document.querySelector("#button-02").onclick = function(){
+
+    const idades = usuarios.map(function(usuario){
+        return usuario.idade;
+    });
+
+    appendItem(JSON.stringify(usuarios), "#list-02");
+    appendItem(JSON.stringify(idades), "#list-02");
+
+    console.log(idades);
+
 }
