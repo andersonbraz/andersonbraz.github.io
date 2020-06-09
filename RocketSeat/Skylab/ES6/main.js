@@ -19,9 +19,7 @@ class Admin extends Usuario{
 
 /* Example Create User and Admin */
 
-var listElement = document.querySelector(".card .list-group");
-
-document.querySelector("#button-test").onclick = function(){
+document.querySelector("#button-01").onclick = function(){
 
     var usuario =  new Usuario();
     usuario.email = 'contato@andersonbraz.com';
@@ -33,13 +31,14 @@ document.querySelector("#button-test").onclick = function(){
     admin.senha = 'Net@CfTG#h67$';
     console.log(admin);
 
-    appendItem(JSON.stringify(usuario));
-    appendItem(JSON.stringify(admin));
+    appendItem(JSON.stringify(usuario), "#list-01");
+    appendItem(JSON.stringify(admin), "#list-01");
 
 }
 
-function appendItem(item){
+function appendItem(item, idList){
 
+    var listElement = document.querySelector(idList);
     var itemElement = document.createElement("li");
   
     itemElement.setAttribute("class", "list-group-item");
