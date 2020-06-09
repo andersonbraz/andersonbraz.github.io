@@ -79,27 +79,34 @@ var usuarios = [{
   empresa: 'Facebook'
 }];
 
-document.querySelector("#button-02").onclick = function () {
-  var idades = usuarios.map(function (usuario) {
-    return usuario.idade;
-  });
-  appendItem(JSON.stringify(usuarios), "#list-02");
-  appendItem(JSON.stringify(idades), "#list-02");
-  console.log(idades);
-};
-
 document.querySelector("#button-02_1").onclick = function () {
-  var pesquisa = usuarios.filter(function (usuario) {
+  var resultado = usuarios.filter(function (usuario) {
     return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
   });
-  appendItem(JSON.stringify(pesquisa), "#list-02_1");
-  console.log(pesquisa);
+  appendItem(JSON.stringify(resultado), "#list-02_1");
+  console.log(resultado);
 };
 
-document.querySelector("#button-02_1").onclick = function () {
-  var pesquisa = usuarios.filter(function (usuario) {
+document.querySelector("#button-02_2").onclick = function () {
+  var resultado = usuarios.filter(function (usuario) {
     return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
   });
-  appendItem(JSON.stringify(pesquisa), "#list-02_1");
-  console.log(pesquisa);
+  appendItem(JSON.stringify(resultado), "#list-02_2");
+  console.log(resultado);
+};
+
+document.querySelector("#button-02_3").onclick = function () {
+  var resultado = usuarios.find(function (usuario) {
+    return usuario.empresa == 'Google';
+  });
+  appendItem(JSON.stringify(resultado), "#list-02_3");
+  console.log(resultado);
+};
+
+document.querySelector("#button-02_4").onclick = function () {
+  var resultado = usuarios.map(function (usuario) {
+    return usuario.nome, usuario.empresa, usuario.idade * 2 >= 50;
+  });
+  appendItem(JSON.stringify(resultado), "#list-02_4");
+  console.log(resultado);
 };
