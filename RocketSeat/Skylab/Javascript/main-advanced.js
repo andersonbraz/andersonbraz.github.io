@@ -35,7 +35,7 @@ function appendItem(item){
   var itemElement = document.createElement("li");
 
   itemElement.setAttribute("class", "list-group-item");
-  itemElement.innerText = repo.name;
+  itemElement.innerText = item;
   listElement.appendChild(itemElement);
 
 }

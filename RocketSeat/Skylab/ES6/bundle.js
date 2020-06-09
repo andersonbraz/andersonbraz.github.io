@@ -55,4 +55,14 @@ document.querySelector("#button-test").onclick = function () {
   admin.email = 'admin@andersonbraz.com';
   admin.senha = 'Net@CfTG#h67$';
   console.log(admin);
+  var listElement = document.querySelector(".card .list-group");
+  appendItem(JSON.stringify(usuario));
+  appendItem(JSON.stringify(admin));
 };
+
+function appendItem(item) {
+  var itemElement = document.createElement("li");
+  itemElement.setAttribute("class", "list-group-item");
+  itemElement.innerText = item;
+  listElement.appendChild(itemElement);
+}
