@@ -17,7 +17,9 @@ class Admin extends Usuario{
 
 }
 
-/* Example Create User and Admin */ 
+/* Example Create User and Admin */
+
+var listElement = document.querySelector(".card .list-group");
 
 document.querySelector("#button-test").onclick = function(){
 
@@ -31,7 +33,6 @@ document.querySelector("#button-test").onclick = function(){
     admin.senha = 'Net@CfTG#h67$';
     console.log(admin);
 
-    var listElement = document.querySelector(".card .list-group");
     appendItem(JSON.stringify(usuario));
     appendItem(JSON.stringify(admin));
 

@@ -46,6 +46,8 @@ var Admin = /*#__PURE__*/function (_Usuario) {
 /* Example Create User and Admin */
 
 
+var listElement = document.querySelector(".card .list-group");
+
 document.querySelector("#button-test").onclick = function () {
   var usuario = new Usuario();
   usuario.email = 'contato@andersonbraz.com';
@@ -55,7 +57,6 @@ document.querySelector("#button-test").onclick = function () {
   admin.email = 'admin@andersonbraz.com';
   admin.senha = 'Net@CfTG#h67$';
   console.log(admin);
-  var listElement = document.querySelector(".card .list-group");
   appendItem(JSON.stringify(usuario));
   appendItem(JSON.stringify(admin));
 };
