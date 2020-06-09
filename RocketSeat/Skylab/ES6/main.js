@@ -90,7 +90,7 @@ document.querySelector("#button-02_3").onclick = function(){
 document.querySelector("#button-02_4").onclick = function(){
 
     const resultado = usuarios.map(function(usuario){
-        return usuario.nome, usuario.empresa, (usuario.idade * 2) >= 50;
+        return (usuario.idade * 2) < 50;
     });
 
     appendItem(JSON.stringify(resultado), "#list-02_4");
