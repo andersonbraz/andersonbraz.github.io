@@ -87,3 +87,19 @@ document.querySelector("#button-02").onclick = function () {
   appendItem(JSON.stringify(idades), "#list-02");
   console.log(idades);
 };
+
+document.querySelector("#button-02_1").onclick = function () {
+  var pesquisa = usuarios.filter(function (usuario) {
+    return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
+  });
+  appendItem(JSON.stringify(pesquisa), "#list-02_1");
+  console.log(pesquisa);
+};
+
+document.querySelector("#button-02_1").onclick = function () {
+  var pesquisa = usuarios.filter(function (usuario) {
+    return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
+  });
+  appendItem(JSON.stringify(pesquisa), "#list-02_1");
+  console.log(pesquisa);
+};
