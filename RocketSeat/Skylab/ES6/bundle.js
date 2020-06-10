@@ -46,12 +46,12 @@ var Admin = /*#__PURE__*/function (_Usuario) {
 
 document.querySelector("#button-01").onclick = function () {
   var usuario = new Usuario();
-  usuario.email = 'contato@andersonbraz.com';
-  usuario.senha = 'Yml$Cs93GHt89!';
+  usuario.email = "contato@andersonbraz.com";
+  usuario.senha = "Yml$Cs93GHt89!";
   console.log(usuario);
   var admin = new Admin();
-  admin.email = 'admin@andersonbraz.com';
-  admin.senha = 'Net@CfTG#h67$';
+  admin.email = "admin@andersonbraz.com";
+  admin.senha = "Net@CfTG#h67$";
   console.log(admin);
   appendItem(JSON.stringify(usuario), "#list-01");
   appendItem(JSON.stringify(admin), "#list-01");
@@ -66,22 +66,22 @@ function appendItem(item, idList) {
 }
 
 var usuarios = [{
-  nome: 'Diego',
+  nome: "Diego",
   idade: 23,
-  empresa: 'Rocketseat'
+  empresa: "Rocketseat"
 }, {
-  nome: 'Gabriel',
+  nome: "Gabriel",
   idade: 15,
-  empresa: 'Rocketseat'
+  empresa: "Rocketseat"
 }, {
-  nome: 'Lucas',
+  nome: "Lucas",
   idade: 30,
-  empresa: 'Facebook'
+  empresa: "Facebook"
 }];
 
 document.querySelector("#button-02_1").onclick = function () {
   var resultado = usuarios.filter(function (usuario) {
-    return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
+    return usuario.idade >= 18 && usuario.empresa == "Rocketseat";
   });
   appendItem(JSON.stringify(resultado), "#list-02_1");
   console.log(resultado);
@@ -89,7 +89,7 @@ document.querySelector("#button-02_1").onclick = function () {
 
 document.querySelector("#button-02_2").onclick = function () {
   var resultado = usuarios.filter(function (usuario) {
-    return usuario.idade >= 18 && usuario.empresa == 'Rocketseat';
+    return usuario.idade >= 18 && usuario.empresa == "Rocketseat";
   });
   appendItem(JSON.stringify(resultado), "#list-02_2");
   console.log(resultado);
@@ -97,7 +97,7 @@ document.querySelector("#button-02_2").onclick = function () {
 
 document.querySelector("#button-02_3").onclick = function () {
   var resultado = usuarios.find(function (usuario) {
-    return usuario.empresa == 'Google';
+    return usuario.empresa == "Google";
   });
   appendItem(JSON.stringify(resultado), "#list-02_3");
   console.log(resultado);
@@ -110,3 +110,44 @@ document.querySelector("#button-02_4").onclick = function () {
   appendItem(JSON.stringify(resultado), "#list-02_4");
   console.log(resultado);
 };
+/*
+    Exercicío - 3.1
+
+    const arr = [1, 2, 3, 4, 5];
+
+    arr.map(function(item) {
+        return item + 10;
+    });
+
+    Solved:
+
+*/
+
+
+var arr = [1, 2, 3, 4, 5];
+var resultado = arr.map(function (item) {
+  return item + 10;
+});
+console.log(resultado);
+appendItem(JSON.stringify(resultado), "#list-03");
+/*
+    Exercicío - 3.2
+    Dica: Utilize uma constante pra function
+
+    const usuario = { nome: 'Diego', idade: 23 };
+
+    function mostraIdade(usuario) {
+        return usuario.idade;
+    }
+
+    mostraIdade(usuario);
+
+*/
+
+var usuario = {
+  nome: 'Diego',
+  idade: 23
+};
+var mostraIdade = usuario.idade;
+console.log(mostraIdade);
+appendItem(JSON.stringify(mostraIdade), "#list-03");
