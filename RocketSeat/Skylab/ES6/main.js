@@ -121,3 +121,39 @@ const mostraIdade = usuario.idade;
 console.log(mostraIdade);
 
 appendItem(JSON.stringify(mostraIdade), "#list-03");
+
+/*
+    Exercicío - 3.3
+    Dica: Utilize uma constante pra function
+
+    const nome = "Diego";
+    const idade = 23;
+
+    function mostraUsuario(nome = 'Diego', idade = 18) {
+        return { nome, idade };
+    }
+
+    mostraUsuario(nome, idade);
+    mostraUsuario(nome);
+
+*/
+
+/*
+    Exercicío - 3.4
+
+    const promise = function() {
+        return new Promise(function(resolve, reject) {
+            return resolve();
+        })
+    }
+    
+*/
+
+
+const empresa = {
+  nome: 'Rocketseat',
+  endereco: {
+  cidade: 'Rio do Sul',
+  estado: 'SC',
+  }
+ };
