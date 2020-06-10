@@ -104,7 +104,7 @@ document.querySelector("#button-02_3").onclick = function () {
 };
 
 document.querySelector("#button-02_4").onclick = function () {
-  var resultado = usuarios.map(function (usuario) {
+  var resultado = usuarios.filter(function (usuario) {
     return usuario.idade * 2 < 50;
   });
   appendItem(JSON.stringify(resultado), "#list-02_4");

@@ -89,7 +89,7 @@ document.querySelector("#button-02_3").onclick = function(){
 
 document.querySelector("#button-02_4").onclick = function(){
 
-    const resultado = usuarios.map(function(usuario){
+    const resultado = usuarios.filter(function(usuario){
         return (usuario.idade * 2) < 50;
     });
 
