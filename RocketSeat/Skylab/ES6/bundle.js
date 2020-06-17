@@ -178,6 +178,17 @@ appendItem(JSON.stringify(mostraIdade), "#list-03");
     
 */
 
+/*
+    Exercicío - 4.1
+
+    const promise = function() {
+        return new Promise(function(resolve, reject) {
+            return resolve();
+        })
+    }
+    
+*/
+
 var empresa = {
   nome: 'Rocketseat',
   endereco: {
@@ -185,3 +196,13 @@ var empresa = {
     estado: 'SC'
   }
 };
+var nome = empresa.nome,
+    _empresa$endereco = empresa.endereco,
+    cidade = _empresa$endereco.cidade,
+    estado = _empresa$endereco.estado;
+console.log(nome);
+console.log(cidade);
+console.log(estado);
+appendItem(JSON.stringify(nome), "#list-04");
+appendItem(JSON.stringify(cidade), "#list-04");
+appendItem(JSON.stringify(estado), "#list-04");
