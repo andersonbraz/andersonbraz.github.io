@@ -1,0 +1,56 @@
+[14-Aug-2018 19:10:42 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getupdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:10:45 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getupdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:24:13 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function result() on string in /home1/anders10/public_html/webdevbot/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home1/anders10/public_html/webdevbot/index.php on line 9
+[14-Aug-2018 19:24:43 America/Chicago] PHP Warning:  Illegal string offset 'result' in /home1/anders10/public_html/webdevbot/index.php on line 9
+[14-Aug-2018 19:54:50 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:54:54 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:55:17 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:55:20 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:55:27 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:57:15 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[14-Aug-2018 19:57:20 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
+ in /home1/anders10/public_html/webdevbot/index.php on line 6
+[15-Aug-2018 12:24:30 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Hello%20World): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 17
+[15-Aug-2018 12:26:37 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Hello%20World): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 17
+[15-Aug-2018 12:27:26 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Hello%20World): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 17
+[15-Aug-2018 12:30:42 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Hello%20World): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 17
+[15-Aug-2018 12:36:33 America/Chicago] PHP Parse error:  syntax error, unexpected '$name' (T_VARIABLE), expecting ',' or ')' in /home1/anders10/public_html/webdevbot/index.php on line 18
+[15-Aug-2018 12:37:15 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Ol%C3%A1%21+%3Cbr+%2F%3E%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvovlvimento.): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 12:38:43 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Ol%C3%A1%21+%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 12:40:44 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Ol%C3%A1%21+%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 12:46:01 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=&amp;text=Ol%C3%A1%21+%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:30 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:31 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:32 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:33 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:41 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:42 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:43 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
+[15-Aug-2018 13:11:44 America/Chicago] PHP Warning:  file_get_contents(https://api.telegram.org/bot626693263:AAHR4uhelFYO8fqIw0fQBQin162vYZ9zU9g/sendMessage?chat_id=28234798&amp;text=Ol%C3%A1%21+Anderson%2C+sou+um+rob%C3%B4+que+encontra-se+em+desenvolvimento.): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home1/anders10/public_html/webdevbot/index.php on line 25
