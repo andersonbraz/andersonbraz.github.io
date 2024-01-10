@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pandas/">
+        <link rel="prev" href="../python/">
       
       
-        <link rel="next" href="../pythons/">
+        <link rel="next" href="../sql/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.1.6">
@@ -815,6 +815,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -826,24 +840,125 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PySpark
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         PySpark
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../pythons/" class="md-nav__link">
-        Python
-      </a>
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sparkdrivermemory" class="md-nav__link">
+    spark.driver.memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutormemory" class="md-nav__link">
+    spark.executor.memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutorinstances" class="md-nav__link">
+    spark.executor.instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutorcores" class="md-nav__link">
+    spark.executor.cores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparktaskcpus" class="md-nav__link">
+    spark.task.cpus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqlshufflepartitions" class="md-nav__link">
+    spark.sql.shuffle.partitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkdefaultparallelism" class="md-nav__link">
+    spark.default.parallelism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkmemoryfraction" class="md-nav__link">
+    spark.memory.fraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkmemorystoragefraction" class="md-nav__link">
+    spark.memory.storageFraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparknetworktimeout" class="md-nav__link">
+    spark.network.timeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkspeculation" class="md-nav__link">
+    spark.speculation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqladaptiveenabled" class="md-nav__link">
+    spark.sql.adaptive.enabled
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqladaptivecoalescepartitionsenabled" class="md-nav__link">
+    spark.sql.adaptive.coalescePartitions.enabled
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -987,6 +1102,105 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sparkdrivermemory" class="md-nav__link">
+    spark.driver.memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutormemory" class="md-nav__link">
+    spark.executor.memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutorinstances" class="md-nav__link">
+    spark.executor.instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkexecutorcores" class="md-nav__link">
+    spark.executor.cores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparktaskcpus" class="md-nav__link">
+    spark.task.cpus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqlshufflepartitions" class="md-nav__link">
+    spark.sql.shuffle.partitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkdefaultparallelism" class="md-nav__link">
+    spark.default.parallelism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkmemoryfraction" class="md-nav__link">
+    spark.memory.fraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkmemorystoragefraction" class="md-nav__link">
+    spark.memory.storageFraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparknetworktimeout" class="md-nav__link">
+    spark.network.timeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparkspeculation" class="md-nav__link">
+    spark.speculation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqladaptiveenabled" class="md-nav__link">
+    spark.sql.adaptive.enabled
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparksqladaptivecoalescepartitionsenabled" class="md-nav__link">
+    spark.sql.adaptive.coalescePartitions.enabled
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1002,6 +1216,32 @@
 
 
 <h1 id="pyspark">PySpark</h1>
+<h2 id="sparkdrivermemory">spark.driver.memory</h2>
+<p>Define a quantidade de memória que o driver (o processo principal do aplicativo Spark) pode usar. Aumentar essa configuração pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
+<h2 id="sparkexecutormemory">spark.executor.memory</h2>
+<p>Define a quantidade de memória que cada executor pode usar. Isso pode afetar o número de tarefas que podem ser executadas simultaneamente. Aumentar essa configuração pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
+<h2 id="sparkexecutorinstances">spark.executor.instances</h2>
+<p>Define o número de executores que serão criados na inicialização da sessão. Aumentar esse número pode ajudar a aumentar o paralelismo e a velocidade de processamento do aplicativo.</p>
+<h2 id="sparkexecutorcores">spark.executor.cores</h2>
+<p>Define o número de núcleos de CPU que cada executor pode usar. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que usam muitos recursos de CPU.</p>
+<h2 id="sparktaskcpus">spark.task.cpus</h2>
+<p>Define o número de núcleos de CPU que cada tarefa pode usar. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que usam muitos recursos de CPU.</p>
+<h2 id="sparksqlshufflepartitions">spark.sql.shuffle.partitions</h2>
+<p>Define o número de partições usadas para operações de shuffle, como groupByKey e reduceByKey. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas</p>
+<h2 id="sparkdefaultparallelism">spark.default.parallelism</h2>
+<p>Define o número de partições usadas para operações como parallelize, union, intersection, cartesian e sortByKey. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
+<h2 id="sparkmemoryfraction">spark.memory.fraction</h2>
+<p>Define a fração da memória total que é usada para a memória de execução. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
+<h2 id="sparkmemorystoragefraction">spark.memory.storageFraction</h2>
+<p>Define a fração da memória total que é usada para a memória de armazenamento. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
+<h2 id="sparknetworktimeout">spark.network.timeout</h2>
+<p>Define o tempo limite de rede em segundos. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que exigem mais tempo para serem concluídas.</p>
+<h2 id="sparkspeculation">spark.speculation</h2>
+<p>Ativa ou desativa a especulação de tarefa. A especulação de tarefa é usada para executar novamente tarefas que podem estar atrasadas, aumentando assim a velocidade de processamento do aplicativo.</p>
+<h2 id="sparksqladaptiveenabled">spark.sql.adaptive.enabled</h2>
+<p>Ativa ou desativa o modo adaptativo do Spark SQL. O modo adaptativo pode ajudar a melhorar o desempenho do aplicativo ajustando dinamicamente o tamanho da memória e o número de partições usadas para operações de shuffle e join.</p>
+<h2 id="sparksqladaptivecoalescepartitionsenabled">spark.sql.adaptive.coalescePartitions.enabled</h2>
+<p>Ativa ou desativa a redução dinâmica do número de partições em operações de shuffle e join.</p>
 
 
 
@@ -1028,7 +1268,7 @@
     >
       
         <a
-          href="../pandas/"
+          href="../python/"
           class="md-footer__link md-footer__link--prev"
           rel="prev"
         >
@@ -1040,14 +1280,14 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Pandas
+              Python
             </div>
           </div>
         </a>
       
       
         <a
-          href="../pythons/"
+          href="../sql/"
           class="md-footer__link md-footer__link--next"
           rel="next"
         >
@@ -1056,7 +1296,7 @@
               <span class="md-footer__direction">
                 Next
               </span>
-              Python
+              SQL
             </div>
           </div>
           <div class="md-footer__button md-icon">
