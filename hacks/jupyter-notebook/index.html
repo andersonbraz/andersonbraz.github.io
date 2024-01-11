@@ -798,9 +798,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Jupyter Notebook
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Jupyter Notebook
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#melhor-visualizacao-de-dataframe-em-formato-tabular" class="md-nav__link">
+    Melhor visualização de dataframe em formato tabular
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -987,6 +1018,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#melhor-visualizacao-de-dataframe-em-formato-tabular" class="md-nav__link">
+    Melhor visualização de dataframe em formato tabular
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1002,6 +1048,13 @@
 
 
 <h1 id="jupyter-notebook">Jupyter Notebook</h1>
+<h2 id="melhor-visualizacao-de-dataframe-em-formato-tabular">Melhor visualização de dataframe em formato tabular</h2>
+<pre><code class="language-python">from IPython.display import Image, Markdown, display
+from IPython.core.display import HTML
+
+# Ad-hoc para display do dataframe no formato de tabela
+display(HTML(&quot;&lt;style = font-size&gt;pre { white-space: pre !important; }&lt;/style&gt;&quot;))
+</code></pre>
 
 
 
