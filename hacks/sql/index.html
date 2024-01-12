@@ -29,6 +29,14 @@
         <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2 1 21Z"/></svg>');}</style>
+
 
     
     
@@ -1179,25 +1187,28 @@
 <li>ORDER BY</li>
 </ul>
 <h2 id="alias">ALIAS</h2>
-<pre><code class="language-sql">SELECT nome AS 'first_name', sobrenome AS 'last_name' 
-FROM TB_USUARIOS AS 'USERS';
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">nome</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">sobrenome</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s1">&#39;last_name&#39;</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">TB_USUARIOS</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s1">&#39;USERS&#39;</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="group-by">GROUP BY</h2>
-<pre><code class="language-sql">SELECT nome, sobrenome, cidade
-FROM TB_USUARIOS
-GROUP BY cidade;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">nome</span><span class="p">,</span><span class="w"> </span><span class="n">sobrenome</span><span class="p">,</span><span class="w"> </span><span class="n">cidade</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">TB_USUARIOS</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cidade</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="order-by">ORDER BY</h2>
-<pre><code class="language-sql">SELECT nome, sobrenome, cidade
-FROM TB_USUARIOS
-ORDER BY nome;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">nome</span><span class="p">,</span><span class="w"> </span><span class="n">sobrenome</span><span class="p">,</span><span class="w"> </span><span class="n">cidade</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">TB_USUARIOS</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">nome</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="join">JOIN</h2>
-<pre><code class="language-sql"></code></pre>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 <h2 id="functions">FUNCTIONS</h2>
-<pre><code class="language-sql"></code></pre>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 <h2 id="where">WHERE</h2>
-<pre><code class="language-sql"></code></pre>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 <h2 id="referencias-e-fontes">Referências e Fontes</h2>
 
 
