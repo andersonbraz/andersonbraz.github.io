@@ -1158,6 +1158,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-iopub-data-rate-exceeded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema - IOPub data rate exceeded
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1465,6 +1498,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-iopub-data-rate-exceeded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema - IOPub data rate exceeded
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1487,6 +1553,25 @@
 
 <span class="c1"># Ad-hoc para display do dataframe no formato de tabela</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style = font-size&gt;pre { white-space: pre !important; }&lt;/style&gt;&quot;</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="erros">Erros</h2>
+<h3 id="problema-iopub-data-rate-exceeded">Problema - IOPub data rate exceeded</h3>
+<div class="highlight"><pre><span></span><code>IOPub<span class="w"> </span>data<span class="w"> </span>rate<span class="w"> </span>exceeded.
+The<span class="w"> </span>Jupyter<span class="w"> </span>server<span class="w"> </span>will<span class="w"> </span>temporarily<span class="w"> </span>stop<span class="w"> </span>sending<span class="w"> </span>output
+to<span class="w"> </span>the<span class="w"> </span>client<span class="w"> </span><span class="k">in</span><span class="w"> </span>order<span class="w"> </span>to<span class="w"> </span>avoid<span class="w"> </span>crashing<span class="w"> </span>it.
+To<span class="w"> </span>change<span class="w"> </span>this<span class="w"> </span>limit,<span class="w"> </span><span class="nb">set</span><span class="w"> </span>the<span class="w"> </span>config<span class="w"> </span>variable
+<span class="sb">`</span>--ServerApp.iopub_data_rate_limit<span class="sb">`</span>.
+
+Current<span class="w"> </span>values:
+ServerApp.iopub_data_rate_limit<span class="o">=</span><span class="m">1000000</span>.0<span class="w"> </span><span class="o">(</span>bytes/sec<span class="o">)</span>
+ServerApp.rate_limit_window<span class="o">=</span><span class="m">3</span>.0<span class="w"> </span><span class="o">(</span>secs<span class="o">)</span>
+</code></pre></div>
+<h3 id="solucao">Solução</h3>
+<p>Editar:</p>
+<div class="highlight"><pre><span></span><code>vim<span class="w"> </span>/home/nanny/.jupyter/jupyter_notebook_config.py
+</code></pre></div>
+<p>Incluir:</p>
+<div class="highlight"><pre><span></span><code>c.NotebookApp.iopub_data_rate_limit<span class="o">=</span><span class="m">1</span>.0e10
 </code></pre></div>
 
 
