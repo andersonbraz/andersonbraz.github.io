@@ -82,6 +82,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pandas" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1100,6 +1105,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pandas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1110,6 +1128,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manipulando-planilhas-do-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulando planilhas do Excel
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1438,6 +1484,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manipulando-planilhas-do-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulando planilhas do Excel
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1452,9 +1517,26 @@
                   
 
 
-  <h1>Pandas</h1>
+<h1 id="pandas">Pandas</h1>
+<h2 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
+<span class="k">def</span> <span class="nf">compare_excel_structure</span><span class="p">(</span><span class="n">model_file</span><span class="p">,</span> <span class="n">new_file</span><span class="p">):</span>
 
+    <span class="n">df_model</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">model_file</span><span class="p">)</span>
+    <span class="n">df_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">new_file</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_model</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A estrutura de arquivos é a mesma.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">missing_columns</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_model</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="n">additional_columns</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_new</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">df_model</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">missing_columns</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;As colunas </span><span class="si">{</span><span class="n">missing_columns</span><span class="si">}</span><span class="s2"> estão ausentes no arquivo: &quot;</span><span class="p">,</span> <span class="n">new_file</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">missing_columns</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;As colunas </span><span class="si">{</span><span class="n">missing_columns</span><span class="si">}</span><span class="s2"> foram adicionadas no novo arquivo: &quot;</span><span class="p">,</span> <span class="n">new_file</span><span class="p">)</span>
+</code></pre></div>
 
 
 
