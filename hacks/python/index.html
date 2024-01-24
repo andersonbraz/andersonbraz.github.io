@@ -1193,6 +1193,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Funções Úteis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validar-e-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validar e-mail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1500,6 +1515,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Funções Úteis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validar-e-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validar e-mail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1519,6 +1549,13 @@
 
 <h1 id="python">Python</h1>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
+<h3 id="validar-e-mail">Validar e-mail</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">is_valid_email</span><span class="p">(</span><span class="n">email</span><span class="p">):</span>
+    <span class="n">email_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$&#39;</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">email_pattern</span><span class="p">,</span> <span class="n">email</span><span class="p">)</span>
+</code></pre></div>
 
 
 
