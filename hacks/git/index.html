@@ -1522,6 +1522,14 @@
 <p>Remover arquivos definidos posteriormente no .gitignore</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>ls-files<span class="w"> </span>-i<span class="w"> </span>-c<span class="w"> </span>--exclude-from<span class="o">=</span>.gitignore<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>git<span class="w"> </span>rm<span class="w"> </span>--cached
 </code></pre></div>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>filter-branch<span class="w"> </span>--commit-filter<span class="w"> </span><span class="s1">&#39;</span>
+<span class="s1">    if [ &quot;$GIT_AUTHOR_NAME&quot; = &quot;C1314678 Anderson Braz De Sousa&quot; ];</span>
+<span class="s1">    then</span>
+<span class="s1">            skip_commit &quot;$@&quot;;</span>
+<span class="s1">    else</span>
+<span class="s1">            git commit-tree &quot;$@&quot;;</span>
+<span class="s1">    fi&#39;</span><span class="w"> </span>HEAD
+</code></pre></div>
 
 
 
