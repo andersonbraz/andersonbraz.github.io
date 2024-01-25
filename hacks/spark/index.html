@@ -1208,6 +1208,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#identificar-diretorio-de-instalacao-do-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar diretório de instalação do Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sparkdrivermemory" class="md-nav__link">
     <span class="md-ellipsis">
       spark.driver.memory
@@ -1602,6 +1611,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#identificar-diretorio-de-instalacao-do-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar diretório de instalação do Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sparkdrivermemory" class="md-nav__link">
     <span class="md-ellipsis">
       spark.driver.memory
@@ -1734,6 +1752,9 @@
 
 
 <h1 id="spark">Spark</h1>
+<h2 id="identificar-diretorio-de-instalacao-do-spark">Identificar diretório de instalação do Spark</h2>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;sc.getConf(&quot;spark.home&quot;)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>spark-shell
+</code></pre></div>
 <h2 id="sparkdrivermemory">spark.driver.memory</h2>
 <p>Define a quantidade de memória que o driver (o processo principal do aplicativo Spark) pode usar. Aumentar essa configuração pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
 <h2 id="sparkexecutormemory">spark.executor.memory</h2>
