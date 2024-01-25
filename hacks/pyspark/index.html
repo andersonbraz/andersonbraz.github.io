@@ -1521,6 +1521,7 @@
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <p>Ler arquivo csv e entregar dados em dataframe</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">json_to_df</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
     <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;sep&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;header&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
@@ -1531,10 +1532,20 @@
 </code></pre></div>
 <p>Ler arquivo json e entregar dados em dataframe</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">csv_to_df</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
     <span class="n">df</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;multiline&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>\
         <span class="o">.</span><span class="n">json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Retirar colunas duplicadas de um DataFrame</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">drop_cols_duplicates</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+
+    <span class="n">dup_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+    <span class="n">dup_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">dup_cols</span> <span class="k">if</span> <span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="o">*</span><span class="n">dup_cols</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">df</span>
 </code></pre></div>
