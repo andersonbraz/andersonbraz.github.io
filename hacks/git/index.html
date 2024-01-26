@@ -1525,7 +1525,10 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>push.defaul<span class="w"> </span>matching
 </code></pre></div>
 <p>Remover arquivos definidos posteriormente no .gitignore</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>ls-files<span class="w"> </span>-i<span class="w"> </span>-c<span class="w"> </span>--exclude-from<span class="o">=</span>.gitignore<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>git<span class="w"> </span>rm<span class="w"> </span>--cached
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>ls-files<span class="w"> </span>-i<span class="w"> </span>-c<span class="w"> </span>--exclude-from<span class="o">=</span>.gitignore<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>git<span class="w"> </span>rm<span class="w"> </span>--cached
+</code></pre></div>
+Configurar o Visual Studio Code como editor padrão do git</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s1">&#39;code --wait&#39;</span>
 </code></pre></div>
 
 
