@@ -1585,11 +1585,8 @@
 
 <h1 id="jupyter-notebook">Jupyter Notebook</h1>
 <h2 id="melhorar-visualizacao-de-dataframe-em-formato-tabular">Melhorar visualização de dataframe em formato tabular</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="c1"># Ad-hoc para display do dataframe no formato de tabela</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style = font-size&gt;pre { white-space: pre !important; }&lt;/style&gt;&quot;</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style&gt;.container { width:100% !important; }&lt;/style&gt;&quot;</span><span class="p">))</span>
 </code></pre></div>
 <h2 id="erros">Erros</h2>
 <h3 id="problema-iopub-data-rate-exceeded">Problema - IOPub data rate exceeded</h3>
