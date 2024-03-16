@@ -1561,6 +1561,15 @@
 
 <h1 id="docker">Docker</h1>
 <h2 id="comandos-uteis">Comandos Úteis</h2>
+<p>Parar todos os contêineres em execução, utilize o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+</code></pre></div>
+<p>Remover todos os contêineres, utilize o seguinte comando:</p>
+<p><div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+</code></pre></div>
+Remover os volumes, utilize o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>volume<span class="w"> </span>ls<span class="w"> </span>-q<span class="k">)</span><span class="w"> </span>--force
+</code></pre></div>
 <p>Segue a lista de comandos docker e sua utilidade:</p>
 <p>docker attach  – Acessar dentro do container e trabalhar a partir dele.</p>
 <p>docker build   – A partir de instruções de um arquivo Dockerfile eu possa criar uma imagem.</p>
