@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,17 +54,15 @@
     
     
    <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -234,10 +232,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
@@ -362,10 +358,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
@@ -490,10 +484,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
@@ -744,10 +736,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
@@ -956,10 +946,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
@@ -1023,10 +1011,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
@@ -1326,10 +1312,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
@@ -1412,10 +1396,8 @@
     
     
     
-    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
@@ -1561,62 +1543,201 @@
 
 <h1 id="docker">Docker</h1>
 <h2 id="comandos-uteis">Comandos Úteis</h2>
-<p>Parar todos os contêineres em execução, utilize o seguinte comando:</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
-</code></pre></div>
-<p>Remover todos os contêineres, utilize o seguinte comando:</p>
-<p><div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
-</code></pre></div>
-Remover os volumes, utilize o seguinte comando:</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>volume<span class="w"> </span>ls<span class="w"> </span>-q<span class="k">)</span><span class="w"> </span>--force
-</code></pre></div>
 <p>Segue a lista de comandos docker e sua utilidade:</p>
-<p>docker attach  – Acessar dentro do container e trabalhar a partir dele.</p>
-<p>docker build   – A partir de instruções de um arquivo Dockerfile eu possa criar uma imagem.</p>
-<p>docker commit  – Cria uma imagem a partir de um container.</p>
-<p>docker cp      – Copia arquivos ou diretórios do container para o host.</p>
-<p>docker create  – Cria um novo container.</p>
-<p>docker diff    – Exibe as alterações feitas no filesystem do container.</p>
-<p>docker events  – Exibe os eventos do container em tempo real.</p>
-<p>docker exec    – Executa uma instrução dentro do container que está rodando sem precisar atachar nele.</p>
-<p>docker export  – Exporta um container para um arquivo .tar.</p>
-<p>docker history – Exibe o histórico de comandos que foram executados dentro do container.</p>
-<p>docker images  – Lista as imagens disponíveis no host.</p>
-<p>docker import  – Importa uma imagem .tar para o host.</p>
-<p>docker info    – Exibe as informações sobre o host.</p>
-<p>docker inspect – Exibe r o json com todas as configurações do container.</p>
-<p>docker kill    – Da Poweroff no container.</p>
-<p>docker load    – Carrega a imagem de um arquivo .tar.</p>
-<p>docker login   – Registra ou faz o login em um servidor de registry.</p>
-<p>docker logout  – Faz o logout de um servidor de registry.</p>
-<p>docker logs    – Exibe os logs de um container.</p>
-<p>docker port    – Abre uma porta do host e do container.</p>
-<p>docker network – Gerenciamento das redes do Docker.</p>
-<p>docker node    – Gerenciamento dos nodes do Docker Swarm.</p>
-<p>docker pause   – Pausa o container.</p>
-<p>docker port    – Lista as portas mapeadas de um container.</p>
-<p>docker ps      – Lista todos os containers.</p>
-<p>docker pull    – Faz o pull de uma imagem a partir de um servidor de registry.</p>
-<p>docker push    – Faz o push de uma imagem a partir de um servidor de registry.</p>
-<p>docker rename  – Renomeia um container existente.</p>
-<p>docker restart – Restarta um container que está rodando ou parado.</p>
-<p>docker rm      – Remove um ou mais containeres.</p>
-<p>docker rmi     – Remove uma ou mais imagens.</p>
-<p>docker run     – Executa um comando em um novo container.</p>
-<p>docker save    – Salva a imagem em um arquivo .tar.</p>
-<p>docker search  – Procura por uma imagem no Docker Hub.</p>
-<p>docker service – Gernciamento dos serviços do Docker.</p>
-<p>docker start   – Inicia um container que esteja parado.</p>
-<p>docker stats   – Exibe informações de uso de CPU, memória e rede.</p>
-<p>docker stop    – Para um container que esteja rodando.</p>
-<p>docker swarm   – Clusterização das aplicações em uma orquestração de várias containers, aplicações junto.</p>
-<p>docker tag     – Coloca tag em uma imagem para o repositorio.</p>
-<p>docker top     – Exibe os processos rodando em um container.</p>
-<p>docker unpause – Inicia um container que está em pause.</p>
-<p>docker update  – Atualiza a configuração de um ou mais containers.</p>
-<p>docker version – Exibe as versões de API, Client e Server do host.</p>
-<p>docker volume  – Gerenciamento dos volumes no Docker.</p>
-<p>docker wait    – Aguarda o retorno da execução de um container para iniciar esse container.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker attach</td>
+<td>Acessar dentro do container e trabalhar a partir dele.</td>
+</tr>
+<tr>
+<td>docker build</td>
+<td>A partir de instruções de um arquivo Dockerfile eu possa criar uma imagem.</td>
+</tr>
+<tr>
+<td>docker commit</td>
+<td>Cria uma imagem a partir de um container.</td>
+</tr>
+<tr>
+<td>docker cp</td>
+<td>Copia arquivos ou diretórios do container para o host.</td>
+</tr>
+<tr>
+<td>docker create</td>
+<td>Cria um novo container.</td>
+</tr>
+<tr>
+<td>docker diff</td>
+<td>Exibe as alterações feitas no filesystem do container.</td>
+</tr>
+<tr>
+<td>docker events</td>
+<td>Exibe os eventos do container em tempo real.</td>
+</tr>
+<tr>
+<td>docker exec</td>
+<td>Executa uma instrução dentro do container que está rodando sem precisar atachar nele.</td>
+</tr>
+<tr>
+<td>docker export</td>
+<td>Exporta um container para um arquivo .tar.</td>
+</tr>
+<tr>
+<td>docker history</td>
+<td>Exibe o histórico de comandos que foram executados dentro do container.</td>
+</tr>
+<tr>
+<td>docker images</td>
+<td>Lista as imagens disponíveis no host.</td>
+</tr>
+<tr>
+<td>docker import</td>
+<td>Importa uma imagem .tar para o host.</td>
+</tr>
+<tr>
+<td>docker info</td>
+<td>Exibe as informações sobre o host.</td>
+</tr>
+<tr>
+<td>docker inspect</td>
+<td>Exibe r o json com todas as configurações do container.</td>
+</tr>
+<tr>
+<td>docker kill</td>
+<td>Da Poweroff no container.</td>
+</tr>
+<tr>
+<td>docker load</td>
+<td>Carrega a imagem de um arquivo .tar.</td>
+</tr>
+<tr>
+<td>docker login</td>
+<td>Registra ou faz o login em um servidor de registry.</td>
+</tr>
+<tr>
+<td>docker logout</td>
+<td>Faz o logout de um servidor de registry.</td>
+</tr>
+<tr>
+<td>docker logs</td>
+<td>Exibe os logs de um container.</td>
+</tr>
+<tr>
+<td>docker port</td>
+<td>Abre uma porta do host e do container.</td>
+</tr>
+<tr>
+<td>docker network</td>
+<td>Gerenciamento das redes do Docker.</td>
+</tr>
+<tr>
+<td>docker node</td>
+<td>Gerenciamento dos nodes do Docker Swarm.</td>
+</tr>
+<tr>
+<td>docker pause</td>
+<td>Pausa o container.</td>
+</tr>
+<tr>
+<td>docker port</td>
+<td>Lista as portas mapeadas de um container.</td>
+</tr>
+<tr>
+<td>docker ps</td>
+<td>Lista todos os containers.</td>
+</tr>
+<tr>
+<td>docker pull</td>
+<td>Faz o pull de uma imagem a partir de um servidor de registry.</td>
+</tr>
+<tr>
+<td>docker push</td>
+<td>Faz o push de uma imagem a partir de um servidor de registry.</td>
+</tr>
+<tr>
+<td>docker rename</td>
+<td>Renomeia um container existente.</td>
+</tr>
+<tr>
+<td>docker restart</td>
+<td>Restarta um container que está rodando ou parado.</td>
+</tr>
+<tr>
+<td>docker rm</td>
+<td>Remove um ou mais containeres.</td>
+</tr>
+<tr>
+<td>docker rmi</td>
+<td>Remove uma ou mais imagens.</td>
+</tr>
+<tr>
+<td>docker run</td>
+<td>Executa um comando em um novo container.</td>
+</tr>
+<tr>
+<td>docker save</td>
+<td>Salva a imagem em um arquivo .tar.</td>
+</tr>
+<tr>
+<td>docker search</td>
+<td>Procura por uma imagem no Docker Hub.</td>
+</tr>
+<tr>
+<td>docker service</td>
+<td>Gernciamento dos serviços do Docker.</td>
+</tr>
+<tr>
+<td>docker start</td>
+<td>Inicia um container que esteja parado.</td>
+</tr>
+<tr>
+<td>docker stats</td>
+<td>Exibe informações de uso de CPU, memória e rede.</td>
+</tr>
+<tr>
+<td>docker stop</td>
+<td>Para um container que esteja rodando.</td>
+</tr>
+<tr>
+<td>docker swarm</td>
+<td>Clusterização das aplicações em uma orquestração de várias containers, aplicações junto.</td>
+</tr>
+<tr>
+<td>docker tag</td>
+<td>Coloca tag em uma imagem para o repositorio.</td>
+</tr>
+<tr>
+<td>docker top</td>
+<td>Exibe os processos rodando em um container.</td>
+</tr>
+<tr>
+<td>docker unpause</td>
+<td>Inicia um container que está em pause.</td>
+</tr>
+<tr>
+<td>docker update</td>
+<td>Atualiza a configuração de um ou mais containers.</td>
+</tr>
+<tr>
+<td>docker version</td>
+<td>Exibe as versões de API, Client e Server do host.</td>
+</tr>
+<tr>
+<td>docker volume</td>
+<td>Gerenciamento dos volumes no Docker.</td>
+</tr>
+<tr>
+<td>docker wait</td>
+<td>Aguarda o retorno da execução de um container para iniciar esse container.</td>
+</tr>
+</tbody>
+</table>
 <p>Obs.: É possível ver todos os comandos que o Docker possui, tendo o docker instalado, basta digitar no terminal docker --help</p>
 
 
@@ -1744,10 +1865,10 @@ Remover os volumes, utilize o seguinte comando:</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
