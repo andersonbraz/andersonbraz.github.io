@@ -1118,6 +1118,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comandos-uteis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos Úteis
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1526,6 +1535,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comandos-uteis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos Úteis
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1543,7 +1561,20 @@
 
 <h1 id="docker">Docker</h1>
 <h2 id="comandos-uteis">Comandos Úteis</h2>
-<p>Segue a lista de comandos docker e sua utilidade:</p>
+<h2 id="comandos-uteis_1">Comandos Úteis</h2>
+<p>Parar todos os contêineres em execução, utilize o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+</code></pre></div>
+<p>Remover todos os contêineres, utilize o seguinte comando:</p>
+<p><div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+</code></pre></div>
+Remover todos os volumes, utilize o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>volume<span class="w"> </span>ls<span class="w"> </span>-q<span class="k">)</span><span class="w"> </span>--force
+</code></pre></div>
+<p>Remover todas as imagens, utilize o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>images<span class="w"> </span>-a<span class="w"> </span>-q<span class="k">)</span>
+</code></pre></div>
+<p>Abaixo veja descritivo de cada comando do docker:</p>
 <table>
 <thead>
 <tr>
