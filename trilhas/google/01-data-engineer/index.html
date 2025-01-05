@@ -1534,6 +1534,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 02
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1762,6 +1771,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 02
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1782,7 +1800,7 @@
 <h2 id="problema-01">Problema 01</h2>
 <p>Na organização ondeeu trabalho temos uma equipe de analistas de negócios que precisam corrigir e aprimorar um conjunto de grandes arquivos de dados de entrada. Por exemplo, duplicatas precisam ser removidas, linhas incorretas devem ser excluídas e dados ausentes devem ser adicionados. Essas etapas precisam ser executadas em todo o conjunto atual de arquivos e em todos os arquivos recebidos no futuro em um processo automatizado e repetível. Os analistas de negócios não são adeptos da programação. O que devo fazer?</p>
 <blockquote>
-<p>Resposta: Para que analistas de negócios que não são adeptos da programação possam corrigir e aprimorar grandes arquivos de dados de entrada, removendo duplicatas, excluindo linhas incorretas e adicionando dados ausentes de forma automatizada e repetível, o recomendado é eles usarem o Dataprep.</p>
+<p>Resposta: Para que analistas de negócios que não são adeptos da programação possam corrigir e aprimorar grandes arquivos de dados de entrada, removendo duplicatas, excluindo linhas incorretas e adicionando dados ausentes de forma automatizada e repetível, <strong>o recomendado é eles usarem o Dataprep</strong>.</p>
 </blockquote>
 <p>O Dataprep permite:</p>
 <ul>
@@ -1797,6 +1815,13 @@
 </li>
 </ul>
 <p>Outras opções, como criar um job do Dataproc, criar um pipeline do Dataflow, ou carregar os dados nas Planilhas Google não são adequadas para analistas de negócios sem conhecimento em programação.</p>
+<h2 id="problema-02">Problema 02</h2>
+<p>Preciso migrar dados locais para um armazenamento de dados no Google Cloud. Esses dados serão disponibilizados para analistas de negócios. Os regulamentos locais exigem que as informações do cliente, incluindo números de cartão de crédito, números de telefone e IDs de e-mail, sejam capturadas, mas não usadas na análise. Preciso usar uma solução confiável e recomendada para redigir os dados confidenciais. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para proteger dados confidenciais, como números de cartão de crédito, números de telefone e IDs de e-mail, durante a migração de dados locais para um data warehouse no Google Cloud, <strong>a solução recomendada é usar a API Cloud Data Loss Prevention (DLP)</strong>.</p>
+</blockquote>
+<p>A API Cloud DLP pode ser usada para identificar e encobrir dados que correspondam a infoTypes específicos, como números de cartão de crédito, números de telefone e IDs de e-mail. Isso garante que os dados sejam capturados conforme exigido pelas regulamentações locais, mas que as informações confidenciais não sejam usadas diretamente na análise.
+Outras abordagens, como excluir colunas com títulos semelhantes aos dados confidenciais ou criar expressões regulares para identificar e excluir padrões similares, não são as práticas recomendadas e podem não ser tão confiáveis. A API DLP é uma solução mais robusta para proteger os dados confidenciais ao migrar dados para o Google Cloud.</p>
 
 
 
