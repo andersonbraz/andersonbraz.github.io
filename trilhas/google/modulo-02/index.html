@@ -1600,6 +1600,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1873,6 +1909,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2024,6 +2096,125 @@ Ao usar o Dataproc sem servidor, você se beneficia das seguintes vantagens:</p>
 </ul>
 <p>Outras opções como copiar os dados do Cloud SQL para uma nova tabela do BigQuery a cada hora ou criar uma tabela combinada e normalizada a cada hora, podem gerar dados desatualizados e requerem mais esforço. A criação de um pipeline do Dataflow para combinar os dados do BigQuery e do Cloud SQL quando os dados do Cloud SQL mudarem, pode ser uma solução mais complexa do que as consultas federadas.</p>
 <p>Ao utilizar consultas federadas, você poderá acessar dados do Cloud SQL em tempo real, combinando-os com dados do BigQuery de maneira eficiente e sem a necessidade de criar pipelines de cópia de dados ou manter cópias redundantes.</p>
+<h2 id="problema-07">Problema 07</h2>
+<p>Estou executando jobs do Dataflow para processamento de dados. Quando os desenvolvedores atualizam o código no Cloud Source Repositories, preciso testar e implantar o código atualizado com o mínimo de esforço. O que posso usar para criar meu pipeline de integração e entrega contínua (CI/CD) para processamento de dados?</p>
+<blockquote>
+<p>Resposta: Para criar um pipeline de integração e entrega contínua (CI/CD) para processamento de dados, onde você executa jobs do Dataflow e precisa testar e implantar o código atualizado do Cloud Source Repositories com o mínimo de esforço, você deve usar o Cloud Build.</p>
+</blockquote>
+<ul>
+<li>
+<p>O Cloud Build é um serviço de CI/CD totalmente gerenciado que permite automatizar as etapas de compilação, teste e implantação do seu código.</p>
+</li>
+<li>
+<p>Ao usar o Cloud Build, você pode configurar um pipeline que será acionado automaticamente quando os desenvolvedores atualizarem o código no Cloud Source Repositories.</p>
+</li>
+<li>
+<p>O Cloud Build pode ser configurado para executar os testes necessários e, em seguida, implantar o código atualizado no seu ambiente de processamento de dados do Dataflow, com mínimo de esforço.</p>
+</li>
+</ul>
+<p>Outras opções como o Terraform, Compute Engine e Cloud Code não são as mais adequadas para este cenário. O Terraform é usado para infraestrutura como código e não é especificamente projetado para pipelines CI/CD. O Compute Engine é usado para máquinas virtuais e não para automação de CI/CD. O Cloud Code é uma extensão para ambientes de desenvolvimento e não para automação de pipelines CI/CD.</p>
+<p>O Cloud Build é ideal para automatizar todo o processo de CI/CD para seus jobs do Dataflow, desde a detecção de alterações no código até a implantação das atualizações, com o mínimo de esforço necessário.</p>
+<h2 id="problema-08">Problema 08</h2>
+<p>Estou criando um pipeline de dados para transmitir dados no Dataflow para os dados de um ponto de venda da organização onde trabalho. Desejo calcular o total de vendas por hora continuamente. Qual dessas opção de janela devo usar?</p>
+<blockquote>
+<p>Resposta: Para calcular o total de vendas por hora de forma contínua em um pipeline de dados de streaming no Dataflow para dados de ponto de venda, você deve usar janelas de salto (sliding windows).</p>
+</blockquote>
+<ul>
+<li>
+<p>Janelas de salto (sliding windows): As janelas de salto, também conhecidas como janelas deslizantes, são ideais para cenários onde você precisa calcular agregações (como somas, médias ou contagens) em intervalos de tempo sobrepostos.</p>
+<ul>
+<li>
+<p>Elas dividem os dados de streaming em segmentos temporais que se sobrepõem, permitindo que você obtenha uma visão contínua e atualizada das agregações.</p>
+</li>
+<li>
+<p>Com janelas de salto, você pode definir o tamanho da janela (por exemplo, 1 hora) e o período de salto (por exemplo, 1 minuto), permitindo calcular o total de vendas por hora e obter uma atualização a cada minuto.</p>
+</li>
+<li>Isso garante que você obtenha uma visão contínua e gradual das vendas ao longo do tempo.</li>
+</ul>
+</li>
+<li>
+<p>As janelas de sessão são mais adequadas para dados que chegam em sessões com períodos de inatividade entre elas, e não para dados contínuos como os dados de ponto de venda.</p>
+</li>
+<li>
+<p>A janela global agrupa todos os dados em uma única janela, não permitindo o cálculo do total de vendas por hora.</p>
+</li>
+<li>
+<p>As janelas em cascata (fixed windows) dividem os dados em intervalos de tempo não sobrepostos e não são as mais adequadas para calcular agregações contínuas.</p>
+</li>
+</ul>
+<p>Portanto, as janelas de salto (sliding windows) são a melhor opção para calcular continuamente o total de vendas por hora em seu pipeline de dados de streaming no Dataflow, pois permitem agregar dados em intervalos de tempo sobrepostos, fornecendo uma visão contínua e atualizada das vendas.</p>
+<h2 id="problema-09">Problema 09</h2>
+<p>O primeiro estágio do pipeline de dados processa dezenas de terabytes de dados financeiros e cria um conjunto de dados esparso de séries temporais como um par de chave-valor. Qual o coletor adequado para o primeiro estágio da pipeline?</p>
+<blockquote>
+<p>Resposta: Para o primeiro estágio de um pipeline de dados que processa dezenas de terabytes de dados financeiros e cria um conjunto de dados esparso de séries temporais como um par de chave-valor, o coletor adequado é o Bigtable.</p>
+</blockquote>
+<ul>
+<li>
+<p>O Bigtable é um serviço de banco de dados NoSQL totalmente gerenciado e escalável, ideal para dados de séries temporais esparsos. Ele foi projetado para lidar com grandes volumes de dados com baixa latência e alta escalabilidade.</p>
+</li>
+<li>
+<p>Estrutura de Dados: A estrutura de chave-valor do Bigtable é perfeita para dados de séries temporais esparsos, onde a chave pode ser usada para identificar a série temporal e o valor para armazenar os dados correspondentes.</p>
+</li>
+<li>
+<p>Desempenho: O Bigtable oferece alto desempenho para leituras e gravações, o que é essencial para um pipeline de processamento de dados que opera com grandes volumes de dados.</p>
+</li>
+</ul>
+<p>Outras opções não são adequadas para esta situação:</p>
+<ul>
+<li>
+<p>Cloud Storage é um serviço de armazenamento de objetos, adequado para dados não estruturados ou arquivos, mas não é otimizado para dados de séries temporais esparsos.</p>
+</li>
+<li>
+<p>Cloud SQL é um banco de dados relacional, ideal para dados estruturados com relacionamentos definidos, mas não é a melhor opção para dados de séries temporais esparsos.</p>
+</li>
+<li>
+<p>AlloyDB também é um banco de dados relacional compatível com PostgreSQL, adequado para dados transacionais, mas não é otimizado para dados de séries temporais esparsos.</p>
+</li>
+</ul>
+<p>Em resumo, o Bigtable é a melhor opção como coletor para a primeira etapa do seu pipeline de dados, pois sua estrutura de dados e características de desempenho se adequam perfeitamente aos requisitos de dados de séries temporais esparsos gerados pelo seu processamento de dados financeiros.</p>
+<h2 id="problema-10">Problema 10</h2>
+<p>Tenho um pipeline de dados que exige que eu monitore um bucket do Cloud Storage em busca de um arquivo, inicie um job do Dataflow para processar dados no arquivo, execute um script de shell para validar os dados processados no BigQuery e exclua o arquivo original. Preciso orquestrar esse pipeline usando as ferramentas recomendadas. Qual produto mais adequado neste caso?</p>
+<blockquote>
+<p>Resposta: Para orquestrar um pipeline de dados que monitora um bucket do Cloud Storage em busca de um arquivo, inicia um job do Dataflow para processar os dados nesse arquivo, executa um script de shell para validar os dados processados no BigQuery e exclui o arquivo original, você deve usar o Cloud Composer.</p>
+</blockquote>
+<ul>
+<li>
+<p>O Cloud Composer é um serviço de orquestração de fluxo de trabalho totalmente gerenciado que permite criar, agendar, monitorar e gerenciar pipelines de dados complexos.</p>
+</li>
+<li>
+<p>Ele é baseado no Apache Airflow e oferece uma interface gráfica de usuário (GUI) para criar fluxos de trabalho complexos, além de suporte para Python e outros idiomas.
+O Cloud Composer é ideal para este cenário porque permite:</p>
+</li>
+<li>
+<p>Monitorar o Cloud Storage: Você pode usar os sensores do Cloud Composer para monitorar um bucket do Cloud Storage em busca de novos arquivos.</p>
+</li>
+<li>
+<p>Iniciar jobs do Dataflow: O Cloud Composer pode iniciar automaticamente um job do Dataflow quando um novo arquivo for detectado no bucket do Cloud Storage.</p>
+</li>
+<li>
+<p>Executar scripts de shell: O Cloud Composer permite executar scripts de shell para validar os dados processados no BigQuery.</p>
+</li>
+<li>
+<p>Excluir arquivos: O Cloud Composer permite excluir o arquivo original do Cloud Storage após a conclusão bem-sucedida do processamento.</p>
+</li>
+<li>
+<p>Orquestração Complexa: O Cloud Composer oferece recursos avançados de orquestração, permitindo que você defina dependências entre tarefas e gerencie o fluxo de dados de forma eficiente.</p>
+</li>
+<li>
+<p>Visualização e monitoramento: O Cloud Composer oferece uma interface gráfica intuitiva para visualizar o fluxo de trabalho e monitorar o progresso das tarefas.
+Outras opções, como Cloud Tasks, Cloud Scheduler e Cloud Run, não são adequadas para este cenário.</p>
+</li>
+<li>
+<p>O Cloud Tasks é usado para enfileirar tarefas para execução assíncrona e não para orquestrar pipelines completos.</p>
+</li>
+<li>
+<p>O Cloud Scheduler é usado para agendar tarefas recorrentes e não para orquestração de pipelines com diversas etapas.</p>
+</li>
+<li>
+<p>O Cloud Run é usado para executar aplicativos conteinerizados e não para a orquestração de pipelines de dados.</p>
+</li>
+</ul>
+<p>Portanto, o Cloud Composer é a melhor opção para orquestrar seu pipeline de dados complexo, pois oferece a flexibilidade e os recursos necessários para monitorar o Cloud Storage, executar jobs do Dataflow, validar dados no BigQuery e gerenciar o fluxo de trabalho de forma eficiente.</p>
 
 
 
