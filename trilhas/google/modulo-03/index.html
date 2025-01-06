@@ -1612,6 +1612,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1876,6 +1885,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2072,6 +2090,46 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </ul>
 <p>Outras opções como renomear colunas do BigQuery com nomes mais descritivos, exportar os dados para o Cloud Storage com nomes de arquivo descritivos ou adicionar uma coluna de descrição correspondente a cada coluna de dados, não são tão eficazes para melhorar a capacidade de pesquisa dos dados. Renomear colunas pode ajudar, mas não oferece o mesmo nível de flexibilidade e centralização que o Cloud Catalog. Exportar dados com nomes descritivos ajuda apenas na localização dos arquivos, não nos dados propriamente ditos. Adicionar uma coluna de descrição pode ser útil, mas é mais difícil de manter e não é tão pesquisável quanto as tags do Cloud Catalog.</p>
 <p>Em resumo, criar tags para entradas de dados no Cloud Catalog é a melhor abordagem para melhorar a capacidade de pesquisa dos dados, pois ele centraliza as informações, facilita a descoberta e melhora a compreensão dos dados.</p>
+<h2 id="problema-06">Problema 06</h2>
+<p>Estou ingerindo dados espalhados por uma ampla variedade de datas no BigQuery em um ritmo rápido. Preciso particionar a tabela para tornar as consultas performáticas. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para melhorar o desempenho das consultas ao ingerir dados distribuídos por um amplo intervalo de datas no BigQuery em um ritmo rápido, você deve criar uma tabela particionada por tempo de processamento com tipo de particionamento diário.</p>
+</blockquote>
+<ul>
+<li>
+<p>Particionamento por tempo de processamento: Ao particionar uma tabela por tempo de processamento, o BigQuery divide automaticamente os dados em partições com base na data em que os dados são ingeridos. Isso permite que as consultas sejam direcionadas apenas às partições relevantes, melhorando o desempenho e reduzindo os custos.</p>
+</li>
+<li>
+<p>Particionamento diário: Ao escolher o particionamento diário, o BigQuery cria partições separadas para cada dia de dados. Essa abordagem é adequada para dados que são ingeridos em um ritmo rápido e distribuídos por um amplo intervalo de datas, pois garante que cada dia de dados seja armazenado em sua própria partição.</p>
+</li>
+<li>
+<p>Benefícios do particionamento:</p>
+<ul>
+<li>
+<p>Melhora o desempenho das consultas: As consultas que filtram dados com base em datas podem ser executadas de forma mais rápida e eficiente, pois o BigQuery só precisa verificar as partições relevantes.</p>
+</li>
+<li>
+<p>Reduz os custos: Ao consultar apenas as partições relevantes, o BigQuery processa menos dados, o que resulta em custos mais baixos.</p>
+</li>
+<li>
+<p>Facilita o gerenciamento de dados: O particionamento torna o gerenciamento de grandes conjuntos de dados mais fácil, pois permite realizar operações como exclusão ou atualização de dados em partições específicas.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Outras opções apresentadas não são adequadas para esse cenário específico:</p>
+<ul>
+<li>
+<p>Criar uma tabela particionada por tempo de processamento com tipo de particionamento anual: O particionamento anual não é a melhor opção quando os dados são ingeridos em um ritmo rápido e distribuídos por um amplo intervalo de datas. Isso resultaria em partições muito grandes, o que impactaria negativamente o desempenho da consulta.</p>
+</li>
+<li>
+<p>Criar uma tabela particionada por intervalo de números inteiros: O particionamento por intervalo de números inteiros é adequado quando os dados são particionados com base em um valor inteiro, como um ID. Não é apropriado para dados que são particionados por tempo de processamento.</p>
+</li>
+<li>
+<p>Criar uma tabela particionada por coluna de unidade de tempo com tipo de particionamento anual: Embora o particionamento por coluna de unidade de tempo seja válido, o particionamento anual não seria ideal para este cenário. O particionamento diário é a melhor opção para dados distribuídos por um amplo intervalo de datas.</p>
+</li>
+</ul>
+<p>Em resumo, para ingerir dados distribuídos por um amplo intervalo de datas no BigQuery, criar uma tabela particionada por tempo de processamento com tipo de particionamento diário é a melhor abordagem para garantir um bom desempenho nas consultas.</p>
 
 
 
