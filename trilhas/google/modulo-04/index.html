@@ -1642,6 +1642,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1915,6 +1933,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2183,6 +2219,123 @@ Vantagens de usar campos aninhados e repetidos:</p>
 </li>
 </ul>
 <p>Em resumo, para migrar dados hierárquicos do PostgreSQL para o BigQuery com melhor desempenho, você deve desnormalizar os dados e usar campos aninhados e repetidos. Essa abordagem reduz a necessidade de junções complexas (joins) e melhora o desempenho das consultas analíticas no BigQuery.</p>
+<h2 id="problema-07">Problema 07</h2>
+<p>Na organização onde trabalho usamos o Dataplex para criar lagos e zonas para seus dados de negócios. No entanto, alguns arquivos não estão sendo descobertos. Qual pode ser o problema?</p>
+<blockquote>
+<p>Resposta: O problema de alguns arquivos não serem descobertos no Dataplex, quando você já criou data lakes e zonas, pode ser devido a formatos de arquivo incompatíveis com o Dataplex. Especificamente, o Dataplex pode ter dificuldades em descobrir arquivos que não estejam nos formatos ORC ou Parquet.</p>
+</blockquote>
+<ul>
+<li>Formatos de Arquivo: O Dataplex pode não conseguir descobrir arquivos se eles não estiverem nos formatos ORC ou Parquet. Esses formatos são projetados para um melhor desempenho em consultas e são bem suportados pelo Dataplex.</li>
+</ul>
+<p><strong>Possíveis causas do problema:</strong></p>
+<ol>
+<li>
+<p>Formato de Arquivo Incorreto:</p>
+<ul>
+<li>Se os arquivos que não estão sendo descobertos estiverem em outros formatos (como CSV, JSON ou texto), o Dataplex pode não conseguir identificá-los e catalogá-los automaticamente.</li>
+</ul>
+</li>
+<li>
+<p>Padrão de Exclusão:</p>
+<ul>
+<li>Certifique-se de que não há nenhum padrão de exclusão que corresponda aos arquivos que você espera descobrir.</li>
+</ul>
+</li>
+<li>
+<p>Agendamento de Descoberta:</p>
+<ul>
+<li>Verifique se a descoberta de dados está agendada para ser executada na frequência correta.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Como Resolver o Problema:</strong></p>
+<ol>
+<li>Verificar os Formatos de Arquivo:</li>
+<li>
+<p>Certifique-se de que os arquivos estejam nos formatos ORC ou Parquet. Se não estiverem, converta-os para um desses formatos.</p>
+</li>
+<li>
+<p>Revisar Padrões de Exclusão:</p>
+</li>
+<li>
+<p>Verifique as configurações do Dataplex para garantir que não há padrões de exclusão que impeçam a descoberta dos arquivos desejados.</p>
+</li>
+<li>
+<p>Verificar Agendamento da Descoberta:</p>
+<ul>
+<li>Verifique se a descoberta de dados está agendada para ser executada na frequência correta. Uma configuração de descoberta por hora pode ser muito lenta para seus requisitos.</li>
+</ul>
+</li>
+<li>
+<p>Usar Tags do Data Catalog:</p>
+<ul>
+<li>Se você tem um grande volume de dados e analistas e líderes têm dificuldade de entender o significado de colunas ou quem é o proprietário dos dados, use as tags do Data Catalog para melhorar a capacidade de descoberta dos dados.</li>
+</ul>
+</li>
+<li>
+<p>Criar Tags para as Entradas de Dados no Cloud Catalog:</p>
+<ul>
+<li>Você pode criar tags para as entradas de dados no Cloud Catalog para facilitar a descoberta de dados.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Considerações Adicionais:</strong></p>
+<ul>
+<li>
+<p>Data Catalog: Use o Data Catalog para entender o significado dos seus dados e sua propriedade. O Data Catalog é um serviço para descoberta de dados. O Dataplex usa o Data Catalog para catalogar automaticamente metadados técnicos.</p>
+</li>
+<li>
+<p>Dataplex: O Dataplex possibilita a criação de um data mesh, permitindo a descoberta e o uso mais fácil dos dados. O Dataplex é um serviço de gerenciamento de dados inteligente.
+Em resumo, a razão mais provável para arquivos não serem descobertos no Dataplex é que eles podem não estar nos formatos ORC ou Parquet. É fundamental verificar os formatos de arquivo, padrões de exclusão e agendamento da descoberta para garantir que todos os dados sejam descobertos corretamente.</p>
+</li>
+</ul>
+<h2 id="problema-08">Problema 08</h2>
+<p>Executo repetidamente as mesmas consultas associando várias tabelas. As tabelas originais mudam cerca de dez vezes por dia. Desejo uma abordagem de consulta otimizada. Qual recurso você devo usar?</p>
+<blockquote>
+<p>Resposta: Para otimizar as consultas que você executa repetidamente, associando várias tabelas que mudam cerca de dez vezes por dia, você deve usar visualizações materializadas.</p>
+</blockquote>
+<ul>
+<li>
+<p>Visualizações Materializadas: Visualizações materializadas são tabelas pré-computadas que armazenam os resultados de uma consulta. Ao usar visualizações materializadas, o BigQuery pode ler os resultados pré-computados em vez de executar a consulta original repetidamente, o que melhora o desempenho e reduz os custos.
+Vantagens das Visualizações Materializadas:</p>
+</li>
+<li>
+<p>Otimização de Consultas: As visualizações materializadas otimizam as consultas, pré-calculando e armazenando os resultados das consultas. Isso é especialmente útil quando as mesmas consultas complexas são executadas repetidamente.</p>
+</li>
+<li>
+<p>Desempenho: Ao armazenar os dados já processados, as visualizações materializadas reduzem o tempo de processamento, pois o BigQuery não precisa acessar as tabelas de origem e executar junções e cálculos a cada consulta.</p>
+</li>
+<li>
+<p>Redução de Custos: Como a consulta é executada apenas quando a visualização materializada é criada ou atualizada, há uma redução nos custos de processamento, principalmente para consultas complexas que são executadas com frequência.</p>
+</li>
+<li>
+<p>Atualizações Automáticas: O BigQuery pode atualizar automaticamente as visualizações materializadas quando as tabelas de origem mudam, garantindo que os dados estejam sempre atualizados.</p>
+</li>
+</ul>
+<p><strong>Como Implementar:</strong></p>
+<ol>
+<li>Identifique as Consultas: Identifique as consultas que você executa repetidamente e que envolvem a junção de várias tabelas.</li>
+<li>
+<p>Crie a Visualização Materializada: Use a instrução CREATE MATERIALIZED VIEW no BigQuery para criar uma visualização materializada com base na consulta que você identificou.</p>
+</li>
+<li>
+<p>Agende Atualizações: Configure o BigQuery para atualizar automaticamente a visualização materializada quando as tabelas de origem forem alteradas. O BigQuery oferece a opção de atualização automática, o que é fundamental em cenários onde os dados mudam frequentemente.</p>
+</li>
+<li>
+<p>Consulte a Visualização Materializada: Em vez de executar a consulta original, direcione suas consultas à visualização materializada.
+Comparação com Outras Abordagens:</p>
+</li>
+<li>
+<p>Visualizações: As visualizações são úteis, mas não armazenam os resultados da consulta. As visualizações são essencialmente consultas salvas, que são executadas a cada vez que a visualização é acessada. Ao contrário das visualizações materializadas, as visualizações não oferecem a mesma vantagem de desempenho.</p>
+</li>
+<li>
+<p>Consultas Federadas: Consultas federadas são úteis para acessar dados em outras fontes de dados, mas não são apropriadas para otimizar consultas que acessam tabelas dentro do BigQuery. As consultas federadas também podem não oferecer o melhor desempenho para dados que são consultados com frequência, já que os dados precisam ser consultados em tempo real de outros sistemas.</p>
+</li>
+<li>
+<p>Partições: Particionar tabelas pode melhorar o desempenho de consultas que acessam grandes conjuntos de dados, mas não resolve o problema de consultas repetitivas que envolvem junções. As partições são uma otimização no armazenamento de dados, não no cálculo da consulta.</p>
+</li>
+</ol>
+<p>Em resumo, para otimizar consultas repetitivas que associam várias tabelas no BigQuery, você deve usar visualizações materializadas. As visualizações materializadas armazenam os resultados das consultas, reduzindo o tempo de processamento e os custos, além de garantirem que os dados estejam sempre atualizados com as mudanças nas tabelas de origem.</p>
 
 
 
