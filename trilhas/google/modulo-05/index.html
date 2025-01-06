@@ -1663,6 +1663,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1936,6 +1945,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2178,6 +2196,57 @@ Comparação com outras abordagens:</p>
 </ul>
 <p><strong>Resumo</strong></p>
 <p>Para garantir um tempo de inatividade mínimo para transações de banco de dados em uma instância do Cloud SQL, você deve configurar a alta disponibilidade. Isso garante que, em caso de falha na instância primária, o failover para a instância de standby seja feito automaticamente e de forma rápida, mantendo o sistema acessível e minimizando o tempo de inatividade. A alta disponibilidade é crucial para aplicações que exigem um funcionamento contínuo e confiável.</p>
+<h2 id="problema-06">Problema 06</h2>
+<p>Preciso projetar um cluster do Dataproc para executar vários jobs pequenos. Muitos jobs (mas não todos) são de alta prioridade. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para projetar um cluster do Dataproc para executar vários jobs pequenos, muitos dos quais são de alta prioridade, você deve usar clusters temporários ou escalonamento automático de cluster.</p>
+</blockquote>
+<p><strong>Clusters Temporários</strong></p>
+<ul>
+<li>
+<p>Clusters temporários são criados sob demanda para executar um ou mais jobs específicos, sendo automaticamente excluídos após a conclusão.</p>
+</li>
+<li>
+<p>Essa abordagem é ideal para jobs pequenos e variados, pois não exige que você mantenha um cluster ativo continuamente, o que pode gerar economia de custos.</p>
+</li>
+<li>
+<p>Ao usar clusters temporários, você pode configurar cada cluster de forma otimizada para os jobs que ele executará, inclusive a prioridade dos jobs.
+Escalonamento Automático de Cluster</p>
+</li>
+<li>
+<p>O escalonamento automático permite que o Dataproc ajuste automaticamente o tamanho do cluster com base nas necessidades de processamento, aumentando ou diminuindo o número de nós de trabalho.</p>
+</li>
+<li>
+<p>Essa abordagem é útil quando você tem uma carga de trabalho variável, onde a demanda pode aumentar e diminuir ao longo do tempo.</p>
+</li>
+<li>
+<p>O escalonamento automático garante que você tenha recursos suficientes para jobs de alta prioridade quando necessário e que você não pague por recursos ociosos quando a demanda é baixa.</p>
+</li>
+<li>
+<p>O escalonamento automático é recomendado quando há cargas de trabalho de tamanhos diferentes no cluster.
+Comparação com outras abordagens:</p>
+</li>
+<li>
+<p>Reutilizar o mesmo cluster para executar cada job em sequência: Essa abordagem pode levar a gargalos de desempenho, pois os jobs de alta prioridade podem ter que esperar que os jobs de baixa prioridade sejam concluídos. Além disso, manter um cluster ativo o tempo todo pode gerar custos mais altos.</p>
+</li>
+<li>
+<p>Reutilizar o mesmo cluster para executar todos os jobs em paralelo: Executar todos os jobs em paralelo em um cluster único pode sobrecarregar o sistema, especialmente se houver muitos jobs de alta prioridade. Além disso, essa abordagem dificulta o gerenciamento de prioridades.</p>
+</li>
+</ul>
+<p><strong>Recomendações adicionais:</strong></p>
+<ul>
+<li>
+<p>Você pode combinar o uso de clusters temporários com o escalonamento automático para atender aos seus requisitos. Por exemplo, você pode usar clusters temporários com escalonamento automático para jobs de alta prioridade e clusters temporários menores para jobs de baixa prioridade.</p>
+</li>
+<li>
+<p>Ao configurar o escalonamento automático, você pode definir limites para o número máximo e mínimo de nós de trabalho, garantindo que o cluster nunca consuma recursos em excesso ou fique sobrecarregado.</p>
+</li>
+<li>
+<p>Monitore o desempenho dos jobs e ajuste a configuração do cluster e o escalonamento automático, se necessário.</p>
+</li>
+</ul>
+<p><strong>Resumo</strong></p>
+<p>Para projetar um cluster do Dataproc para executar vários jobs pequenos com diferentes prioridades, você deve usar clusters temporários combinados ou não com o escalonamento automático de cluster. Os clusters temporários fornecem flexibilidade para otimizar cada job e eliminar o tempo de inatividade. O escalonamento automático garante o dimensionamento adequado dos recursos. Você também deve analisar os padrões de uso e monitorar o desempenho para otimizar ainda mais o processo.</p>
 
 
 
