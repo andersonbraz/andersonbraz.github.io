@@ -1645,6 +1645,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 05
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1900,6 +1918,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 05
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1941,7 +1977,7 @@ Em resumo, o Google recomenda ativar o escalonamento automático do Dataproc qua
 </li>
 </ul>
 <h2 id="problema-02">Problema 02</h2>
-<p>Estou executando um pipeline do Dataflow em produção. Os dados de entrada para esse pipeline são ocasionalmente inconsistentes. Separadamente do processamento dos dados válidos, desejo capturar com eficiência os dados de entrada incorretos para análise. O que você devo fazer?</p>
+<p>Estou executando um pipeline do Dataflow em produção. Os dados de entrada para esse pipeline são ocasionalmente inconsistentes. Separadamente do processamento dos dados válidos, desejo capturar com eficiência os dados de entrada incorretos para análise. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para capturar dados de entrada incorretos em seu pipeline do Dataflow, além de processar os dados válidos, você deve criar uma saída secundária para os dados incorretos.</p>
 </blockquote>
@@ -1985,7 +2021,7 @@ Recursos adicionais:</p>
 </ul>
 <p>Em resumo, criar uma saída secundária para os dados incorretos é a abordagem mais recomendada para capturar dados inconsistentes no seu pipeline do Dataflow, garantindo que os dados válidos sejam processados corretamente e os dados problemáticos possam ser analisados posteriormente. O uso de saídas secundárias é uma prática eficiente e flexível para lidar com erros e inconsistências nos dados em um pipeline do Dataflow.</p>
 <h2 id="problema-03">Problema 03</h2>
-<p>Vários dos nossos analistas precisam preparar relatórios nas manhãs de segunda-feira, devido ao uso intenso do BigQuery. Desejo adotar uma abordagem econômica para gerenciar essa demanda. O que você devo fazer?</p>
+<p>Vários dos nossos analistas precisam preparar relatórios nas manhãs de segunda-feira, devido ao uso intenso do BigQuery. Desejo adotar uma abordagem econômica para gerenciar essa demanda. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para gerenciar o aumento da demanda no BigQuery nas manhãs de segunda-feira de forma econômica, você deve usar slots flexíveis ou a edição Enterprise do BigQuery com um compromisso de um ano.</p>
 </blockquote>
@@ -2093,6 +2129,55 @@ Aumentar ou Diminuir a Escala do Data Warehouse Rapidamente</p>
 <p>Analise os padrões de uso, otimize as consultas e considere criar reservas se necessário.</p>
 </li>
 </ul>
+<h2 id="problema-05">Problema 05</h2>
+<p>Executo uma instância do Cloud SQL para uma empresa que exige que o banco de dados esteja acessível para transações. Preciso garantir um tempo de inatividade mínimo para transações de banco de dados. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para garantir um tempo de inatividade mínimo para transações de banco de dados em uma instância do Cloud SQL, você deve configurar a alta disponibilidade.</p>
+</blockquote>
+<p><strong>Alta Disponibilidade no Cloud SQL</strong></p>
+<ul>
+<li>
+<p>A configuração de alta disponibilidade garante que o banco de dados permaneça acessível mesmo em caso de falhas.</p>
+</li>
+<li>
+<p>Em um cenário de alta disponibilidade, o Cloud SQL mantém uma instância primária e uma instância de standby em zonas diferentes.</p>
+</li>
+<li>
+<p>Se a instância primária falhar, o Cloud SQL automaticamente faz o failover para a instância de standby, minimizando o tempo de inatividade.
+Implementação da Alta Disponibilidade</p>
+</li>
+<li>
+<p>Ao criar uma instância do Cloud SQL, você pode optar por ativar a configuração de alta disponibilidade.</p>
+</li>
+<li>
+<p>Essa configuração replica os dados de forma síncrona entre a instância primária e a instância de standby, garantindo que os dados estejam sempre atualizados em ambos os locais.</p>
+</li>
+<li>
+<p>O processo de failover é automático e geralmente leva alguns minutos, mantendo o tempo de inatividade o mais baixo possível.</p>
+</li>
+<li>
+<p>A alta disponibilidade é uma configuração regional, ou seja, as instâncias primárias e de standby são implementadas em diferentes zonas da mesma região.
+Comparação com outras abordagens:</p>
+</li>
+<li>
+<p>Replicação: A replicação de dados é uma forma de manter cópias dos dados em outro local, mas não oferece a mesma garantia de failover automático e rápido que a alta disponibilidade. A replicação é mais adequada para fins de backup e leitura, não para garantir a continuidade das transações.</p>
+</li>
+<li>
+<p>Backups: Os backups são importantes para a recuperação de desastres, mas não garantem a continuidade das transações. A restauração de um backup pode levar um tempo considerável, resultando em um tempo de inatividade inaceitável para um sistema transacional.</p>
+</li>
+</ul>
+<h2 id="-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico">- Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.</h2>
+<p><strong>Recursos adicionais:</strong></p>
+<ul>
+<li>
+<p>O Cloud SQL oferece diferentes opções de alta disponibilidade dependendo do tipo de banco de dados (MySQL, PostgreSQL, SQL Server).</p>
+</li>
+<li>
+<p>Ao configurar a alta disponibilidade, você pode monitorar o status das instâncias e configurar alertas para receber notificações em caso de problemas.</p>
+</li>
+</ul>
+<p><strong>Resumo</strong></p>
+<p>Para garantir um tempo de inatividade mínimo para transações de banco de dados em uma instância do Cloud SQL, você deve configurar a alta disponibilidade. Isso garante que, em caso de falha na instância primária, o failover para a instância de standby seja feito automaticamente e de forma rápida, mantendo o sistema acessível e minimizando o tempo de inatividade. A alta disponibilidade é crucial para aplicações que exigem um funcionamento contínuo e confiável.</p>
 
 
 
