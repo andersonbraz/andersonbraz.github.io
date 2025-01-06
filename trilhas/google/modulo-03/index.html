@@ -1639,6 +1639,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1925,6 +1934,15 @@
   <a href="#problema-08" class="md-nav__link">
     <span class="md-ellipsis">
       Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
     </span>
   </a>
   
@@ -2258,6 +2276,45 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </li>
 </ul>
 <p>Em resumo, criar visualizações materializadas é a melhor abordagem para reduzir o esforço dos analistas, pois permite que eles consultem dados já processados e atualizados automaticamente, ao mesmo tempo que melhora o desempenho das consultas.</p>
+<h2 id="problema-09">Problema 09</h2>
+<p>Preciso escolher uma solução de armazenamento de dados para dar suporte a um sistema transacional. Meus clientes estão baseados principalmente em uma região. Desejo reduzir suas tarefas de administração e concentrar o esforço de engenharia na criação de seu aplicativo de negócios. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para dar suporte a um sistema transacional com clientes baseados principalmente em uma região, e para reduzir as tarefas administrativas, você deve usar o Cloud SQL.</p>
+</blockquote>
+<ul>
+<li>
+<p>O Cloud SQL é um serviço de banco de dados totalmente gerenciado que oferece suporte a MySQL, PostgreSQL e SQL Server.</p>
+<ul>
+<li>Ao escolher o Cloud SQL, você delega grande parte da administração do banco de dados ao Google Cloud, permitindo que sua equipe se concentre no desenvolvimento do aplicativo.</li>
+</ul>
+</li>
+<li>
+<p>O Cloud SQL é ideal para sistemas transacionais devido à sua capacidade de fornecer suporte a transações ACID, que garantem a consistência e a confiabilidade dos dados.</p>
+</li>
+<li>
+<p>Como seus clientes estão principalmente em uma única região, você pode usar o Cloud SQL para criar uma instância de banco de dados nessa região, reduzindo a latência e melhorando o desempenho.</p>
+</li>
+<li>
+<p>O Cloud SQL também oferece alta disponibilidade, backups automatizados e outras funcionalidades que ajudam a garantir a continuidade dos negócios.</p>
+</li>
+<li>
+<p>Ao usar o Cloud SQL, você pode reduzir as tarefas administrativas, pois não precisa se preocupar com provisionamento, instalação de patches, backups e outros aspectos da administração do banco de dados.</p>
+</li>
+<li>
+<p>O Cloud SQL oferece várias opções de armazenamento, incluindo SSD, que são adequadas para aplicações transacionais de alto desempenho.
+Outras opções apresentadas não são recomendadas para o cenário em questão:</p>
+</li>
+<li>
+<p>O Cloud Spanner é um banco de dados globalmente distribuído que é adequado para aplicativos que exigem alta escalabilidade e disponibilidade em várias regiões. Como seus clientes estão principalmente em uma região, o Cloud Spanner não é a opção mais econômica nem a mais adequada para esse cenário.</p>
+</li>
+<li>
+<p>Instalar um banco de dados de sua preferência em uma VM do Compute Engine exige que você gerencie toda a infraestrutura e administração do banco de dados, o que aumenta as tarefas administrativas e não é o ideal para quem quer reduzir o esforço da equipe.</p>
+</li>
+<li>
+<p>Criar um bucket do Cloud Storage com um bucket regional é adequado para armazenar arquivos e objetos, não para suportar um sistema transacional, que requer uma base de dados relacional.</p>
+</li>
+</ul>
+<p>Em resumo, usar o Cloud SQL é a melhor opção para um sistema transacional com clientes em uma região, pois oferece alta disponibilidade e reduz a sobrecarga administrativa, permitindo que você foque no desenvolvimento do aplicativo de negócios.</p>
 
 
 
