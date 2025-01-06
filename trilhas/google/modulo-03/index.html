@@ -12,7 +12,7 @@
         <link rel="prev" href="../modulo-02/">
       
       
-        <link rel="next" href="../../microsoft/01-data-engineer/">
+        <link rel="next" href="../modulo-04/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -1648,10 +1648,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Preparando e Usando Dados Para Anáilse
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1943,6 +1973,15 @@
   <a href="#problema-09" class="md-nav__link">
     <span class="md-ellipsis">
       Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
     </span>
   </a>
   
@@ -2315,6 +2354,40 @@ Outras opções apresentadas não são recomendadas para o cenário em questão:
 </li>
 </ul>
 <p>Em resumo, usar o Cloud SQL é a melhor opção para um sistema transacional com clientes em uma região, pois oferece alta disponibilidade e reduz a sobrecarga administrativa, permitindo que você foque no desenvolvimento do aplicativo de negócios.</p>
+<h2 id="problema-10">Problema 10</h2>
+<p>Tenho grandes quantidades de dados armazenados no Cloud Storage e no BigQuery. Parte disso é processado, mas parte ainda não foi processado. Também tenho uma malha de dados criada no Dataplex. Preciso tornar conveniente para os usuários internos dos dados descobrir e usar os dados. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para facilitar o processo de descoberta e uso de dados armazenados no Cloud Storage e no BigQuery, tanto os dados já processados quanto os não processados, dentro de uma malha de dados criada no Dataplex, você deve criar uma zona bruta para dados não processados e uma zona selecionada para dados processados.</p>
+</blockquote>
+<ul>
+<li>
+<p>Zonas no Dataplex: No Dataplex, as zonas são usadas para organizar os dados e controlar como os dados são acessados e gerenciados. As zonas podem ser divididas em zonas brutas (raw) para dados não processados e zonas selecionadas (curated) para dados processados.</p>
+</li>
+<li>
+<p>Zona Bruta: A zona bruta deve conter os dados em seu formato original, sem nenhuma transformação ou limpeza. Isso garante que você mantenha uma cópia dos dados brutos para fins de auditoria e recuperação.</p>
+</li>
+<li>
+<p>Zona Selecionada: A zona selecionada deve conter os dados que já foram processados, limpos e transformados para consumo. Isso facilita que os usuários internos encontrem e usem os dados que já foram preparados para análise.</p>
+</li>
+<li>
+<p>Implementação:</p>
+<ul>
+<li>Dados não processados: Os dados não processados armazenados no Cloud Storage e no BigQuery devem ser colocados na zona bruta do Dataplex.</li>
+<li>Dados processados: Os dados processados armazenados no Cloud Storage e no BigQuery devem ser movidos ou referenciados na zona selecionada do Dataplex.</li>
+<li>Metadados: Certifique-se de que os metadados dos dados (como descrição, proprietário, etc.) estejam corretamente catalogados no Dataplex. Isso ajudará na descoberta e compreensão dos dados.</li>
+</ul>
+</li>
+<li>
+<p>Benefícios de usar zonas no Dataplex:</p>
+<ul>
+<li>Organização dos dados: Facilita a localização e o uso dos dados, separando os dados brutos dos dados processados.</li>
+<li>Descoberta de dados: Torna mais fácil para os usuários internos encontrar os dados de que precisam, melhorando o potencial de pesquisa.</li>
+<li>Gerenciamento de dados: Oferece uma maneira centralizada de gerenciar os dados, incluindo governança e controle de acesso.</li>
+</ul>
+</li>
+</ul>
+<p>Outras opções como criar um data lake para dados do Cloud Storage e uma zona para dados do BigQuery ou criar um data lake para dados do BigQuery e uma zona para dados do Cloud Storage ou criar um data lake para dados não processados e recursos para dados processados não são tão eficazes quanto usar zonas para separar dados não processados e processados, e gerenciar esses dados de forma unificada. Ao criar um data lake para dados específicos, você ainda precisará organizar os dados dentro do data lake para facilitar o processo de descoberta de dados.</p>
+<p>Em resumo, criar uma zona bruta para dados não processados e uma zona selecionada para dados processados dentro da malha de dados do Dataplex é a abordagem mais adequada para organizar seus dados, melhorar o potencial de pesquisa e facilitar o acesso para os usuários internos.</p>
 
 
 

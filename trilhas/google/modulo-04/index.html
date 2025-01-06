@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../python/">
+        <link rel="prev" href="../modulo-03/">
       
       
-        <link rel="next" href="../sql/">
+        <link rel="next" href="../../microsoft/01-data-engineer/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Spark - Amazing Things in Data</title>
+        <title>4. Preparando e Usando Dados Para Anáilse - Amazing Things in Data</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#spark" class="md-skip">
+        <a href="#4-preparando-e-usando-dados-para-anailse" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97V22m1.76 0 7.8-4.22V9.07l-7.8 3.97V22Z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Spark
+              4. Preparando e Usando Dados Para Anáilse
             
           </span>
         </div>
@@ -191,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97V22m1.76 0 7.8-4.22V9.07l-7.8 3.97V22Z"/></svg>
@@ -209,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -264,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../carreiras/01-data-architect/" class="md-nav__link">
+      <a href="../../../carreiras/01-data-architect/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -285,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../carreiras/02-data-engineer/" class="md-nav__link">
+      <a href="../../../carreiras/02-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../carreiras/03-data-scientist/" class="md-nav__link">
+      <a href="../../../carreiras/03-data-scientist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../carreiras/04-data-analyst/" class="md-nav__link">
+      <a href="../../../carreiras/04-data-analyst/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estudos/01-treinamentos/" class="md-nav__link">
+      <a href="../../../estudos/01-treinamentos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estudos/02-livros/" class="md-nav__link">
+      <a href="../../../estudos/02-livros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estudos/03-certificacoes/" class="md-nav__link">
+      <a href="../../../estudos/03-certificacoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estudos/04-trilha-aprendizado/" class="md-nav__link">
+      <a href="../../../estudos/04-trilha-aprendizado/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/apache-airflow/" class="md-nav__link">
+      <a href="../../../ferramentas/apache-airflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/aws/" class="md-nav__link">
+      <a href="../../../ferramentas/aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/azure/" class="md-nav__link">
+      <a href="../../../ferramentas/azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/gcp/" class="md-nav__link">
+      <a href="../../../ferramentas/gcp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/hadoop/" class="md-nav__link">
+      <a href="../../../ferramentas/hadoop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/hive/" class="md-nav__link">
+      <a href="../../../ferramentas/hive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/kafka/" class="md-nav__link">
+      <a href="../../../ferramentas/kafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/kubernetes/" class="md-nav__link">
+      <a href="../../../ferramentas/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/spark/" class="md-nav__link">
+      <a href="../../../ferramentas/spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -705,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ferramentas/yarn/" class="md-nav__link">
+      <a href="../../../ferramentas/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/01-data-literacy/" class="md-nav__link">
+      <a href="../../../fundamentos/01-data-literacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/02-big-data/" class="md-nav__link">
+      <a href="../../../fundamentos/02-big-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/03-data-driven/" class="md-nav__link">
+      <a href="../../../fundamentos/03-data-driven/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/04-arquiteturas/" class="md-nav__link">
+      <a href="../../../fundamentos/04-arquiteturas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/05-pipeline/" class="md-nav__link">
+      <a href="../../../fundamentos/05-pipeline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -873,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/06-orquestrador/" class="md-nav__link">
+      <a href="../../../fundamentos/06-orquestrador/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/07-dataops/" class="md-nav__link">
+      <a href="../../../fundamentos/07-dataops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
+      <a href="../../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glossario/vocabulary/" class="md-nav__link">
+      <a href="../../../glossario/vocabulary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1003,19 +1003,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1029,7 +1027,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Hacks
@@ -1043,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apache-airflow/" class="md-nav__link">
+      <a href="../../../hacks/apache-airflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1064,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../../hacks/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../../hacks/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1106,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyter-notebook/" class="md-nav__link">
+      <a href="../../../hacks/jupyter-notebook/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1127,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas/" class="md-nav__link">
+      <a href="../../../hacks/pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1148,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pyspark/" class="md-nav__link">
+      <a href="../../../hacks/pyspark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1169,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../../hacks/python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,30 +1185,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Spark
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../hacks/spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1219,167 +1197,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#comandos-uteis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comandos Úteis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracoes-uteis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurações Úteis
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configurações Úteis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sparkdrivermemory" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.driver.memory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutormemory" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.memory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutorinstances" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.instances
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutorcores" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.cores
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparktaskcpus" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.task.cpus
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqlshufflepartitions" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.shuffle.partitions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkdefaultparallelism" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.default.parallelism
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkmemoryfraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.memory.fraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkmemorystoragefraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.memory.storageFraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparknetworktimeout" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.network.timeout
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkspeculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.speculation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqladaptiveenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.adaptive.enabled
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqladaptivecoalescepartitionsenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.adaptive.coalescePartitions.enabled
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1392,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sql/" class="md-nav__link">
+      <a href="../../../hacks/sql/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1413,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wsl/" class="md-nav__link">
+      <a href="../../../hacks/wsl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1476,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../metodologias/01-metodologia-agil/" class="md-nav__link">
+      <a href="../../../metodologias/01-metodologia-agil/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1497,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../metodologias/02-crisp-dm/" class="md-nav__link">
+      <a href="../../../metodologias/02-crisp-dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,17 +1339,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1546,7 +1365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Trilhas
@@ -1595,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trilhas/databricks/01-data-engineer/" class="md-nav__link">
+      <a href="../../databricks/01-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1621,17 +1440,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
         
           
           <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
@@ -1645,7 +1466,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_2">
             <span class="md-nav__icon md-icon"></span>
             Google
@@ -1659,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trilhas/google/modulo-01/" class="md-nav__link">
+      <a href="../modulo-01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1680,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trilhas/google/modulo-02/" class="md-nav__link">
+      <a href="../modulo-02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1701,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trilhas/google/modulo-03/" class="md-nav__link">
+      <a href="../modulo-03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1719,10 +1540,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../trilhas/google/modulo-04/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4. Preparando e Usando Dados Para Anáilse
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1731,6 +1572,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 01
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probelma-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probelma 02
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1786,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trilhas/microsoft/01-data-engineer/" class="md-nav__link">
+      <a href="../../microsoft/01-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1857,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/01-download/" class="md-nav__link">
+      <a href="../../../utilidade-publica/01-download/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1878,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/02-online/" class="md-nav__link">
+      <a href="../../../utilidade-publica/02-online/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1899,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
+      <a href="../../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1947,143 +1826,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comandos-uteis" class="md-nav__link">
+  <a href="#problema-01" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos Úteis
+      Problema 01
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracoes-uteis" class="md-nav__link">
+  <a href="#probelma-02" class="md-nav__link">
     <span class="md-ellipsis">
-      Configurações Úteis
+      Probelma 02
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Configurações Úteis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sparkdrivermemory" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.driver.memory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutormemory" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.memory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutorinstances" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.instances
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkexecutorcores" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.executor.cores
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparktaskcpus" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.task.cpus
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqlshufflepartitions" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.shuffle.partitions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkdefaultparallelism" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.default.parallelism
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkmemoryfraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.memory.fraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkmemorystoragefraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.memory.storageFraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparknetworktimeout" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.network.timeout
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparkspeculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.speculation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqladaptiveenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.adaptive.enabled
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sparksqladaptivecoalescepartitionsenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      spark.sql.adaptive.coalescePartitions.enabled
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2102,38 +1858,100 @@
                   
 
 
-<h1 id="spark">Spark</h1>
-<h2 id="comandos-uteis">Comandos Úteis</h2>
-<p>Identificar diretório de instalação do Spark</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;sc.getConf(&quot;spark.home&quot;)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>spark-shell
-</code></pre></div>
-<h2 id="configuracoes-uteis">Configurações Úteis</h2>
-<h3 id="sparkdrivermemory">spark.driver.memory</h3>
-<p>Define a quantidade de memória que o driver (o processo principal do aplicativo Spark) pode usar. Aumentar essa configuração pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
-<h3 id="sparkexecutormemory">spark.executor.memory</h3>
-<p>Define a quantidade de memória que cada executor pode usar. Isso pode afetar o número de tarefas que podem ser executadas simultaneamente. Aumentar essa configuração pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
-<h3 id="sparkexecutorinstances">spark.executor.instances</h3>
-<p>Define o número de executores que serão criados na inicialização da sessão. Aumentar esse número pode ajudar a aumentar o paralelismo e a velocidade de processamento do aplicativo.</p>
-<h3 id="sparkexecutorcores">spark.executor.cores</h3>
-<p>Define o número de núcleos de CPU que cada executor pode usar. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que usam muitos recursos de CPU.</p>
-<h3 id="sparktaskcpus">spark.task.cpus</h3>
-<p>Define o número de núcleos de CPU que cada tarefa pode usar. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que usam muitos recursos de CPU.</p>
-<h3 id="sparksqlshufflepartitions">spark.sql.shuffle.partitions</h3>
-<p>Define o número de partições usadas para operações de shuffle, como groupByKey e reduceByKey. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas</p>
-<h3 id="sparkdefaultparallelism">spark.default.parallelism</h3>
-<p>Define o número de partições usadas para operações como parallelize, union, intersection, cartesian e sortByKey. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
-<h3 id="sparkmemoryfraction">spark.memory.fraction</h3>
-<p>Define a fração da memória total que é usada para a memória de execução. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
-<h3 id="sparkmemorystoragefraction">spark.memory.storageFraction</h3>
-<p>Define a fração da memória total que é usada para a memória de armazenamento. Aumentar esse número pode ajudar a melhorar o desempenho em casos de dados grandes ou operações complexas.</p>
-<h3 id="sparknetworktimeout">spark.network.timeout</h3>
-<p>Define o tempo limite de rede em segundos. Aumentar esse número pode ajudar a melhorar o desempenho em casos de operações que exigem mais tempo para serem concluídas.</p>
-<h3 id="sparkspeculation">spark.speculation</h3>
-<p>Ativa ou desativa a especulação de tarefa. A especulação de tarefa é usada para executar novamente tarefas que podem estar atrasadas, aumentando assim a velocidade de processamento do aplicativo.</p>
-<h3 id="sparksqladaptiveenabled">spark.sql.adaptive.enabled</h3>
-<p>Ativa ou desativa o modo adaptativo do Spark SQL. O modo adaptativo pode ajudar a melhorar o desempenho do aplicativo ajustando dinamicamente o tamanho da memória e o número de partições usadas para operações de shuffle e join.</p>
-<h3 id="sparksqladaptivecoalescepartitionsenabled">spark.sql.adaptive.coalescePartitions.enabled</h3>
-<p>Ativa ou desativa a redução dinâmica do número de partições em operações de shuffle e join.</p>
+<h1 id="4-preparando-e-usando-dados-para-anailse">4. Preparando e Usando Dados Para Anáilse</h1>
+<h2 id="problema-01">Problema 01</h2>
+<p>Tenho dados de análise armazenados no BigQuery. Preciso de uma maneira eficiente de calcular valores em um grupo de linhas e retornar um único resultado para cada linha. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para calcular valores em um grupo de linhas e retornar um único resultado para cada linha no BigQuery, você deve usar uma função de janela com uma cláusula OVER.</p>
+</blockquote>
+<ul>
+<li>
+<p>Funções de Window: As funções de janela permitem realizar cálculos em um conjunto de linhas relacionadas à linha atual, retornando um único resultado para cada linha. Essas funções são muito úteis para análise de dados, pois permitem calcular totais móveis, médias e outras métricas dentro de um grupo de linhas sem a necessidade de agrupar os dados.</p>
+</li>
+<li>
+<p>Cláusula OVER: A cláusula OVER define o conjunto de linhas (a "janela") sobre o qual a função de janela opera. Você pode usar a cláusula OVER para especificar como os dados serão particionados e ordenados para realizar os cálculos.</p>
+</li>
+<li>
+<p>Implementação:</p>
+</li>
+<li>
+<p>Escolha da Função: Selecione a função de janela apropriada para o cálculo que você deseja realizar. </p>
+<p>Exemplos incluem:</p>
+<ul>
+<li>SUM() para calcular a soma de valores em um grupo.</li>
+<li>AVG() para calcular a média de valores em um grupo.</li>
+<li>RANK() para atribuir uma classificação com base em uma ordenação.</li>
+<li>ROW_NUMBER() para atribuir números sequenciais a cada linha em um grupo.</li>
+</ul>
+</li>
+<li>
+<p>Definição da Janela: Use a cláusula OVER para definir a janela de cálculo. Você pode especificar:</p>
+<ul>
+<li>PARTITION BY: Para dividir os dados em grupos sobre os quais a função deve operar.</li>
+<li>ORDER BY: Para definir a ordem dos dados dentro de cada grupo.</li>
+<li>ROWS ou RANGE: Para definir um tamanho de janela específico para cada linha.</li>
+</ul>
+</li>
+<li>
+<p>Escrita da Consulta: Combine a função de janela com a cláusula OVER em sua consulta SQL para calcular os valores desejados.</p>
+<ul>
+<li>Exemplo:</li>
+<li>Neste exemplo, a função SUM() calcula a soma cumulativa de value para cada grupo de column1, ordenado por column2, e cada linha retornará um valor calculado.
+   Outras opções não são tão adequadas para esse cenário específico:</li>
+<li>Funções Agregadas: Funções agregadas (como SUM, AVG, COUNT) retornam um único resultado para todo o conjunto de dados ou para cada grupo definido pela cláusula GROUP BY, não um resultado para cada linha individual.</li>
+<li>UDFs (Funções Definidas pelo Usuário): UDFs podem ser usadas para cálculos complexos, mas para o cenário apresentado, as funções de janela com a cláusula OVER são mais eficientes, já que o BigQuery otimiza o uso de funções de janela.</li>
+<li>BigQuery ML: BigQuery ML é usado para criar e treinar modelos de machine learning, e não é adequado para cálculos em grupos de linhas.</li>
+<li>Visualizações Materializadas: Visualizações materializadas são usadas para otimizar consultas, armazenando resultados pré-calculados. Embora úteis, não abordam o problema de cálculos por linha em um grupo.
+   Em resumo, usar uma função de janela com uma cláusula OVER é a maneira mais eficiente de calcular valores em um grupo de linhas e retornar um único resultado para cada linha no BigQuery. Isso permite que você realize análises avançadas sem a necessidade de operações mais complexas ou agrupamento excessivo de seus dados.</li>
+</ul>
+</li>
+</ul>
+<h2 id="probelma-02">Probelma 02</h2>
+<p>Preciso otimizar o desempenho das consultas no BigQuery. Minhas tabelas não são particionadas ou agrupadas. Qual técnica de otimização devo usar?</p>
+<blockquote>
+<p>Resposta: Para otimizar o desempenho das consultas no BigQuery, quando suas tabelas não estão particionadas ou agrupadas, você pode usar a cláusula LIMIT para reduzir a leitura de dados.</p>
+</blockquote>
+<ul>
+<li>
+<p>Cláusula LIMIT: A cláusula LIMIT restringe o número de linhas retornadas por uma consulta. Ao usar LIMIT, o BigQuery não precisa processar ou ler todo o conjunto de dados, o que resulta em um desempenho de consulta mais rápido, especialmente para tabelas grandes.</p>
+</li>
+<li>
+<p>Como usar a cláusula LIMIT:</p>
+</li>
+<li>
+<p>Inclua a cláusula LIMIT no final de sua consulta SQL, especificando o número de linhas que você deseja retornar.</p>
+</li>
+<li>
+<p>Por exemplo, se você quiser apenas as primeiras 100 linhas de uma tabela, use SELECT * FROM your_table LIMIT 100.</p>
+</li>
+<li>
+<p>Casos de uso: A cláusula LIMIT é útil em diversos cenários:</p>
+</li>
+<li>
+<p>Testes e exploração: Quando você precisa visualizar uma amostra dos seus dados sem processar todo o conjunto de dados.</p>
+</li>
+<li>Consultas de amostra: Para obter uma visão geral dos seus dados ou para fins de depuração.</li>
+<li>
+<p>Subqueries: Para restringir o tamanho dos conjuntos de resultados intermediários, melhorando o desempenho da consulta.</p>
+</li>
+<li>
+<p>Outras técnicas de otimização: Embora a cláusula LIMIT possa melhorar o desempenho das consultas, especialmente quando as tabelas não são particionadas ou agrupadas, outras técnicas podem ser mais adequadas para a otimização a longo prazo, como particionamento e agrupamento:</p>
+</li>
+<li>
+<p>Particionamento: Dividir as tabelas em partições menores, com base em uma coluna, como data ou hora. Isso permite que o BigQuery processe apenas as partições relevantes para a consulta, reduzindo o tempo de processamento.</p>
+</li>
+<li>
+<p>Agrupamento: Organizar os dados em blocos, com base em uma ou mais colunas, para otimizar a leitura e o processamento.</p>
+</li>
+<li>
+<p>Próximos Passos:</p>
+</li>
+<li>
+<p>Análise das Consultas: Use a ferramenta de explicação do BigQuery para entender como suas consultas estão sendo processadas e identificar possíveis gargalos.</p>
+</li>
+<li>Implementação: Comece com a cláusula LIMIT para melhorar imediatamente o desempenho das consultas, e em seguida avalie o particionamento e agrupamento de suas tabelas.</li>
+</ul>
+<p>Em resumo, usar a cláusula LIMIT pode melhorar o desempenho das consultas, pois permite que o BigQuery não necessite processar ou ler todos os dados, o que é importante quando suas tabelas não são particionadas ou agrupadas. Para uma otimização mais eficaz e a longo prazo, considere também o particionamento e agrupamento das suas tabelas.</p>
 
 
 
@@ -2260,10 +2078,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
