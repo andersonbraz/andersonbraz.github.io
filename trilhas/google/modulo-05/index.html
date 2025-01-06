@@ -1636,6 +1636,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 04
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1882,6 +1891,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 04
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2014,6 +2032,67 @@ Outras Considerações</p>
 <li>Considere o uso de visualizações: Use visualizações para simplificar consultas complexas. Isso pode ajudar a reduzir o tempo e o custo de execução das consultas.</li>
 </ol>
 <p>Em resumo, para gerenciar o uso intenso do BigQuery nas manhãs de segunda-feira de forma econômica, considere usar slots flexíveis para lidar com os picos de demanda ou a edição Enterprise do BigQuery com um compromisso de um ano caso o aumento de demanda seja recorrente, combinando com a execução de consultas em lote e outras práticas de otimização para garantir o uso eficiente dos recursos.</p>
+<h2 id="problema-04">Problema 04</h2>
+<p>Tenho uma equipe de analistas de dados que executa consultas interativamente no BigQuery durante o horário de trabalho. Também tenho milhares de consultas de geração de relatórios que são executadas simultaneamente. Muitas vezes vemos um erro: Limites de taxa excedidos: muitas consultas simultâneas para este project_and_region. Como resolvo esse problema?</p>
+<blockquote>
+<p>Resposta: Para resolver o erro "Limites de taxa excedidos: muitas consultas simultâneas para este project_and_region" no BigQuery, você deve executar as consultas de geração de relatório em lote em vez de interativamente e considerar aumentar ou diminuir a escala do data warehouse rapidamente.</p>
+</blockquote>
+<p><strong>Executar Consultas de Geração de Relatório em Lote</strong></p>
+<ul>
+<li>
+<p>Consultas em lote são mais eficientes para executar tarefas que não exigem resposta imediata.</p>
+</li>
+<li>
+<p>Ao executar consultas de geração de relatórios em lote, você pode programá-las para horários de menor demanda, evitando a sobrecarga do sistema durante o horário de trabalho dos analistas.</p>
+</li>
+<li>
+<p>Isso ajuda a reduzir a quantidade de consultas simultâneas que competem por recursos, diminuindo a chance de exceder os limites de taxa.</p>
+</li>
+<li>
+<p>A execução de consultas em lote também permite otimizar o uso de recursos e custos, já que o BigQuery tem preços diferentes para consultas interativas e em lote.
+Aumentar ou Diminuir a Escala do Data Warehouse Rapidamente</p>
+</li>
+<li>
+<p>Aumentar a capacidade de processamento do BigQuery pode ajudar a lidar com o grande volume de consultas simultâneas.</p>
+</li>
+<li>
+<p>Isso pode ser feito usando slots flexíveis, que permitem adicionar capacidade de computação sob demanda e pagar apenas pelo tempo de uso.</p>
+</li>
+<li>
+<p>Outra opção é usar a edição Enterprise do BigQuery com um compromisso de um ano, que oferece recursos avançados de gerenciamento de custos e desempenho, além de um desconto significativo em comparação com os preços sob demanda.</p>
+</li>
+<li>
+<p>Se você tiver um padrão de uso previsível, com picos recorrentes de demanda, o compromisso de um ano pode ser vantajoso.</p>
+</li>
+<li>
+<p>Ao combinar o uso de slots flexíveis ou a edição Enterprise com a execução de consultas em lote, você pode gerenciar o aumento da demanda no BigQuery de forma econômica e eficiente.</p>
+</li>
+</ul>
+<p><strong>Outras Considerações:</strong></p>
+<ul>
+<li>
+<p>Analisar os padrões de uso: Monitore o uso do BigQuery para identificar os horários de pico e planejar a execução das consultas de geração de relatórios fora desses horários.</p>
+</li>
+<li>
+<p>Otimizar consultas: Verifique se as consultas estão otimizadas para evitar o consumo excessivo de recursos. Use técnicas como particionamento, agrupamento e uso de visualizações materializadas para melhorar o desempenho das consultas.</p>
+</li>
+<li>
+<p>Reservas: Ao criar uma reserva anual de slots do BigQuery, é possível ter maior controle sobre a capacidade e o desempenho das consultas. No entanto, uma reserva anual pode não ser tão flexível e econômica quanto slots flexíveis para atender a picos de uso esporádicos.</p>
+</li>
+</ul>
+<p><strong>Resumo</strong></p>
+<p>Para resolver o problema de limites de taxa excedidos devido a muitas consultas simultâneas no BigQuery, você deve:</p>
+<ul>
+<li>
+<p>Executar as consultas de geração de relatórios em lote.</p>
+</li>
+<li>
+<p>Considerar aumentar ou diminuir a escala do data warehouse rapidamente usando slots flexíveis ou a edição Enterprise do BigQuery com um compromisso de um ano.</p>
+</li>
+<li>
+<p>Analise os padrões de uso, otimize as consultas e considere criar reservas se necessário.</p>
+</li>
+</ul>
 
 
 
