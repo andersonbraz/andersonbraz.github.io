@@ -1621,6 +1621,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1894,6 +1912,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2130,6 +2166,98 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </li>
 </ul>
 <p>Em resumo, para ingerir dados distribuídos por um amplo intervalo de datas no BigQuery, criar uma tabela particionada por tempo de processamento com tipo de particionamento diário é a melhor abordagem para garantir um bom desempenho nas consultas.</p>
+<h2 id="problema-07">Problema 07</h2>
+<p>Tenho dados que são ingeridos diariamente e analisados com frequência no primeiro mês. Depois disso, os dados são retidos apenas para auditorias, que acontecem ocasionalmente a cada poucos anos. Preciso configurar o armazenamento econômico. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para configurar um armazenamento econômico para dados que são analisados frequentemente no primeiro mês e depois retidos para auditorias ocasionais, você deve configurar uma política de ciclo de vida no Cloud Storage.</p>
+</blockquote>
+<ul>
+<li>
+<p>Política de ciclo de vida do Cloud Storage: Uma política de ciclo de vida permite que você defina regras para gerenciar automaticamente o ciclo de vida dos seus objetos no Cloud Storage. Você pode definir regras para mover objetos entre classes de armazenamento ou para excluir objetos com base em critérios como tempo de criação, idade ou tipo de arquivo.</p>
+</li>
+<li>
+<p>Como configurar a política de ciclo de vida:</p>
+<ul>
+<li>
+<p>Classe de armazenamento inicial: Inicialmente, armazene seus dados na classe de armazenamento Standard ou Nearline, que são adequadas para o primeiro mês, quando os dados são acessados com frequência.</p>
+</li>
+<li>
+<p>Transição para Coldline: Após o primeiro mês, você pode criar uma regra na política de ciclo de vida para mover automaticamente os dados para a classe de armazenamento Coldline. A Coldline Storage é adequada para dados que são acessados com pouca frequência, como trimestralmente, o que corresponde à sua necessidade de auditorias ocasionais.</p>
+</li>
+<li>
+<p>Transição para Archive: Se os dados forem necessários apenas para auditorias que acontecem raramente a cada poucos anos, você pode criar uma regra adicional para mover os dados para a classe Archive Storage, após um período especificado na classe Coldline.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Benefícios da política de ciclo de vida:</p>
+<ul>
+<li>
+<p>Otimização de custos: A política de ciclo de vida garante que você armazene seus dados na classe de armazenamento mais econômica para cada fase do seu ciclo de vida, reduzindo os custos gerais de armazenamento.</p>
+</li>
+<li>
+<p>Automatização do gerenciamento: A política de ciclo de vida automatiza o processo de movimentação de dados entre classes de armazenamento ou exclusão de dados, o que reduz a carga administrativa e evita erros.</p>
+</li>
+<li>
+<p>Flexibilidade: Você pode criar regras personalizadas com base em suas necessidades específicas, com configurações flexíveis para o tempo de retenção e transição para diferentes classes de armazenamento.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Outras opções, como criar um bucket no Cloud Storage com o controle de versões de objetos configurado, ou criar um bucket no Cloud Storage com a classe automática configurada não são tão eficazes para gerenciar o ciclo de vida dos dados e otimizar custos nesse caso. O controle de versões de objetos é útil para recuperação de dados, mas não reduz os custos de armazenamento a longo prazo. A classe automática do Cloud Storage, move os dados entre classes de armazenamento de acordo com padrões de acesso, mas você não teria o controle específico que você precisa para gerenciar dados para o cenário em questão.</p>
+<p>Em resumo, configurar uma política de ciclo de vida no Cloud Storage é a melhor abordagem para garantir que seus dados sejam armazenados de forma econômica, movendo os dados para as classes de armazenamento adequadas, com base na sua frequência de acesso e tempo de retenção.</p>
+<h2 id="problema-08">Problema 08</h2>
+<p>Os analistas de dados da organização onde trabalho executam repetidamente as mesmas consultas complexas que combinam e filtram muitos dados no BigQuery. Os dados mudam com frequência. Preciso reduzir o esforço dos analistas. O que você devo fazer?</p>
+<blockquote>
+<p>Resposta: Para reduzir o esforço dos analistas que executam repetidamente as mesmas consultas complexas que combinam e filtram muitos dados no BigQuery, e considerando que os dados mudam com frequência, você deve criar views materializadas.</p>
+</blockquote>
+<ul>
+<li>
+<p>Views materializadas: As visualizações materializadas são tabelas pré-computadas que armazenam os resultados de uma consulta, ou seja, são consultas com resultados armazenados. Quando uma consulta é feita a uma visualização materializada, o BigQuery retorna os resultados armazenados em vez de executar a consulta original. Isso pode melhorar muito o desempenho e reduzir o esforço dos analistas, pois eles não precisam executar as mesmas consultas complexas repetidamente.</p>
+<ul>
+<li>Quando os dados nas tabelas de base mudam, o BigQuery atualiza automaticamente os dados na visualização materializada, o que garante que os resultados sejam sempre precisos.</li>
+</ul>
+</li>
+<li>
+<p>Como usar visualizações materializadas:</p>
+<ul>
+<li>
+<p>Crie uma visualização materializada que corresponda à consulta complexa que os analistas executam repetidamente.</p>
+</li>
+<li>
+<p>Os analistas podem então consultar a visualização materializada em vez da consulta complexa original.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Benefícios das visualizações materializadas:</p>
+</li>
+<li>
+<p>Melhora o desempenho das consultas: Como os resultados já estão pré-computados, as consultas são executadas muito mais rapidamente do que as consultas diretas nas tabelas base.</p>
+</li>
+<li>
+<p>Reduz o esforço dos analistas: Os analistas não precisam mais criar e executar as mesmas consultas complexas repetidamente.</p>
+</li>
+<li>
+<p>Garante dados atualizados: O BigQuery atualiza automaticamente as visualizações materializadas quando os dados nas tabelas base são alterados, garantindo que os resultados sejam sempre precisos e atualizados.</p>
+</li>
+<li>
+<p>Reduz custos: Ao consultar dados pré-calculados em vez de fazer uma varredura nas tabelas base, o BigQuery processa menos dados, o que pode levar a uma redução de custos.</p>
+</li>
+</ul>
+<p>Outras opções como <strong>visualizações regulares</strong>, consultas federadas e partições não são tão eficazes para reduzir o esforço dos analistas neste cenário específico.</p>
+<ul>
+<li>
+<p>Visualizações regulares são consultas nomeadas que não armazenam os resultados. Elas não melhoram o desempenho como as materializadas.</p>
+</li>
+<li>
+<p>Consultas federadas são úteis para consultar dados que residem fora do BigQuery, mas não são adequadas quando o objetivo é otimizar consultas que são executadas repetidamente.</p>
+</li>
+<li>
+<p>Partições melhoram o desempenho de consultas em grandes tabelas, mas não evitam que os analistas executem consultas complexas repetidamente, que é o foco principal da sua necessidade.</p>
+</li>
+</ul>
+<p>Em resumo, criar visualizações materializadas é a melhor abordagem para reduzir o esforço dos analistas, pois permite que eles consultem dados já processados e atualizados automaticamente, ao mesmo tempo que melhora o desempenho das consultas.</p>
 
 
 
