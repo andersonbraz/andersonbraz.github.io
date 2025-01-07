@@ -1655,18 +1655,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico" class="md-nav__link">
+  <a href="#problema-06" class="md-nav__link">
     <span class="md-ellipsis">
-      - Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.
+      Problema 06
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problema-06" class="md-nav__link">
+  <a href="#problema-07" class="md-nav__link">
     <span class="md-ellipsis">
-      Problema 06
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
     </span>
   </a>
   
@@ -1937,18 +1964,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico" class="md-nav__link">
+  <a href="#problema-06" class="md-nav__link">
     <span class="md-ellipsis">
-      - Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.
+      Problema 06
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problema-06" class="md-nav__link">
+  <a href="#problema-07" class="md-nav__link">
     <span class="md-ellipsis">
-      Problema 06
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
     </span>
   </a>
   
@@ -2183,8 +2237,10 @@ Comparação com outras abordagens:</p>
 <li>
 <p>Backups: Os backups são importantes para a recuperação de desastres, mas não garantem a continuidade das transações. A restauração de um backup pode levar um tempo considerável, resultando em um tempo de inatividade inaceitável para um sistema transacional.</p>
 </li>
+<li>
+<p>Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.</p>
+</li>
 </ul>
-<h2 id="-configurar-e-aumentar-o-numero-de-backups-aumentar-o-numero-de-backups-pode-melhorar-a-seguranca-dos-seus-dados-mas-nao-resolve-o-problema-de-tempo-de-inatividade-os-backups-sao-usados-para-restaurar-os-dados-em-caso-de-falha-nao-para-evitar-a-interrupcao-do-servico">- Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.</h2>
 <p><strong>Recursos adicionais:</strong></p>
 <ul>
 <li>
@@ -2247,6 +2303,167 @@ Comparação com outras abordagens:</p>
 </ul>
 <p><strong>Resumo</strong></p>
 <p>Para projetar um cluster do Dataproc para executar vários jobs pequenos com diferentes prioridades, você deve usar clusters temporários combinados ou não com o escalonamento automático de cluster. Os clusters temporários fornecem flexibilidade para otimizar cada job e eliminar o tempo de inatividade. O escalonamento automático garante o dimensionamento adequado dos recursos. Você também deve analisar os padrões de uso e monitorar o desempenho para otimizar ainda mais o processo.</p>
+<h2 id="problema-07">Problema 07</h2>
+<p>Temos um pipeline do Dataflow em produção. Para certos dados, o sistema parece estar travado por mais tempo do que o normal. Isso está causando atrasos na execução do pipeline. Desejo rastrear e resolver esses problemas de forma confiável e proativa. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para rastrear e resolver de forma confiável e proativa os problemas de atraso em seu pipeline do Dataflow, você deve configurar alertas no Cloud Monitoring com base no atraso do sistema.</p>
+</blockquote>
+<p><strong>Cloud Monitoring para Rastreamento e Alertas</strong></p>
+<ul>
+<li>
+<p>O Cloud Monitoring permite monitorar o desempenho e o status dos seus pipelines do Dataflow em tempo real.</p>
+</li>
+<li>
+<p>Você pode configurar alertas baseados em várias métricas, como o atraso do sistema (system lag).</p>
+</li>
+<li>
+<p>O atraso do sistema indica quanto tempo os dados estão aguardando para serem processados no pipeline. Um atraso crescente ou prolongado pode indicar problemas no pipeline.</p>
+</li>
+<li>
+<p>Ao configurar alertas com base no atraso do sistema, você receberá notificações automáticas quando o pipeline estiver com problemas, permitindo que você aja rapidamente para resolver a questão.</p>
+</li>
+</ul>
+<p><strong>Passos para Implementar o Monitoramento e Alertas</strong></p>
+<ol>
+<li>Acessar o Cloud Monitoring: Você pode acessar o Cloud Monitoring através do console do Google Cloud.</li>
+<li>Configurar alertas: Configure alertas com base em métricas de atraso do sistema. Defina limites e notificações para alertar quando o atraso exceder um certo limite.</li>
+<li>Analisar painéis: Utilize os painéis do Cloud Monitoring para visualizar gráficos e métricas do pipeline. Isso ajuda a identificar tendências e problemas.</li>
+<li>Investigar problemas: Ao receber um alerta, investigue o problema usando os registros do Dataflow e as métricas do Cloud Monitoring.</li>
+<li>Resolver problemas: Com base na sua investigação, faça os ajustes necessários no seu pipeline do Dataflow para resolver o problema.</li>
+</ol>
+<p><strong>Comparação com Outras Abordagens</strong></p>
+<ul>
+<li>
+<p>Analisar os registros do Dataflow com frequência: Essa abordagem é reativa e exige que você analise manualmente os registros, o que não é eficiente para detectar e resolver problemas de forma proativa.</p>
+</li>
+<li>
+<p>Configurar alertas com o código do Cloud Functions que analisa os registros de auditoria regularmente: Embora seja possível configurar alertas usando o Cloud Functions, usar o Cloud Monitoring é uma forma mais direta e recomendada. O Cloud Monitoring já possui as métricas e funcionalidades necessárias para configurar alertas, o que o torna uma solução mais simples e eficiente.</p>
+</li>
+<li>
+<p>Analisar o painel do Cloud Monitoring com frequência: Analisar o painel do Cloud Monitoring pode ajudar a identificar tendências e problemas, mas não é proativo como configurar alertas. Os alertas fornecem notificações automáticas quando há problemas, permitindo que você tome ações imediatas.
+Considerações Adicionais</p>
+</li>
+<li>
+<p>O Cloud Monitoring também oferece integração com outras ferramentas de monitoramento e registro do Google Cloud, o que pode ajudar na resolução de problemas.</p>
+</li>
+<li>
+<p>Ao analisar os registros do Dataflow, procure por erros ou avisos que podem estar relacionados aos problemas de atraso.</p>
+</li>
+<li>
+<p>Além do atraso do sistema, você pode monitorar outras métricas, como a utilização da CPU, memória e disco, para identificar possíveis gargalos.</p>
+</li>
+</ul>
+<p><strong>Resumo</strong></p>
+<p>Para rastrear e resolver de forma confiável e proativa os problemas de atraso no seu pipeline do Dataflow, você deve configurar alertas no Cloud Monitoring com base no atraso do sistema. Essa abordagem permite identificar problemas rapidamente e tomar ações corretivas para garantir o desempenho adequado do seu pipeline. Além disso, você pode usar os painéis e registros do Dataflow para identificar e resolver os problemas de forma eficiente.</p>
+<h2 id="problema-08">Problema 08</h2>
+<p>A organização onde trabalho processa dados de streaming no Dataflow com o Pub/Sub como origem. Preciso planejar a recuperação de desastres e se proteger contra falhas zonais. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para planejar a recuperação de desastres e se proteger contra falhas zonais ao processar dados de streaming no Dataflow com o Pub/Sub como origem, você deve criar jobs do Dataflow com base em modelos. Além disso, é recomendado ativar o Dataflow Shuffle.</p>
+</blockquote>
+<p><strong>Criação de Jobs do Dataflow com Base em Modelos</strong></p>
+<ul>
+<li>
+<p>Reutilização: Ao criar jobs do Dataflow com base em modelos, você consegue reutilizar a configuração do pipeline e reduzir o tempo de implantação em caso de recuperação de desastres.</p>
+</li>
+<li>
+<p>Consistência: Os modelos garantem que o mesmo pipeline seja implantado de forma consistente, reduzindo erros humanos durante a recuperação.</p>
+</li>
+<li>
+<p>Agilidade: Modelos permitem uma recuperação rápida e eficiente de pipelines em caso de falhas, seja por motivo de falhas zonais ou outros desastres.</p>
+</li>
+<li>
+<p>Implantação: Você pode implantar jobs do Dataflow baseados em modelos rapidamente a partir do console do Google Cloud, da linha de comando ou da API.</p>
+</li>
+<li>
+<p>Segurança: Além de facilitar a recuperação, os modelos podem incluir configurações de segurança, garantindo a proteção dos seus dados.</p>
+</li>
+</ul>
+<p><strong>Ativação do Dataflow Shuffle</strong> </p>
+<ul>
+<li>
+<p>Resiliência: O Dataflow Shuffle é uma funcionalidade que melhora a resiliência do seu pipeline, permitindo que ele continue processando dados mesmo em caso de falhas parciais.</p>
+</li>
+<li>
+<p>Gerenciamento de dados: O Dataflow Shuffle distribui os dados de maneira eficiente entre os nós de trabalho, evitando gargalos e melhorando o desempenho geral.</p>
+</li>
+<li>
+<p>Disponibilidade: Ao ativar o Dataflow Shuffle, você garante que seu pipeline mantenha a disponibilidade mesmo em situações de falhas zonais.
+Outras Considerações</p>
+</li>
+<li>
+<p>Snapshots do Dataflow: Embora a criação de snapshots possa ser útil para fins de backup e recuperação, ela não é a solução mais eficiente para recuperação de desastres. A recuperação a partir de um snapshot pode levar tempo e não garante a continuidade em tempo real do processamento de streaming.</p>
+</li>
+<li>
+<p>Escalonamento automático vertical: O escalonamento automático vertical pode ser útil para aumentar ou diminuir a capacidade de recursos do seu pipeline, mas não resolve a necessidade de recuperação de desastres em caso de falha zonal.
+Comparação com outras abordagens:</p>
+</li>
+<li>
+<p>A configuração da replicação ou a configuração de alta disponibilidade são mais apropriadas para serviços como o Cloud SQL, que exigem que os dados sejam acessados em tempo real em múltiplas zonas, mas não são a solução recomendada para o Dataflow.</p>
+</li>
+<li>
+<p>Configurar backups é essencial para a proteção dos seus dados, mas não garante a continuidade dos pipelines de streaming em caso de falha.</p>
+</li>
+</ul>
+<p><strong>Resumo</strong></p>
+<p>Para planejar a recuperação de desastres e se proteger contra falhas zonais ao processar dados de streaming no Dataflow com o Pub/Sub como origem, é recomendado criar jobs do Dataflow com base em modelos e ativar o Dataflow Shuffle. O uso de modelos oferece uma forma rápida e eficiente de reimplantar seu pipeline, enquanto o Dataflow Shuffle garante a resiliência e a disponibilidade do seu sistema, minimizando o impacto de uma falha zonal.</p>
+<h2 id="problema-09">Problema 09</h2>
+<p>Ao executar jobs do Dataflow, você verá este erro nos registros: "Uma tecla de atalho HOT_KEY_NAME foi detectada em...". Preciso resolver esse problema e tornar a carga de trabalho eficiente. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Ao encontrar o erro "Uma tecla de atalho HOT_KEY_NAME foi detectada em..." ao executar jobs do Dataflow, você deve verificar se os dados estão distribuídos de maneira uniforme. Este erro indica que uma chave específica está recebendo uma quantidade desproporcional de dados, o que pode causar gargalos no processamento.</p>
+</blockquote>
+<p><strong>Para resolver o problema e melhorar a eficiência da carga de trabalho, você pode seguir estas etapas:</strong></p>
+<ul>
+<li>
+<p>Verificar a distribuição dos dados: Certifique-se de que os dados estejam distribuídos de forma uniforme entre as chaves. Uma distribuição desigual pode causar o problema de "hot key".</p>
+</li>
+<li>
+<p>Aumentar os dados com a chave de atalho: Se possível, você pode aumentar os dados associados à chave de atalho. Isso pode ajudar a distribuir a carga de trabalho de forma mais uniforme.</p>
+</li>
+<li>
+<p>Desativar o Dataflow Shuffle: Em alguns casos, desativar o Dataflow Shuffle pode ajudar a resolver o problema, embora geralmente não seja a solução recomendada.</p>
+</li>
+<li>
+<p>Adicionar mais instâncias de computação: Aumentar o número de instâncias de computação para o processamento também pode ajudar a melhorar o desempenho, mas isso pode não resolver o problema de "hot key" diretamente.</p>
+</li>
+</ul>
+<p>Além disso, os registros do Dataflow devem ser analisados frequentemente para identificar esses problemas. Configurar alertas no Cloud Monitoring com base no atraso do sistema também pode ajudar a rastrear e resolver esses problemas de forma proativa. A documentação do Google Cloud também oferece guias para resolver problemas de stragglers em jobs em lote do Dataflow.</p>
+<h2 id="problema-10">Problema 10</h2>
+<p>Preciso criar tarefas de processamento de dados repetíveis usando o Cloud Composer. Preciso seguir as melhores práticas e abordagens recomendadas. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para criar tarefas de processamento de dados repetíveis usando o Cloud Composer, é importante seguir as melhores práticas e abordagens recomendadas. </p>
+</blockquote>
+<p><strong>Aqui estão algumas orientações sobre o que você deve fazer:</strong></p>
+<ul>
+<li>
+<p>Definir cada tarefa como responsável por uma única operação: Ao criar tarefas recorrentes no Cloud Composer, é fundamental garantir que cada tarefa seja responsável por uma única operação. Isso ajuda a manter o DAG (Directed Acyclic Graph) organizado e facilita a resolução de problemas.</p>
+</li>
+<li>
+<p>Evitar o uso do horário atual com a função now() para cálculos: Não é recomendado usar o horário atual com a função now() para cálculos dentro das tarefas. Isso pode levar a resultados inesperados e tornar as tarefas não determinísticas. Em vez disso, utilize variáveis ou métodos que forneçam informações de tempo consistentes.</p>
+</li>
+<li>
+<p>Evitar atualizar dados com instruções INSERT durante a execução da tarefa: Durante a execução da tarefa, é recomendado evitar a atualização de dados com instruções INSERT. Isso pode gerar inconsistências e erros difíceis de rastrear no processamento.</p>
+</li>
+<li>
+<p>Combinar funcionalidades em uma única execução de tarefa deve ser evitado: Evite combinar várias funcionalidades em uma única execução de tarefa. É preferível dividir o processamento em tarefas menores e mais especializadas, o que torna o fluxo mais fácil de gerenciar, depurar e manter.
+Ao projetar seus DAGs (Directed Acyclic Graphs) no Cloud Composer, considere:</p>
+</li>
+<li>
+<p>Modularidade: Divida o fluxo de trabalho em tarefas menores e independentes. Isso facilita a manutenção e a reutilização de componentes.</p>
+</li>
+<li>
+<p>Idempotência: Garanta que suas tarefas sejam idempotentes, ou seja, que possam ser executadas várias vezes sem causar efeitos colaterais indesejados. Isso é fundamental para lidar com falhas e repetições de tarefas.</p>
+</li>
+<li>
+<p>Monitoramento: Implemente um sistema de monitoramento para acompanhar o progresso das tarefas e identificar possíveis problemas. O Cloud Monitoring pode ser usado para criar alertas baseados no atraso do sistema.</p>
+</li>
+<li>
+<p>Testes: Realize testes rigorosos em seus DAGs antes de implantá-los em produção. Utilize práticas de CI/CD (integração contínua e entrega contínua) para automatizar os testes e a implantação.</p>
+</li>
+<li>
+<p>Documentação: Siga as práticas recomendadas para gravação de DAGs no Apache Airflow, conforme a documentação do Astronomer e do Google Cloud.</p>
+</li>
+</ul>
+<p>Seguindo estas práticas, você criará tarefas de processamento de dados repetíveis, confiáveis e fáceis de manter no Cloud Composer.</p>
 
 
 
