@@ -2134,7 +2134,7 @@
 
 <h1 id="2-ingestao-e-processamento-de-dados">2. Ingestão e Processamento de Dados</h1>
 <h2 id="problema-01">Problema 01</h2>
-<p>Uma time de engenheiro de dados recebe dados no formato JSON de fontes externas no final de cada dia. Os mesmos precisam projetar um pipeline de dados para consumir estes dados. O que eles devemos fazer?</p>
+<p>Uma time de engenheiro de dados recebe dados no formato JSON de fontes externas no final de cada dia. Os mesmos precisam projetar um pipeline de dados para consumir estes dados. O que devemos fazer?</p>
 <blockquote>
 <p>Resposta: Para projetar um pipeline de dados para dados em formato JSON recebidos de fontes externas no final de cada dia, a melhor abordagem é armazenar os dados no <strong>Cloud Storage</strong> e criar um pipeline de extração, transformação e carregamento (ETL).</p>
 </blockquote>
@@ -2231,7 +2231,7 @@ Ao usar o Dataproc sem servidor, você se beneficia das seguintes vantagens:</p>
 </ul>
 <p>Em resumo, para um pipeline de análise de dados de streaming no Google Cloud, a combinação de Pub/Sub para ingestão, Dataflow para processamento e BigQuery para armazenamento e análise é a mais adequada, pois essas ferramentas foram projetadas para trabalhar em conjunto e garantir um pipeline de dados eficiente e escalável.</p>
 <h2 id="problema-05">Problema 05</h2>
-<p>Preciso executar trabalhos em lote, usando o Google Cloud, o que pode levar muitos dias para ser concluído. Não desejo gerenciar o provisionamento de infraestrutura. O que você devo fazer?</p>
+<p>Preciso executar trabalhos em lote, usando o Google Cloud, o que pode levar muitos dias para ser concluído. Não desejo gerenciar o provisionamento de infraestrutura. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para executar trabalhos em lote que podem levar vários dias para serem concluídos, sem gerenciar o provisionamento de infraestrutura, você deve usar o Batch do Google Cloud.</p>
 </blockquote>
@@ -2251,7 +2251,7 @@ Ao usar o Dataproc sem servidor, você se beneficia das seguintes vantagens:</p>
 </ul>
 <p>Portanto, o Batch é a solução mais adequada para executar seus trabalhos em lote de longa duração no Google Cloud, pois oferece uma abordagem sem servidor que elimina a necessidade de gerenciar a infraestrutura, permitindo que você se concentre na execução dos seus trabalhos.</p>
 <h2 id="problema-06">Problema 06</h2>
-<p>Estou processando grandes quantidades de dados de entrada no BigQuery. Sendo necessário combinar esses dados com uma pequena quantidade de dados que mudam com frequência que estão disponíveis no Cloud SQL. O que você devo fazer?</p>
+<p>Estou processando grandes quantidades de dados de entrada no BigQuery. Sendo necessário combinar esses dados com uma pequena quantidade de dados que mudam com frequência que estão disponíveis no Cloud SQL. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para combinar grandes quantidades de dados de entrada no BigQuery com uma pequena quantidade de dados que mudam frequentemente no Cloud SQL, você deve usar uma consulta federada para receber dados do Cloud SQL.</p>
 </blockquote>
@@ -2287,7 +2287,7 @@ Ao usar o Dataproc sem servidor, você se beneficia das seguintes vantagens:</p>
 <p>Outras opções como o Terraform, Compute Engine e Cloud Code não são as mais adequadas para este cenário. O Terraform é usado para infraestrutura como código e não é especificamente projetado para pipelines CI/CD. O Compute Engine é usado para máquinas virtuais e não para automação de CI/CD. O Cloud Code é uma extensão para ambientes de desenvolvimento e não para automação de pipelines CI/CD.</p>
 <p>O Cloud Build é ideal para automatizar todo o processo de CI/CD para seus jobs do Dataflow, desde a detecção de alterações no código até a implantação das atualizações, com o mínimo de esforço necessário.</p>
 <h2 id="problema-08">Problema 08</h2>
-<p>Estou criando um pipeline de dados para transmitir dados no Dataflow para os dados de um ponto de venda da organização onde trabalho. Desejo calcular o total de vendas por hora continuamente. Qual dessas opção de janela devo usar?</p>
+<p>Estou criando um pipeline de dados para transmitir dados no Dataflow para os dados de um ponto de venda da organização onde trabalho. Desejo calcular o total de vendas por hora continuamente. Qual opção window mais adequada?</p>
 <blockquote>
 <p>Resposta: Para calcular o total de vendas por hora de forma contínua em um pipeline de dados de streaming no Dataflow para dados de ponto de venda, você deve usar janelas de salto (sliding windows).</p>
 </blockquote>
