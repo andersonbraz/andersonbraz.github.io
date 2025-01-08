@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../modulo-04/">
+        <link rel="prev" href="../modulo-01/">
       
       
-        <link rel="next" href="../../microsoft/01-data-engineer/">
+        <link rel="next" href="../modulo-03/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>5. Manutenção e Automação de Cargas de Trabalho - Amazing Things in Data</title>
+        <title>2. Ingestão e Processamento de Dados - Amazing Things in Data</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#5-manutencao-e-automacao-de-cargas-de-trabalho" class="md-skip">
+        <a href="#2-ingestao-e-processamento-de-dados" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../../../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97V22m1.76 0 7.8-4.22V9.07l-7.8 3.97V22Z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. Manutenção e Automação de Cargas de Trabalho
+              2. Ingestão e Processamento de Dados
             
           </span>
         </div>
@@ -191,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../../../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97V22m1.76 0 7.8-4.22V9.07l-7.8 3.97V22Z"/></svg>
@@ -209,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -264,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../carreiras/01-data-architect/" class="md-nav__link">
+      <a href="../../../../carreiras/01-data-architect/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -285,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../carreiras/02-data-engineer/" class="md-nav__link">
+      <a href="../../../../carreiras/02-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../carreiras/03-data-scientist/" class="md-nav__link">
+      <a href="../../../../carreiras/03-data-scientist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../carreiras/04-data-analyst/" class="md-nav__link">
+      <a href="../../../../carreiras/04-data-analyst/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../estudos/01-treinamentos/" class="md-nav__link">
+      <a href="../../../../estudos/01-treinamentos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../estudos/02-livros/" class="md-nav__link">
+      <a href="../../../../estudos/02-livros/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../estudos/03-certificacoes/" class="md-nav__link">
+      <a href="../../../../estudos/03-certificacoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../estudos/04-trilha-aprendizado/" class="md-nav__link">
+      <a href="../../../../estudos/04-trilha-aprendizado/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/apache-airflow/" class="md-nav__link">
+      <a href="../../../../ferramentas/apache-airflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/aws/" class="md-nav__link">
+      <a href="../../../../ferramentas/aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/azure/" class="md-nav__link">
+      <a href="../../../../ferramentas/azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/gcp/" class="md-nav__link">
+      <a href="../../../../ferramentas/gcp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/hadoop/" class="md-nav__link">
+      <a href="../../../../ferramentas/hadoop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/hive/" class="md-nav__link">
+      <a href="../../../../ferramentas/hive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/kafka/" class="md-nav__link">
+      <a href="../../../../ferramentas/kafka/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/kubernetes/" class="md-nav__link">
+      <a href="../../../../ferramentas/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/spark/" class="md-nav__link">
+      <a href="../../../../ferramentas/spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -705,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ferramentas/yarn/" class="md-nav__link">
+      <a href="../../../../ferramentas/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/01-data-literacy/" class="md-nav__link">
+      <a href="../../../../fundamentos/01-data-literacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/02-big-data/" class="md-nav__link">
+      <a href="../../../../fundamentos/02-big-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/03-data-driven/" class="md-nav__link">
+      <a href="../../../../fundamentos/03-data-driven/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/04-arquiteturas/" class="md-nav__link">
+      <a href="../../../../fundamentos/04-arquiteturas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/05-pipeline/" class="md-nav__link">
+      <a href="../../../../fundamentos/05-pipeline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -873,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/06-orquestrador/" class="md-nav__link">
+      <a href="../../../../fundamentos/06-orquestrador/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/07-dataops/" class="md-nav__link">
+      <a href="../../../../fundamentos/07-dataops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
+      <a href="../../../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../glossario/vocabulary/" class="md-nav__link">
+      <a href="../../../../glossario/vocabulary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/apache-airflow/" class="md-nav__link">
+      <a href="../../../../hacks/apache-airflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/docker/" class="md-nav__link">
+      <a href="../../../../hacks/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/git/" class="md-nav__link">
+      <a href="../../../../hacks/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/jupyter-notebook/" class="md-nav__link">
+      <a href="../../../../hacks/jupyter-notebook/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/pandas/" class="md-nav__link">
+      <a href="../../../../hacks/pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1146,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/pyspark/" class="md-nav__link">
+      <a href="../../../../hacks/pyspark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/python/" class="md-nav__link">
+      <a href="../../../../hacks/python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/spark/" class="md-nav__link">
+      <a href="../../../../hacks/spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/sql/" class="md-nav__link">
+      <a href="../../../../hacks/sql/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hacks/wsl/" class="md-nav__link">
+      <a href="../../../../hacks/wsl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1293,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../metodologias/01-metodologia-agil/" class="md-nav__link">
+      <a href="../../../../metodologias/01-metodologia-agil/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1314,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../metodologias/02-crisp-dm/" class="md-nav__link">
+      <a href="../../../../metodologias/02-crisp-dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1414,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databricks/01-data-engineer/" class="md-nav__link">
+      <a href="../../../databricks/01-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,6 +1477,43 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_2_1" id="__nav_9_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Step 01
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Step 01
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -1485,69 +1522,6 @@
   
   <span class="md-ellipsis">
     1. Projetar Sistemas de Processamento de Dados
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modulo-02/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    2. Ingestão e Processamento de Dados
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modulo-03/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    3. Armazenamento de Dados
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modulo-04/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4. Preparando e Usando Dados Para Anáilse
   </span>
   
 
@@ -1577,7 +1551,7 @@
           
   
   <span class="md-ellipsis">
-    5. Manutenção e Automação de Cargas de Trabalho
+    2. Ingestão e Processamento de Dados
   </span>
   
 
@@ -1588,7 +1562,7 @@
         
   
   <span class="md-ellipsis">
-    5. Manutenção e Automação de Cargas de Trabalho
+    2. Ingestão e Processamento de Dados
   </span>
   
 
@@ -1708,6 +1682,141 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Armazenamento de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Preparando e Usando Dados Para Anáilse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Manutenção e Automação de Cargas de Trabalho
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2_2" id="__nav_9_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Step 02
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Step 02
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../step-02/modulo-01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução a Engenharia de Dados no Google Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1758,7 +1867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../microsoft/01-data-engineer/" class="md-nav__link">
+      <a href="../../../microsoft/01-data-engineer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1829,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utilidade-publica/01-download/" class="md-nav__link">
+      <a href="../../../../utilidade-publica/01-download/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1850,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utilidade-publica/02-online/" class="md-nav__link">
+      <a href="../../../../utilidade-publica/02-online/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1871,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
+      <a href="../../../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2023,447 +2132,261 @@
                   
 
 
-<h1 id="5-manutencao-e-automacao-de-cargas-de-trabalho">5. Manutenção e Automação de Cargas de Trabalho</h1>
+<h1 id="2-ingestao-e-processamento-de-dados">2. Ingestão e Processamento de Dados</h1>
 <h2 id="problema-01">Problema 01</h2>
-<p>Tenho curiosidade sobre a configuração do dimensionamento automático do Dataproc para um projeto. Qual a situação recomendada pelo Google para ativarmos o escalonamento automático?</p>
+<p>Uma time de engenheiro de dados recebe dados no formato JSON de fontes externas no final de cada dia. Os mesmos precisam projetar um pipeline de dados para consumir estes dados. O que eles devemos fazer?</p>
 <blockquote>
-<p>Resposta: O Google recomenda a ativação do escalonamento automático do Dataproc nas seguintes situações:</p>
-<ul>
-<li>
-<p>Quando você quer reduzir clusters inativos para o tamanho mínimo. O escalonamento automático permite que o Dataproc ajuste automaticamente o número de nós de trabalho em um cluster com base na carga de trabalho. Quando a carga de trabalho diminui, o número de nós é reduzido, economizando recursos e custos.</p>
-</li>
-<li>
-<p>Quando há cargas de trabalho de tamanhos diferentes no cluster. O escalonamento automático é útil quando você tem cargas de trabalho que variam em tamanho ao longo do tempo. Isso garante que o cluster tenha recursos suficientes para lidar com cargas de trabalho pesadas e reduz automaticamente o número de recursos quando a carga diminui, otimizando o uso de recursos e custos.</p>
-</li>
-</ul>
+<p>Resposta: Para projetar um pipeline de dados para dados em formato JSON recebidos de fontes externas no final de cada dia, a melhor abordagem é armazenar os dados no <strong>Cloud Storage</strong> e criar um pipeline de extração, transformação e carregamento (ETL).</p>
 </blockquote>
-<p>O escalonamento automático do Dataproc é uma funcionalidade que permite que os clusters ajustem automaticamente seu tamanho com base nas necessidades de processamento. Isso ajuda a otimizar custos e recursos, já que o cluster usa apenas os recursos necessários em cada momento.</p>
-<p><strong>Outras situações em que o escalonamento automático pode não ser ideal incluem:</strong></p>
 <ul>
 <li>
-<p>Quando você quer dimensionar o sistema de arquivos distribuídos do Hadoop (HDFS) no cluster. O escalonamento automático do Dataproc é projetado para ajustar a capacidade de computação e não o armazenamento, portanto, não é recomendado para dimensionar o HDFS.</p>
+<p>Cloud Storage como armazenamento inicial: O Cloud Storage é um serviço de armazenamento de objetos escalável e durável, adequado para armazenar dados não estruturados ou semiestruturados, como arquivos JSON. Ele serve como a camada de armazenamento inicial para seus dados brutos antes de qualquer processamento.</p>
 </li>
 <li>
-<p>Quando você quer expandir clusters de job único. Se você tem clusters que executam um único job, o escalonamento automático pode não ser necessário, pois o tamanho do cluster pode ser definido de acordo com as necessidades específicas do job.
-Em resumo, o Google recomenda ativar o escalonamento automático do Dataproc quando você quer reduzir clusters inativos para o tamanho mínimo e quando há cargas de trabalho de tamanhos diferentes no cluster. Isso ajuda a otimizar o uso de recursos e reduzir os custos associados ao processamento de dados no Dataproc.</p>
+<p>Pipeline ETL: Um pipeline ETL (Extrair, Transformar, Carregar) é uma abordagem comum para processamento de dados.</p>
+<ul>
+<li>
+<p>Extração: Os dados JSON são extraídos do Cloud Storage.</p>
+</li>
+<li>
+<p>Transformação: Os dados são transformados e preparados para análise, como limpeza, formatação e enriquecimento dos dados.</p>
+</li>
+<li>
+<p>Carregamento: Os dados transformados são carregados em um sistema de destino, como um data warehouse (BigQuery) ou um data lake.</p>
 </li>
 </ul>
+</li>
+</ul>
+<p>Outras opções, como tornar o data warehouse do BigQuery público, criar uma API pública para inserção de dados, ou armazenar os dados em discos permanentes, não são as mais adequadas para este cenário. Tornar o BigQuery público pode expor os dados a riscos de segurança. A criação de uma API pública exige um esforço de desenvolvimento adicional e não é a forma mais direta de ingerir dados. Armazenar os dados em discos permanentes não é flexível e escalável como o Cloud Storage para um pipeline de dados.</p>
+<p>Ao usar o Cloud Storage como camada de armazenamento inicial, você garante a flexibilidade e a escalabilidade necessárias para um pipeline de dados confiável. Um pipeline ETL bem projetado permite que você transforme os dados JSON e os carregue em um destino adequado para análise.</p>
 <h2 id="problema-02">Problema 02</h2>
-<p>Estou executando um pipeline do Dataflow em produção. Os dados de entrada para esse pipeline são ocasionalmente inconsistentes. Separadamente do processamento dos dados válidos, desejo capturar com eficiência os dados de entrada incorretos para análise. O que devo fazer?</p>
+<p>Na organização onde trabalho temos vários analistas de dados, mas uma equipe limitada de engenharia de dados. Preciso escolher uma ferramenta em que os analistas possam criar pipelines de dados com uma interface gráfica do usuário. Qual o produto da Google Cloud mais adequado?</p>
 <blockquote>
-<p>Resposta: Para capturar dados de entrada incorretos em seu pipeline do Dataflow, além de processar os dados válidos, você deve criar uma saída secundária para os dados incorretos.</p>
+<p>Resposta: Para permitir que os analistas de dados criem pipelines de dados com uma interface gráfica do usuário, o produto mais adequado é o <strong>Cloud Data Fusion</strong>.</p>
 </blockquote>
-<p><strong>Saídas Secundárias no Dataflow</strong></p>
 <ul>
 <li>
-<p>O Dataflow permite que você crie saídas secundárias para lidar com dados que não seguem o fluxo de processamento principal.</p>
+<p>O Cloud Data Fusion é uma ferramenta de integração de dados com uma interface gráfica que permite aos usuários criar pipelines de dados sem a necessidade de escrever código.</p>
 </li>
 <li>
-<p>Essa abordagem é eficaz para separar dados inválidos ou inconsistentes dos dados válidos, facilitando a análise posterior dos dados problemáticos.</p>
+<p>Essa abordagem é ideal para equipes com um número limitado de engenheiros de dados, pois os analistas podem construir seus próprios pipelines de dados de forma autônoma.</p>
 </li>
 <li>
-<p>Ao usar uma saída secundária, você mantém o pipeline principal limpo e eficiente, direcionando os dados incorretos para uma análise separada.</p>
+<p>O Cloud Data Fusion oferece uma variedade de conectores e transformações pré-construídas que facilitam a criação de pipelines complexos sem a necessidade de programação manual.</p>
+</li>
+<li>
+<p>Ao invés de usar outras ferramentas como o Dataflow, Dataproc ou Cloud Composer, o Cloud Data Fusion é a opção que melhor se adapta às necessidades da sua equipe, pois foi concebido especificamente para situações onde uma interface gráfica é necessária.</p>
 </li>
 </ul>
-<p><strong>Como implementar uma saída secundária para dados incorretos:</strong></p>
-<ol>
-<li>Identifique dados incorretos: No seu pipeline do Dataflow, implemente lógica para identificar dados que não atendem aos critérios de validação.</li>
-<li>Direcione para a saída secundária: Use a funcionalidade de saídas secundárias do Dataflow para enviar os dados identificados como incorretos para um coletor de dados diferente. Isso pode ser um bucket do Cloud Storage, uma tabela do BigQuery ou outro destino adequado para análise.</li>
-<li>Processe dados válidos: Continue processando os dados válidos no pipeline principal normalmente.</li>
-<li>Analise os dados incorretos: Após o pipeline ser executado, analise os dados armazenados na saída secundária para identificar as causas das inconsistências e tomar medidas corretivas.</li>
-</ol>
-<p><strong>Comparação com outras abordagens:</strong></p>
-<ul>
-<li>
-<p>Ler os dados de entrada de novo e criar saídas separadas para dados válidos e incorretos: Essa abordagem pode ser ineficiente, pois exige que os dados sejam lidos novamente, o que aumenta o tempo de processamento e o consumo de recursos.</p>
-</li>
-<li>
-<p>Ler os dados uma vez e dividi-los em dois pipelines, um para gerar dados válidos e outro para gerar dados incorretos: Essa abordagem também adiciona complexidade e dificulta a manutenção do pipeline. O uso de saídas secundárias em um único pipeline é mais eficiente e gerenciável.</p>
-</li>
-<li>
-<p>Verificar se há dados incorretos nos registros: A verificação de registros pode ajudar na identificação de problemas, mas não permite a captura dos dados problemáticos para análise detalhada e correção.
-Recursos adicionais:</p>
-</li>
-<li>
-<p>O Dataflow oferece recursos para lidar com dados inconsistentes, como estado e temporizadores, que podem ser úteis em conjunto com as saídas secundárias.</p>
-</li>
-<li>
-<p>As práticas recomendadas do Dataflow incentivam o tratamento de erros e dados incorretos através de saídas secundárias.</p>
-</li>
-</ul>
-<p>Em resumo, criar uma saída secundária para os dados incorretos é a abordagem mais recomendada para capturar dados inconsistentes no seu pipeline do Dataflow, garantindo que os dados válidos sejam processados corretamente e os dados problemáticos possam ser analisados posteriormente. O uso de saídas secundárias é uma prática eficiente e flexível para lidar com erros e inconsistências nos dados em um pipeline do Dataflow.</p>
+<p>Em resumo, o Cloud Data Fusion é a ferramenta mais adequada para permitir que seus analistas de dados, que podem não ter habilidades de programação, criem seus próprios pipelines de dados de maneira fácil e eficiente, com sua interface gráfica do usuário.</p>
 <h2 id="problema-03">Problema 03</h2>
-<p>Vários dos nossos analistas precisam preparar relatórios nas manhãs de segunda-feira, devido ao uso intenso do BigQuery. Desejo adotar uma abordagem econômica para gerenciar essa demanda. O que devo fazer?</p>
+<p>Gerencio um pipeline de dados em lote do PySpark usando o Dataproc: quero usar uma abordagem prática para executar a carga de trabalho e não quero provisionar e gerenciar cluster próprio. O que devo fazer?</p>
 <blockquote>
-<p>Resposta: Para gerenciar o aumento da demanda no BigQuery nas manhãs de segunda-feira de forma econômica, você deve usar slots flexíveis ou a edição Enterprise do BigQuery com um compromisso de um ano.</p>
+<p>Resposta: Para executar um pipeline de dados em lote do PySpark usando o Dataproc de forma prática, sem precisar provisionar e gerenciar seu próprio cluster, você deve configurar o job para execução no Dataproc sem servidor.</p>
 </blockquote>
-<p><strong>Slots Flexíveis</strong></p>
+<p>O Dataproc sem servidor é uma opção que permite executar jobs do Spark sem a necessidade de criar e gerenciar clusters do Dataproc. Essa abordagem é ideal para situações em que você deseja uma solução de processamento de dados prática, sem a complexidade de gerenciar a infraestrutura subjacente.
+Ao usar o Dataproc sem servidor, você se beneficia das seguintes vantagens:</p>
 <ul>
 <li>
-<p>Slots flexíveis permitem que você adicione capacidade de computação ao seu BigQuery sob demanda.</p>
+<p>Gerenciamento simplificado: Você não precisa se preocupar com o provisionamento, dimensionamento e gerenciamento de clusters. O Dataproc sem servidor lida com tudo isso automaticamente, permitindo que você se concentre em seus jobs de processamento de dados.</p>
 </li>
 <li>
-<p>Você só paga pelo tempo de uso, o que é mais econômico do que um compromisso de longo prazo, especialmente para picos de uso.</p>
+<p>Escalabilidade automática: O Dataproc sem servidor dimensiona automaticamente os recursos de computação de acordo com as necessidades do seu job, garantindo que ele seja executado de forma eficiente.</p>
 </li>
 <li>
-<p>Esta abordagem é adequada quando você tem picos de demanda apenas em determinados horários ou dias da semana.
-Edição Enterprise do BigQuery com Compromisso de Um Ano</p>
+<p>Redução de custos: Você só paga pelos recursos de computação que usa, sem a necessidade de manter um cluster ocioso quando não há jobs em execução.</p>
 </li>
 <li>
-<p>A edição Enterprise do BigQuery oferece recursos avançados de gerenciamento de custos e desempenho.</p>
-</li>
-<li>
-<p>Ao se comprometer por um ano, você pode obter um desconto significativo em comparação com os preços sob demanda.</p>
-</li>
-<li>
-<p>Essa opção é vantajosa se você tem um padrão de uso previsível, com picos recorrentes.
-Comparação com Outras Abordagens:</p>
-</li>
-<li>
-<p>Preços sob demanda: Usar preços sob demanda pode ser caro para picos de uso recorrentes. Embora ofereça flexibilidade, pode não ser a opção mais econômica quando há um aumento regular na demanda.</p>
-</li>
-<li>
-<p>Edição Enterprise Plus do BigQuery com um compromisso de três anos: Essa opção pode ser mais econômica a longo prazo, mas não é adequada se você não tem certeza sobre a demanda ou se precisa de flexibilidade.
-Outras Considerações</p>
-</li>
-<li>
-<p>Consultas em lote: Execute as consultas de geração de relatório em lote em vez de interativamente. Consultas em lote podem ser mais eficientes e podem ser programadas para serem executadas durante horários de menor demanda.</p>
-</li>
-<li>
-<p>Reservas: Ao criar uma reserva anual de slots do BigQuery, é possível ter maior controle sobre a capacidade e o desempenho das consultas. No entanto, uma reserva anual pode não ser tão flexível e econômica quanto slots flexíveis para atender a picos de uso esporádicos.</p>
+<p>Fácil de usar: O Dataproc sem servidor se integra bem com outras ferramentas do Google Cloud, o que facilita a criação e a execução de jobs do Spark.</p>
 </li>
 </ul>
-<p><strong>Recomendações Adicionais:</strong></p>
-<ol>
-<li>Analise os padrões de uso: Monitore o uso do BigQuery para entender os padrões de demanda. Isso ajudará você a escolher a opção de gerenciamento de custos mais adequada.</li>
-<li>Otimize as consultas: Certifique-se de que as consultas sejam otimizadas para evitar o consumo excessivo de recursos.</li>
-<li>Considere o uso de visualizações: Use visualizações para simplificar consultas complexas. Isso pode ajudar a reduzir o tempo e o custo de execução das consultas.</li>
-</ol>
-<p>Em resumo, para gerenciar o uso intenso do BigQuery nas manhãs de segunda-feira de forma econômica, considere usar slots flexíveis para lidar com os picos de demanda ou a edição Enterprise do BigQuery com um compromisso de um ano caso o aumento de demanda seja recorrente, combinando com a execução de consultas em lote e outras práticas de otimização para garantir o uso eficiente dos recursos.</p>
+<p>Outras opções, como configurar o job para execução com VMs spot, reescrever o job no Spark SQL ou reescrever o job no Dataflow com SQL, não são as mais adequadas para este cenário. Configurar o job com VMs spot exige que você gerencie um cluster, o que não atende ao seu requisito de não ter que provisionar e gerenciar a infraestrutura. Reescrever o job em Spark SQL ou Dataflow com SQL pode exigir muito esforço e tempo.</p>
 <h2 id="problema-04">Problema 04</h2>
-<p>Tenho uma equipe de analistas de dados que executa consultas interativamente no BigQuery durante o horário de trabalho. Também tenho milhares de consultas de geração de relatórios que são executadas simultaneamente. Muitas vezes vemos um erro: Limites de taxa excedidos: muitas consultas simultâneas para este project_and_region. Como resolvo esse problema?</p>
+<p>Preciso criar um pipeline de análise de dados de streaming no Google Cloud. Preciso escolher um produto que suporte streaming de dados. Qual produto mais adequado neste caso?</p>
 <blockquote>
-<p>Resposta: Para resolver o erro "Limites de taxa excedidos: muitas consultas simultâneas para este project_and_region" no BigQuery, você deve executar as consultas de geração de relatório em lote em vez de interativamente e considerar aumentar ou diminuir a escala do data warehouse rapidamente.</p>
+<p>Resposta: Para criar um pipeline de análise de dados de streaming no Google Cloud, você deve escolher produtos que suportem dados de streaming. A combinação mais adequada nesse caso é Pub/Sub, Dataflow e BigQuery.</p>
 </blockquote>
-<p><strong>Executar Consultas de Geração de Relatório em Lote</strong></p>
 <ul>
 <li>
-<p>Consultas em lote são mais eficientes para executar tarefas que não exigem resposta imediata.</p>
+<p>Pub/Sub: O Pub/Sub é um serviço de mensagens sem servidor que permite a ingestão de dados de streaming em tempo real. Ele atua como a fonte de dados para o seu pipeline, recebendo os dados de streaming e encaminhando-os para processamento.</p>
 </li>
 <li>
-<p>Ao executar consultas de geração de relatórios em lote, você pode programá-las para horários de menor demanda, evitando a sobrecarga do sistema durante o horário de trabalho dos analistas.</p>
+<p>Dataflow: O Dataflow é um serviço de processamento de dados unificado e escalável que é ideal para pipelines de streaming. Ele permite processar dados em tempo real com baixa latência e oferece recursos avançados como janelas, marcas-d'água e gatilhos. O Dataflow pode ler dados do Pub/Sub, realizar transformações e análises e então carregar os resultados para o BigQuery.</p>
 </li>
 <li>
-<p>Isso ajuda a reduzir a quantidade de consultas simultâneas que competem por recursos, diminuindo a chance de exceder os limites de taxa.</p>
-</li>
-<li>
-<p>A execução de consultas em lote também permite otimizar o uso de recursos e custos, já que o BigQuery tem preços diferentes para consultas interativas e em lote.
-Aumentar ou Diminuir a Escala do Data Warehouse Rapidamente</p>
-</li>
-<li>
-<p>Aumentar a capacidade de processamento do BigQuery pode ajudar a lidar com o grande volume de consultas simultâneas.</p>
-</li>
-<li>
-<p>Isso pode ser feito usando slots flexíveis, que permitem adicionar capacidade de computação sob demanda e pagar apenas pelo tempo de uso.</p>
-</li>
-<li>
-<p>Outra opção é usar a edição Enterprise do BigQuery com um compromisso de um ano, que oferece recursos avançados de gerenciamento de custos e desempenho, além de um desconto significativo em comparação com os preços sob demanda.</p>
-</li>
-<li>
-<p>Se você tiver um padrão de uso previsível, com picos recorrentes de demanda, o compromisso de um ano pode ser vantajoso.</p>
-</li>
-<li>
-<p>Ao combinar o uso de slots flexíveis ou a edição Enterprise com a execução de consultas em lote, você pode gerenciar o aumento da demanda no BigQuery de forma econômica e eficiente.</p>
+<p>BigQuery: O BigQuery é um data warehouse totalmente gerenciado e escalável, ideal para análise de grandes conjuntos de dados. Ele pode receber dados de streaming do Dataflow e armazenar os resultados do processamento para posterior análise e consulta. Além disso, o BigQuery possui recursos de streaming de alta capacidade para processar grandes volumes de dados em tempo real.</p>
 </li>
 </ul>
-<p><strong>Outras Considerações:</strong></p>
+<p>Outras opções não são adequadas para este cenário de análise de dados de streaming:</p>
 <ul>
 <li>
-<p>Analisar os padrões de uso: Monitore o uso do BigQuery para identificar os horários de pico e planejar a execução das consultas de geração de relatórios fora desses horários.</p>
+<p>Dataprep não é projetado para dados de streaming, sendo mais adequado para limpeza e preparação de dados em lote.</p>
 </li>
 <li>
-<p>Otimizar consultas: Verifique se as consultas estão otimizadas para evitar o consumo excessivo de recursos. Use técnicas como particionamento, agrupamento e uso de visualizações materializadas para melhorar o desempenho das consultas.</p>
+<p>Cloud SQL e AlloyDB são bancos de dados relacionais e não são ideais para processamento de dados de streaming. Cloud SQL é mais adequado para dados transacionais.</p>
 </li>
 <li>
-<p>Reservas: Ao criar uma reserva anual de slots do BigQuery, é possível ter maior controle sobre a capacidade e o desempenho das consultas. No entanto, uma reserva anual pode não ser tão flexível e econômica quanto slots flexíveis para atender a picos de uso esporádicos.</p>
+<p>Cloud Storage serve como camada de armazenamento inicial, mas não é adequado para processamento de dados de streaming em tempo real.</p>
 </li>
 </ul>
-<p><strong>Resumo</strong></p>
-<p>Para resolver o problema de limites de taxa excedidos devido a muitas consultas simultâneas no BigQuery, você deve:</p>
-<ul>
-<li>
-<p>Executar as consultas de geração de relatórios em lote.</p>
-</li>
-<li>
-<p>Considerar aumentar ou diminuir a escala do data warehouse rapidamente usando slots flexíveis ou a edição Enterprise do BigQuery com um compromisso de um ano.</p>
-</li>
-<li>
-<p>Analise os padrões de uso, otimize as consultas e considere criar reservas se necessário.</p>
-</li>
-</ul>
+<p>Em resumo, para um pipeline de análise de dados de streaming no Google Cloud, a combinação de Pub/Sub para ingestão, Dataflow para processamento e BigQuery para armazenamento e análise é a mais adequada, pois essas ferramentas foram projetadas para trabalhar em conjunto e garantir um pipeline de dados eficiente e escalável.</p>
 <h2 id="problema-05">Problema 05</h2>
-<p>Executo uma instância do Cloud SQL para uma empresa que exige que o banco de dados esteja acessível para transações. Preciso garantir um tempo de inatividade mínimo para transações de banco de dados. O que devo fazer?</p>
+<p>Preciso executar trabalhos em lote, usando o Google Cloud, o que pode levar muitos dias para ser concluído. Não desejo gerenciar o provisionamento de infraestrutura. O que você devo fazer?</p>
 <blockquote>
-<p>Resposta: Para garantir um tempo de inatividade mínimo para transações de banco de dados em uma instância do Cloud SQL, você deve configurar a alta disponibilidade.</p>
+<p>Resposta: Para executar trabalhos em lote que podem levar vários dias para serem concluídos, sem gerenciar o provisionamento de infraestrutura, você deve usar o Batch do Google Cloud.</p>
 </blockquote>
-<p><strong>Alta Disponibilidade no Cloud SQL</strong></p>
 <ul>
 <li>
-<p>A configuração de alta disponibilidade garante que o banco de dados permaneça acessível mesmo em caso de falhas.</p>
+<p>O Batch é um serviço que permite executar jobs em lote sem a necessidade de provisionar e gerenciar a infraestrutura subjacente.</p>
 </li>
 <li>
-<p>Em um cenário de alta disponibilidade, o Cloud SQL mantém uma instância primária e uma instância de standby em zonas diferentes.</p>
+<p>Ele é ideal para cargas de trabalho de longa duração, como processamento de dados, análise científica e modelagem, onde a execução pode levar horas ou dias.</p>
 </li>
 <li>
-<p>Se a instância primária falhar, o Cloud SQL automaticamente faz o failover para a instância de standby, minimizando o tempo de inatividade.
-Implementação da Alta Disponibilidade</p>
+<p>Com o Batch, você pode se concentrar na lógica do seu job, enquanto o serviço cuida do provisionamento, escalonamento e gerenciamento da infraestrutura necessária para sua execução.</p>
 </li>
 <li>
-<p>Ao criar uma instância do Cloud SQL, você pode optar por ativar a configuração de alta disponibilidade.</p>
-</li>
-<li>
-<p>Essa configuração replica os dados de forma síncrona entre a instância primária e a instância de standby, garantindo que os dados estejam sempre atualizados em ambos os locais.</p>
-</li>
-<li>
-<p>O processo de failover é automático e geralmente leva alguns minutos, mantendo o tempo de inatividade o mais baixo possível.</p>
-</li>
-<li>
-<p>A alta disponibilidade é uma configuração regional, ou seja, as instâncias primárias e de standby são implementadas em diferentes zonas da mesma região.
-Comparação com outras abordagens:</p>
-</li>
-<li>
-<p>Replicação: A replicação de dados é uma forma de manter cópias dos dados em outro local, mas não oferece a mesma garantia de failover automático e rápido que a alta disponibilidade. A replicação é mais adequada para fins de backup e leitura, não para garantir a continuidade das transações.</p>
-</li>
-<li>
-<p>Backups: Os backups são importantes para a recuperação de desastres, mas não garantem a continuidade das transações. A restauração de um backup pode levar um tempo considerável, resultando em um tempo de inatividade inaceitável para um sistema transacional.</p>
-</li>
-<li>
-<p>Configurar e aumentar o número de backups: Aumentar o número de backups pode melhorar a segurança dos seus dados, mas não resolve o problema de tempo de inatividade. Os backups são usados para restaurar os dados em caso de falha, não para evitar a interrupção do serviço.</p>
+<p>Outras opções como o Cloud Scheduler, o Workflows e o Cloud Run não são as mais adequadas neste cenário. O Cloud Scheduler é usado para agendar tarefas recorrentes e não é ideal para jobs de longa duração. O Workflows é usado para orquestrar fluxos de trabalho e não é especificamente projetado para executar jobs em lote de longa duração. O Cloud Run é mais adequado para executar aplicativos conteinerizados e não para trabalhos em lote que duram dias.</p>
 </li>
 </ul>
-<p><strong>Recursos adicionais:</strong></p>
-<ul>
-<li>
-<p>O Cloud SQL oferece diferentes opções de alta disponibilidade dependendo do tipo de banco de dados (MySQL, PostgreSQL, SQL Server).</p>
-</li>
-<li>
-<p>Ao configurar a alta disponibilidade, você pode monitorar o status das instâncias e configurar alertas para receber notificações em caso de problemas.</p>
-</li>
-</ul>
-<p><strong>Resumo</strong></p>
-<p>Para garantir um tempo de inatividade mínimo para transações de banco de dados em uma instância do Cloud SQL, você deve configurar a alta disponibilidade. Isso garante que, em caso de falha na instância primária, o failover para a instância de standby seja feito automaticamente e de forma rápida, mantendo o sistema acessível e minimizando o tempo de inatividade. A alta disponibilidade é crucial para aplicações que exigem um funcionamento contínuo e confiável.</p>
+<p>Portanto, o Batch é a solução mais adequada para executar seus trabalhos em lote de longa duração no Google Cloud, pois oferece uma abordagem sem servidor que elimina a necessidade de gerenciar a infraestrutura, permitindo que você se concentre na execução dos seus trabalhos.</p>
 <h2 id="problema-06">Problema 06</h2>
-<p>Preciso projetar um cluster do Dataproc para executar vários jobs pequenos. Muitos jobs (mas não todos) são de alta prioridade. O que devo fazer?</p>
+<p>Estou processando grandes quantidades de dados de entrada no BigQuery. Sendo necessário combinar esses dados com uma pequena quantidade de dados que mudam com frequência que estão disponíveis no Cloud SQL. O que você devo fazer?</p>
 <blockquote>
-<p>Resposta: Para projetar um cluster do Dataproc para executar vários jobs pequenos, muitos dos quais são de alta prioridade, você deve usar clusters temporários ou escalonamento automático de cluster.</p>
+<p>Resposta: Para combinar grandes quantidades de dados de entrada no BigQuery com uma pequena quantidade de dados que mudam frequentemente no Cloud SQL, você deve usar uma consulta federada para receber dados do Cloud SQL.</p>
 </blockquote>
-<p><strong>Clusters Temporários</strong></p>
 <ul>
 <li>
-<p>Clusters temporários são criados sob demanda para executar um ou mais jobs específicos, sendo automaticamente excluídos após a conclusão.</p>
+<p><strong>Consultas Federadas</strong>: As consultas federadas permitem que você consulte dados que residem em fontes de dados externas, como o Cloud SQL, diretamente do BigQuery. Em vez de copiar os dados do Cloud SQL para o BigQuery, as consultas federadas acessam os dados do Cloud SQL em tempo real, garantindo que você esteja usando as informações mais atualizadas.</p>
 </li>
 <li>
-<p>Essa abordagem é ideal para jobs pequenos e variados, pois não exige que você mantenha um cluster ativo continuamente, o que pode gerar economia de custos.</p>
+<p><strong>Dados em Tempo Real</strong>: Essa abordagem é ideal para situações em que os dados do Cloud SQL são frequentemente alterados, pois você sempre terá acesso aos dados mais recentes sem a necessidade de criar pipelines de cópia de dados.</p>
 </li>
 <li>
-<p>Ao usar clusters temporários, você pode configurar cada cluster de forma otimizada para os jobs que ele executará, inclusive a prioridade dos jobs.
-Escalonamento Automático de Cluster</p>
-</li>
-<li>
-<p>O escalonamento automático permite que o Dataproc ajuste automaticamente o tamanho do cluster com base nas necessidades de processamento, aumentando ou diminuindo o número de nós de trabalho.</p>
-</li>
-<li>
-<p>Essa abordagem é útil quando você tem uma carga de trabalho variável, onde a demanda pode aumentar e diminuir ao longo do tempo.</p>
-</li>
-<li>
-<p>O escalonamento automático garante que você tenha recursos suficientes para jobs de alta prioridade quando necessário e que você não pague por recursos ociosos quando a demanda é baixa.</p>
-</li>
-<li>
-<p>O escalonamento automático é recomendado quando há cargas de trabalho de tamanhos diferentes no cluster.
-Comparação com outras abordagens:</p>
-</li>
-<li>
-<p>Reutilizar o mesmo cluster para executar cada job em sequência: Essa abordagem pode levar a gargalos de desempenho, pois os jobs de alta prioridade podem ter que esperar que os jobs de baixa prioridade sejam concluídos. Além disso, manter um cluster ativo o tempo todo pode gerar custos mais altos.</p>
-</li>
-<li>
-<p>Reutilizar o mesmo cluster para executar todos os jobs em paralelo: Executar todos os jobs em paralelo em um cluster único pode sobrecarregar o sistema, especialmente se houver muitos jobs de alta prioridade. Além disso, essa abordagem dificulta o gerenciamento de prioridades.</p>
+<p><strong>Eficiência</strong>: As consultas federadas evitam a necessidade de manter cópias redundantes de dados, economizando tempo e custos de armazenamento.</p>
 </li>
 </ul>
-<p><strong>Recomendações adicionais:</strong></p>
-<ul>
-<li>
-<p>Você pode combinar o uso de clusters temporários com o escalonamento automático para atender aos seus requisitos. Por exemplo, você pode usar clusters temporários com escalonamento automático para jobs de alta prioridade e clusters temporários menores para jobs de baixa prioridade.</p>
-</li>
-<li>
-<p>Ao configurar o escalonamento automático, você pode definir limites para o número máximo e mínimo de nós de trabalho, garantindo que o cluster nunca consuma recursos em excesso ou fique sobrecarregado.</p>
-</li>
-<li>
-<p>Monitore o desempenho dos jobs e ajuste a configuração do cluster e o escalonamento automático, se necessário.</p>
-</li>
-</ul>
-<p><strong>Resumo</strong></p>
-<p>Para projetar um cluster do Dataproc para executar vários jobs pequenos com diferentes prioridades, você deve usar clusters temporários combinados ou não com o escalonamento automático de cluster. Os clusters temporários fornecem flexibilidade para otimizar cada job e eliminar o tempo de inatividade. O escalonamento automático garante o dimensionamento adequado dos recursos. Você também deve analisar os padrões de uso e monitorar o desempenho para otimizar ainda mais o processo.</p>
+<p>Outras opções como copiar os dados do Cloud SQL para uma nova tabela do BigQuery a cada hora ou criar uma tabela combinada e normalizada a cada hora, podem gerar dados desatualizados e requerem mais esforço. A criação de um pipeline do Dataflow para combinar os dados do BigQuery e do Cloud SQL quando os dados do Cloud SQL mudarem, pode ser uma solução mais complexa do que as consultas federadas.</p>
+<p>Ao utilizar consultas federadas, você poderá acessar dados do Cloud SQL em tempo real, combinando-os com dados do BigQuery de maneira eficiente e sem a necessidade de criar pipelines de cópia de dados ou manter cópias redundantes.</p>
 <h2 id="problema-07">Problema 07</h2>
-<p>Temos um pipeline do Dataflow em produção. Para certos dados, o sistema parece estar travado por mais tempo do que o normal. Isso está causando atrasos na execução do pipeline. Desejo rastrear e resolver esses problemas de forma confiável e proativa. O que devo fazer?</p>
+<p>Estou executando jobs do Dataflow para processamento de dados. Quando os desenvolvedores atualizam o código no Cloud Source Repositories, preciso testar e implantar o código atualizado com o mínimo de esforço. O que posso usar para criar meu pipeline de integração e entrega contínua (CI/CD) para processamento de dados?</p>
 <blockquote>
-<p>Resposta: Para rastrear e resolver de forma confiável e proativa os problemas de atraso em seu pipeline do Dataflow, você deve configurar alertas no Cloud Monitoring com base no atraso do sistema.</p>
+<p>Resposta: Para criar um pipeline de integração e entrega contínua (CI/CD) para processamento de dados, onde você executa jobs do Dataflow e precisa testar e implantar o código atualizado do Cloud Source Repositories com o mínimo de esforço, você deve usar o Cloud Build.</p>
 </blockquote>
-<p><strong>Cloud Monitoring para Rastreamento e Alertas</strong></p>
 <ul>
 <li>
-<p>O Cloud Monitoring permite monitorar o desempenho e o status dos seus pipelines do Dataflow em tempo real.</p>
+<p>O Cloud Build é um serviço de CI/CD totalmente gerenciado que permite automatizar as etapas de compilação, teste e implantação do seu código.</p>
 </li>
 <li>
-<p>Você pode configurar alertas baseados em várias métricas, como o atraso do sistema (system lag).</p>
+<p>Ao usar o Cloud Build, você pode configurar um pipeline que será acionado automaticamente quando os desenvolvedores atualizarem o código no Cloud Source Repositories.</p>
 </li>
 <li>
-<p>O atraso do sistema indica quanto tempo os dados estão aguardando para serem processados no pipeline. Um atraso crescente ou prolongado pode indicar problemas no pipeline.</p>
-</li>
-<li>
-<p>Ao configurar alertas com base no atraso do sistema, você receberá notificações automáticas quando o pipeline estiver com problemas, permitindo que você aja rapidamente para resolver a questão.</p>
+<p>O Cloud Build pode ser configurado para executar os testes necessários e, em seguida, implantar o código atualizado no seu ambiente de processamento de dados do Dataflow, com mínimo de esforço.</p>
 </li>
 </ul>
-<p><strong>Passos para Implementar o Monitoramento e Alertas</strong></p>
-<ol>
-<li>Acessar o Cloud Monitoring: Você pode acessar o Cloud Monitoring através do console do Google Cloud.</li>
-<li>Configurar alertas: Configure alertas com base em métricas de atraso do sistema. Defina limites e notificações para alertar quando o atraso exceder um certo limite.</li>
-<li>Analisar painéis: Utilize os painéis do Cloud Monitoring para visualizar gráficos e métricas do pipeline. Isso ajuda a identificar tendências e problemas.</li>
-<li>Investigar problemas: Ao receber um alerta, investigue o problema usando os registros do Dataflow e as métricas do Cloud Monitoring.</li>
-<li>Resolver problemas: Com base na sua investigação, faça os ajustes necessários no seu pipeline do Dataflow para resolver o problema.</li>
-</ol>
-<p><strong>Comparação com Outras Abordagens</strong></p>
-<ul>
-<li>
-<p>Analisar os registros do Dataflow com frequência: Essa abordagem é reativa e exige que você analise manualmente os registros, o que não é eficiente para detectar e resolver problemas de forma proativa.</p>
-</li>
-<li>
-<p>Configurar alertas com o código do Cloud Functions que analisa os registros de auditoria regularmente: Embora seja possível configurar alertas usando o Cloud Functions, usar o Cloud Monitoring é uma forma mais direta e recomendada. O Cloud Monitoring já possui as métricas e funcionalidades necessárias para configurar alertas, o que o torna uma solução mais simples e eficiente.</p>
-</li>
-<li>
-<p>Analisar o painel do Cloud Monitoring com frequência: Analisar o painel do Cloud Monitoring pode ajudar a identificar tendências e problemas, mas não é proativo como configurar alertas. Os alertas fornecem notificações automáticas quando há problemas, permitindo que você tome ações imediatas.
-Considerações Adicionais</p>
-</li>
-<li>
-<p>O Cloud Monitoring também oferece integração com outras ferramentas de monitoramento e registro do Google Cloud, o que pode ajudar na resolução de problemas.</p>
-</li>
-<li>
-<p>Ao analisar os registros do Dataflow, procure por erros ou avisos que podem estar relacionados aos problemas de atraso.</p>
-</li>
-<li>
-<p>Além do atraso do sistema, você pode monitorar outras métricas, como a utilização da CPU, memória e disco, para identificar possíveis gargalos.</p>
-</li>
-</ul>
-<p><strong>Resumo</strong></p>
-<p>Para rastrear e resolver de forma confiável e proativa os problemas de atraso no seu pipeline do Dataflow, você deve configurar alertas no Cloud Monitoring com base no atraso do sistema. Essa abordagem permite identificar problemas rapidamente e tomar ações corretivas para garantir o desempenho adequado do seu pipeline. Além disso, você pode usar os painéis e registros do Dataflow para identificar e resolver os problemas de forma eficiente.</p>
+<p>Outras opções como o Terraform, Compute Engine e Cloud Code não são as mais adequadas para este cenário. O Terraform é usado para infraestrutura como código e não é especificamente projetado para pipelines CI/CD. O Compute Engine é usado para máquinas virtuais e não para automação de CI/CD. O Cloud Code é uma extensão para ambientes de desenvolvimento e não para automação de pipelines CI/CD.</p>
+<p>O Cloud Build é ideal para automatizar todo o processo de CI/CD para seus jobs do Dataflow, desde a detecção de alterações no código até a implantação das atualizações, com o mínimo de esforço necessário.</p>
 <h2 id="problema-08">Problema 08</h2>
-<p>A organização onde trabalho processa dados de streaming no Dataflow com o Pub/Sub como origem. Preciso planejar a recuperação de desastres e se proteger contra falhas zonais. O que devo fazer?</p>
+<p>Estou criando um pipeline de dados para transmitir dados no Dataflow para os dados de um ponto de venda da organização onde trabalho. Desejo calcular o total de vendas por hora continuamente. Qual dessas opção de janela devo usar?</p>
 <blockquote>
-<p>Resposta: Para planejar a recuperação de desastres e se proteger contra falhas zonais ao processar dados de streaming no Dataflow com o Pub/Sub como origem, você deve criar jobs do Dataflow com base em modelos. Além disso, é recomendado ativar o Dataflow Shuffle.</p>
+<p>Resposta: Para calcular o total de vendas por hora de forma contínua em um pipeline de dados de streaming no Dataflow para dados de ponto de venda, você deve usar janelas de salto (sliding windows).</p>
 </blockquote>
-<p><strong>Criação de Jobs do Dataflow com Base em Modelos</strong></p>
 <ul>
 <li>
-<p>Reutilização: Ao criar jobs do Dataflow com base em modelos, você consegue reutilizar a configuração do pipeline e reduzir o tempo de implantação em caso de recuperação de desastres.</p>
-</li>
-<li>
-<p>Consistência: Os modelos garantem que o mesmo pipeline seja implantado de forma consistente, reduzindo erros humanos durante a recuperação.</p>
-</li>
-<li>
-<p>Agilidade: Modelos permitem uma recuperação rápida e eficiente de pipelines em caso de falhas, seja por motivo de falhas zonais ou outros desastres.</p>
-</li>
-<li>
-<p>Implantação: Você pode implantar jobs do Dataflow baseados em modelos rapidamente a partir do console do Google Cloud, da linha de comando ou da API.</p>
-</li>
-<li>
-<p>Segurança: Além de facilitar a recuperação, os modelos podem incluir configurações de segurança, garantindo a proteção dos seus dados.</p>
-</li>
-</ul>
-<p><strong>Ativação do Dataflow Shuffle</strong> </p>
+<p>Janelas de salto (sliding windows): As janelas de salto, também conhecidas como janelas deslizantes, são ideais para cenários onde você precisa calcular agregações (como somas, médias ou contagens) em intervalos de tempo sobrepostos.</p>
 <ul>
 <li>
-<p>Resiliência: O Dataflow Shuffle é uma funcionalidade que melhora a resiliência do seu pipeline, permitindo que ele continue processando dados mesmo em caso de falhas parciais.</p>
+<p>Elas dividem os dados de streaming em segmentos temporais que se sobrepõem, permitindo que você obtenha uma visão contínua e atualizada das agregações.</p>
 </li>
 <li>
-<p>Gerenciamento de dados: O Dataflow Shuffle distribui os dados de maneira eficiente entre os nós de trabalho, evitando gargalos e melhorando o desempenho geral.</p>
+<p>Com janelas de salto, você pode definir o tamanho da janela (por exemplo, 1 hora) e o período de salto (por exemplo, 1 minuto), permitindo calcular o total de vendas por hora e obter uma atualização a cada minuto.</p>
+</li>
+<li>Isso garante que você obtenha uma visão contínua e gradual das vendas ao longo do tempo.</li>
+</ul>
 </li>
 <li>
-<p>Disponibilidade: Ao ativar o Dataflow Shuffle, você garante que seu pipeline mantenha a disponibilidade mesmo em situações de falhas zonais.
-Outras Considerações</p>
+<p>As janelas de sessão são mais adequadas para dados que chegam em sessões com períodos de inatividade entre elas, e não para dados contínuos como os dados de ponto de venda.</p>
 </li>
 <li>
-<p>Snapshots do Dataflow: Embora a criação de snapshots possa ser útil para fins de backup e recuperação, ela não é a solução mais eficiente para recuperação de desastres. A recuperação a partir de um snapshot pode levar tempo e não garante a continuidade em tempo real do processamento de streaming.</p>
+<p>A janela global agrupa todos os dados em uma única janela, não permitindo o cálculo do total de vendas por hora.</p>
 </li>
 <li>
-<p>Escalonamento automático vertical: O escalonamento automático vertical pode ser útil para aumentar ou diminuir a capacidade de recursos do seu pipeline, mas não resolve a necessidade de recuperação de desastres em caso de falha zonal.
-Comparação com outras abordagens:</p>
-</li>
-<li>
-<p>A configuração da replicação ou a configuração de alta disponibilidade são mais apropriadas para serviços como o Cloud SQL, que exigem que os dados sejam acessados em tempo real em múltiplas zonas, mas não são a solução recomendada para o Dataflow.</p>
-</li>
-<li>
-<p>Configurar backups é essencial para a proteção dos seus dados, mas não garante a continuidade dos pipelines de streaming em caso de falha.</p>
+<p>As janelas em cascata (fixed windows) dividem os dados em intervalos de tempo não sobrepostos e não são as mais adequadas para calcular agregações contínuas.</p>
 </li>
 </ul>
-<p><strong>Resumo</strong></p>
-<p>Para planejar a recuperação de desastres e se proteger contra falhas zonais ao processar dados de streaming no Dataflow com o Pub/Sub como origem, é recomendado criar jobs do Dataflow com base em modelos e ativar o Dataflow Shuffle. O uso de modelos oferece uma forma rápida e eficiente de reimplantar seu pipeline, enquanto o Dataflow Shuffle garante a resiliência e a disponibilidade do seu sistema, minimizando o impacto de uma falha zonal.</p>
+<p>Portanto, as janelas de salto (sliding windows) são a melhor opção para calcular continuamente o total de vendas por hora em seu pipeline de dados de streaming no Dataflow, pois permitem agregar dados em intervalos de tempo sobrepostos, fornecendo uma visão contínua e atualizada das vendas.</p>
 <h2 id="problema-09">Problema 09</h2>
-<p>Ao executar jobs do Dataflow, você verá este erro nos registros: "Uma tecla de atalho HOT_KEY_NAME foi detectada em...". Preciso resolver esse problema e tornar a carga de trabalho eficiente. O que devo fazer?</p>
+<p>O primeiro estágio do pipeline de dados processa dezenas de terabytes de dados financeiros e cria um conjunto de dados esparso de séries temporais como um par de chave-valor. Qual o coletor adequado para o primeiro estágio da pipeline?</p>
 <blockquote>
-<p>Resposta: Ao encontrar o erro "Uma tecla de atalho HOT_KEY_NAME foi detectada em..." ao executar jobs do Dataflow, você deve verificar se os dados estão distribuídos de maneira uniforme. Este erro indica que uma chave específica está recebendo uma quantidade desproporcional de dados, o que pode causar gargalos no processamento.</p>
+<p>Resposta: Para o primeiro estágio de um pipeline de dados que processa dezenas de terabytes de dados financeiros e cria um conjunto de dados esparso de séries temporais como um par de chave-valor, o coletor adequado é o Bigtable.</p>
 </blockquote>
-<p><strong>Para resolver o problema e melhorar a eficiência da carga de trabalho, você pode seguir estas etapas:</strong></p>
 <ul>
 <li>
-<p>Verificar a distribuição dos dados: Certifique-se de que os dados estejam distribuídos de forma uniforme entre as chaves. Uma distribuição desigual pode causar o problema de "hot key".</p>
+<p>O Bigtable é um serviço de banco de dados NoSQL totalmente gerenciado e escalável, ideal para dados de séries temporais esparsos. Ele foi projetado para lidar com grandes volumes de dados com baixa latência e alta escalabilidade.</p>
 </li>
 <li>
-<p>Aumentar os dados com a chave de atalho: Se possível, você pode aumentar os dados associados à chave de atalho. Isso pode ajudar a distribuir a carga de trabalho de forma mais uniforme.</p>
+<p>Estrutura de Dados: A estrutura de chave-valor do Bigtable é perfeita para dados de séries temporais esparsos, onde a chave pode ser usada para identificar a série temporal e o valor para armazenar os dados correspondentes.</p>
 </li>
 <li>
-<p>Desativar o Dataflow Shuffle: Em alguns casos, desativar o Dataflow Shuffle pode ajudar a resolver o problema, embora geralmente não seja a solução recomendada.</p>
-</li>
-<li>
-<p>Adicionar mais instâncias de computação: Aumentar o número de instâncias de computação para o processamento também pode ajudar a melhorar o desempenho, mas isso pode não resolver o problema de "hot key" diretamente.</p>
+<p>Desempenho: O Bigtable oferece alto desempenho para leituras e gravações, o que é essencial para um pipeline de processamento de dados que opera com grandes volumes de dados.</p>
 </li>
 </ul>
-<p>Além disso, os registros do Dataflow devem ser analisados frequentemente para identificar esses problemas. Configurar alertas no Cloud Monitoring com base no atraso do sistema também pode ajudar a rastrear e resolver esses problemas de forma proativa. A documentação do Google Cloud também oferece guias para resolver problemas de stragglers em jobs em lote do Dataflow.</p>
+<p>Outras opções não são adequadas para esta situação:</p>
+<ul>
+<li>
+<p>Cloud Storage é um serviço de armazenamento de objetos, adequado para dados não estruturados ou arquivos, mas não é otimizado para dados de séries temporais esparsos.</p>
+</li>
+<li>
+<p>Cloud SQL é um banco de dados relacional, ideal para dados estruturados com relacionamentos definidos, mas não é a melhor opção para dados de séries temporais esparsos.</p>
+</li>
+<li>
+<p>AlloyDB também é um banco de dados relacional compatível com PostgreSQL, adequado para dados transacionais, mas não é otimizado para dados de séries temporais esparsos.</p>
+</li>
+</ul>
+<p>Em resumo, o Bigtable é a melhor opção como coletor para a primeira etapa do seu pipeline de dados, pois sua estrutura de dados e características de desempenho se adequam perfeitamente aos requisitos de dados de séries temporais esparsos gerados pelo seu processamento de dados financeiros.</p>
 <h2 id="problema-10">Problema 10</h2>
-<p>Preciso criar tarefas de processamento de dados repetíveis usando o Cloud Composer. Preciso seguir as melhores práticas e abordagens recomendadas. O que devo fazer?</p>
+<p>Tenho um pipeline de dados que exige que eu monitore um bucket do Cloud Storage em busca de um arquivo, inicie um job do Dataflow para processar dados no arquivo, execute um script de shell para validar os dados processados no BigQuery e exclua o arquivo original. Preciso orquestrar esse pipeline usando as ferramentas recomendadas. Qual produto mais adequado neste caso?</p>
 <blockquote>
-<p>Resposta: Para criar tarefas de processamento de dados repetíveis usando o Cloud Composer, é importante seguir as melhores práticas e abordagens recomendadas. </p>
+<p>Resposta: Para orquestrar um pipeline de dados que monitora um bucket do Cloud Storage em busca de um arquivo, inicia um job do Dataflow para processar os dados nesse arquivo, executa um script de shell para validar os dados processados no BigQuery e exclui o arquivo original, você deve usar o Cloud Composer.</p>
 </blockquote>
-<p><strong>Aqui estão algumas orientações sobre o que você deve fazer:</strong></p>
 <ul>
 <li>
-<p>Definir cada tarefa como responsável por uma única operação: Ao criar tarefas recorrentes no Cloud Composer, é fundamental garantir que cada tarefa seja responsável por uma única operação. Isso ajuda a manter o DAG (Directed Acyclic Graph) organizado e facilita a resolução de problemas.</p>
+<p>O Cloud Composer é um serviço de orquestração de fluxo de trabalho totalmente gerenciado que permite criar, agendar, monitorar e gerenciar pipelines de dados complexos.</p>
 </li>
 <li>
-<p>Evitar o uso do horário atual com a função now() para cálculos: Não é recomendado usar o horário atual com a função now() para cálculos dentro das tarefas. Isso pode levar a resultados inesperados e tornar as tarefas não determinísticas. Em vez disso, utilize variáveis ou métodos que forneçam informações de tempo consistentes.</p>
+<p>Ele é baseado no Apache Airflow e oferece uma interface gráfica de usuário (GUI) para criar fluxos de trabalho complexos, além de suporte para Python e outros idiomas.
+O Cloud Composer é ideal para este cenário porque permite:</p>
 </li>
 <li>
-<p>Evitar atualizar dados com instruções INSERT durante a execução da tarefa: Durante a execução da tarefa, é recomendado evitar a atualização de dados com instruções INSERT. Isso pode gerar inconsistências e erros difíceis de rastrear no processamento.</p>
+<p>Monitorar o Cloud Storage: Você pode usar os sensores do Cloud Composer para monitorar um bucket do Cloud Storage em busca de novos arquivos.</p>
 </li>
 <li>
-<p>Combinar funcionalidades em uma única execução de tarefa deve ser evitado: Evite combinar várias funcionalidades em uma única execução de tarefa. É preferível dividir o processamento em tarefas menores e mais especializadas, o que torna o fluxo mais fácil de gerenciar, depurar e manter.
-Ao projetar seus DAGs (Directed Acyclic Graphs) no Cloud Composer, considere:</p>
+<p>Iniciar jobs do Dataflow: O Cloud Composer pode iniciar automaticamente um job do Dataflow quando um novo arquivo for detectado no bucket do Cloud Storage.</p>
 </li>
 <li>
-<p>Modularidade: Divida o fluxo de trabalho em tarefas menores e independentes. Isso facilita a manutenção e a reutilização de componentes.</p>
+<p>Executar scripts de shell: O Cloud Composer permite executar scripts de shell para validar os dados processados no BigQuery.</p>
 </li>
 <li>
-<p>Idempotência: Garanta que suas tarefas sejam idempotentes, ou seja, que possam ser executadas várias vezes sem causar efeitos colaterais indesejados. Isso é fundamental para lidar com falhas e repetições de tarefas.</p>
+<p>Excluir arquivos: O Cloud Composer permite excluir o arquivo original do Cloud Storage após a conclusão bem-sucedida do processamento.</p>
 </li>
 <li>
-<p>Monitoramento: Implemente um sistema de monitoramento para acompanhar o progresso das tarefas e identificar possíveis problemas. O Cloud Monitoring pode ser usado para criar alertas baseados no atraso do sistema.</p>
+<p>Orquestração Complexa: O Cloud Composer oferece recursos avançados de orquestração, permitindo que você defina dependências entre tarefas e gerencie o fluxo de dados de forma eficiente.</p>
 </li>
 <li>
-<p>Testes: Realize testes rigorosos em seus DAGs antes de implantá-los em produção. Utilize práticas de CI/CD (integração contínua e entrega contínua) para automatizar os testes e a implantação.</p>
+<p>Visualização e monitoramento: O Cloud Composer oferece uma interface gráfica intuitiva para visualizar o fluxo de trabalho e monitorar o progresso das tarefas.
+Outras opções, como Cloud Tasks, Cloud Scheduler e Cloud Run, não são adequadas para este cenário.</p>
 </li>
 <li>
-<p>Documentação: Siga as práticas recomendadas para gravação de DAGs no Apache Airflow, conforme a documentação do Astronomer e do Google Cloud.</p>
+<p>O Cloud Tasks é usado para enfileirar tarefas para execução assíncrona e não para orquestrar pipelines completos.</p>
+</li>
+<li>
+<p>O Cloud Scheduler é usado para agendar tarefas recorrentes e não para orquestração de pipelines com diversas etapas.</p>
+</li>
+<li>
+<p>O Cloud Run é usado para executar aplicativos conteinerizados e não para a orquestração de pipelines de dados.</p>
 </li>
 </ul>
-<p>Seguindo estas práticas, você criará tarefas de processamento de dados repetíveis, confiáveis e fáceis de manter no Cloud Composer.</p>
+<p>Portanto, o Cloud Composer é a melhor opção para orquestrar seu pipeline de dados complexo, pois oferece a flexibilidade e os recursos necessários para monitorar o Cloud Storage, executar jobs do Dataflow, validar dados no BigQuery e gerenciar o fluxo de trabalho de forma eficiente.</p>
 
 
 
@@ -2590,10 +2513,10 @@ Ao projetar seus DAGs (Directed Acyclic Graphs) no Cloud Composer, considere:</p
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
