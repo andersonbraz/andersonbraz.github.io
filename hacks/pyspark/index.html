@@ -1990,7 +1990,7 @@
     <span class="k">return</span> <span class="n">df</span>
 </code></pre></div>
 <p>Retirar colunas duplicadas de um DataFrame</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">drop_cols_duplicates</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">drop_cols_duplicates</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
 
     <span class="n">dup_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
     <span class="n">dup_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">dup_cols</span> <span class="k">if</span> <span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
