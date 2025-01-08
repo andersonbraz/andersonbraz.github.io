@@ -2190,7 +2190,7 @@
 <p>O Cloud EKM oferece flexibilidade e controle sobre suas chaves de criptografia, independentemente de onde seus dados e aplicativos residam, e permite que você atenda aos diferentes requisitos regulatórios de cada região.</p>
 <p>Outras opções como armazenar as chaves no Cloud Key Management Service (KMS) e reduzir o número de dias para rotação automática de chaves, armazenar as chaves no Cloud Hardware Security Module (HSM), ou armazenar as chaves em um sistema de parceiro de gerenciamento de chaves externo sem usar o Cloud EKM não são tão adequadas para o gerenciamento centralizado de chaves, já que estas opções não abordam a complexidade de gerenciar chaves em várias regiões.</p>
 <h2 id="problema-05">Problema 05</h2>
-<p>Estou gerenciando dados de uma organização, que consiste em várias equipes, incluindo varejo, vendas, marketing e jurídico. Essas equipes estão consumindo dados de vários produtores, incluindo sistemas de ponto de venda, dados do setor, pedidos e muito mais. Atualmente, as equipes que consomem dados precisam pedir repetidamente às equipes que os produzem para verificar os dados mais atualizados e esclarecer outras questões sobre os dados, como origem e propriedade. Esse processo não é confiável e demorado e geralmente leva a escalonamentos repetidos. Preciso implementar uma solução centralizada que obtenha uma visão unificada dos dados da organização e melhore a capacidade de pesquisa. O que você devo fazer?</p>
+<p>Estou gerenciando dados de uma organização, que consiste em várias equipes, incluindo varejo, vendas, marketing e jurídico. Essas equipes estão consumindo dados de vários produtores, incluindo sistemas de ponto de venda, dados do setor, pedidos e muito mais. Atualmente, as equipes que consomem dados precisam pedir repetidamente às equipes que os produzem para verificar os dados mais atualizados e esclarecer outras questões sobre os dados, como origem e propriedade. Esse processo não é confiável e demorado e geralmente leva a escalonamentos repetidos. Preciso implementar uma solução centralizada que obtenha uma visão unificada dos dados da organização e melhore a capacidade de pesquisa. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para implementar uma solução centralizada que forneça uma visão unificada dos dados da organização e melhore a capacidade de pesquisa, você deve implementar uma malha de dados com o Dataplex e fazer com que os produtores incluam tags nos dados quando eles forem criados.</p>
 </blockquote>
@@ -2204,7 +2204,7 @@
 <p>Outras abordagens, como implementar um data lake com o Cloud Storage, criar buckets para cada equipe ou implementar um data warehouse usando o BigQuery e criar conjuntos de dados para cada equipe, não resolvem o problema da falta de visibilidade unificada e a dificuldade de pesquisa dos dados de forma tão eficaz. </p>
 <p>Os painéis do Looker podem fornecer visualizações dos dados, mas não abordam o problema central de organizar e tornar os dados pesquisáveis.</p>
 <h2 id="problema-06">Problema 06</h2>
-<p>Recentemente adquirimos outra empresa na Europa. As permissões e políticas de acesso a dados nesta nova região diferem daquelas da nossa sede, que fica na América do Norte. Preciso definir um conjunto consistente de políticas para projetos em cada região que sigam as práticas recomendadas. O que você devo fazer?</p>
+<p>Recentemente adquirimos outra empresa na Europa. As permissões e políticas de acesso a dados nesta nova região diferem daquelas da nossa sede, que fica na América do Norte. Preciso definir um conjunto consistente de políticas para projetos em cada região que sigam as práticas recomendadas. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para definir um conjunto consistente de políticas que sigam as práticas recomendadas para projetos em cada região, considerando que as permissões e políticas de acesso a dados da nova região na Europa diferem daquelas da sede na América do Norte, você deve criar pastas de nível superior para cada região e atribuir políticas no nível da pasta.</p>
 </blockquote>
@@ -2269,7 +2269,7 @@
 </ul>
 <p>Outras opções como ativar o controle de versões de objetos e excluir versões com mais de 365 dias não são as mais adequadas, pois o controle de versões não garante a imutabilidade dos arquivos durante o período de retenção. Especificar um período de armazenamento também não é uma solução adequada, já que esta opção não garante que o arquivo seja excluído automaticamente após o período especificado.</p>
 <h2 id="problema-09">Problema 09</h2>
-<p>Tenho um pipeline do Dataflow que executa jobs de processamento de dados. Preciso identificar as partes do código do pipeline que consomem mais recursos. O que você devo fazer?</p>
+<p>Tenho um pipeline do Dataflow que executa jobs de processamento de dados. Preciso identificar as partes do código do pipeline que consomem mais recursos. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para identificar as partes do código do seu pipeline do Dataflow que consomem mais recursos, você deve usar o Cloud Profiler.</p>
 </blockquote>
@@ -2290,7 +2290,7 @@
 <p>Outras opções como usar o Cloud Monitoring ou o Cloud Logging não são adequadas para essa finalidade. O Cloud Monitoring é mais adequado para monitorar métricas de nível geral, como uso de CPU, memória ou latência, mas não fornece detalhes sobre o consumo de recursos de partes específicas do seu código.</p>
 <p>O Cloud Logging é usado para coletar e analisar logs, o que é útil para depurar erros, mas não para analisar o uso de recursos do código do seu pipeline. Os Registros de auditoria do Cloud rastreiam ações administrativas e não são relevantes para essa necessidade de analisar o desempenho do código.</p>
 <h2 id="problema-10">Problema 10</h2>
-<p>A organização onde trabalho está migrando seus data centers privados para o Google Cloud. Ao longo de muitos anos, centenas de terabytes de dados foram acumulados. No momento, temos uma linha de 100 Mbps e precisamos transferir esses dados de forma confiável antes de iniciar as operações no Google Cloud em 45 dias. O que você devo fazer?</p>
+<p>A organização onde trabalho está migrando seus data centers privados para o Google Cloud. Ao longo de muitos anos, centenas de terabytes de dados foram acumulados. No momento, temos uma linha de 100 Mbps e precisamos transferir esses dados de forma confiável antes de iniciar as operações no Google Cloud em 45 dias. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para transferir centenas de terabytes de dados de seus data centers privados para o Google Cloud de forma confiável, com uma transmissão de 100 Mbps, e dentro de um prazo de 45 dias, você deve usar um <strong>Transfer Appliance</strong>, exportar os dados para ele e enviá-lo para o Google.</p>
 </blockquote>
