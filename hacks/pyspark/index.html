@@ -1194,6 +1194,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -1943,6 +1976,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -1967,9 +2033,18 @@
 
 
 <h1 id="pyspark">PySpark</h1>
+<h2 id="boas-praticas">Boas Práticas</h2>
+<h3 id="imports">Imports</h3>
+<p>Evitando poluição no manespace global do seu projeto de código</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+</code></pre></div>
+<h3 id="window">Window</h3>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <p>Ler arquivo csv e entregar dados em dataframe</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">csv_to_df</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
 
     <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;sep&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span>\
@@ -1980,7 +2055,7 @@
     <span class="k">return</span> <span class="n">df</span>
 </code></pre></div>
 <p>Ler arquivo json e entregar dados em dataframe</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">json_to_df</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
 
     <span class="n">df</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
         <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;multiline&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
