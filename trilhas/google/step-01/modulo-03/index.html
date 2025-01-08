@@ -2134,7 +2134,7 @@
 
 <h1 id="3-armazenamento-de-dados">3. Armazenamento de Dados</h1>
 <h2 id="problema-01">Problema 01</h2>
-<p>A alta direção da organização onde trabalho expressa preocupação com o acesso não autorizado a objetos no bucket do Cloud Storage. Preciso avaliar todo o acesso em todos os objetos no bucket. O que você devo fazer?</p>
+<p>A alta direção da organização onde trabalho expressa preocupação com o acesso não autorizado a objetos no bucket do Cloud Storage. Preciso avaliar todo o acesso em todos os objetos no bucket. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para avaliar todos os acessos a todos os objetos em um bucket do Cloud Storage, você deve ativar e revisar os registros de auditoria de acesso aos dados.</p>
 </blockquote>
@@ -2271,7 +2271,7 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </ul>
 <p>Em resumo, ao mover dados de vários bancos de dados transacionais para o BigQuery, projetar o esquema novamente para desnormalizar os dados com campos aninhados e repetidos é a abordagem recomendada. Isso irá melhorar o desempenho das consultas e simplificar a análise de dados.</p>
 <h2 id="problema-05">Problema 05</h2>
-<p>A organização onde trabalho acumulou uma grande quantidade de dados. Analistas e liderança estão achando difícil entender o significado dos dados, como as colunas do BigQuery. Os usuários dos dados não sabem quem é dono do quê. Preciso melhorar a capacidade de pesquisa dos dados. O que você devo fazer?</p>
+<p>A organização onde trabalho acumulou uma grande quantidade de dados. Analistas e liderança estão achando difícil entender o significado dos dados, como as colunas do BigQuery. Os usuários dos dados não sabem quem é dono do quê. Preciso melhorar a capacidade de pesquisa dos dados. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para melhorar a capacidade de pesquisa dos dados e facilitar o entendimento do significado das colunas do BigQuery, você deve criar tags para entradas de dados no Cloud Catalog.</p>
 </blockquote>
@@ -2314,7 +2314,7 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 <p>Outras opções como renomear colunas do BigQuery com nomes mais descritivos, exportar os dados para o Cloud Storage com nomes de arquivo descritivos ou adicionar uma coluna de descrição correspondente a cada coluna de dados, não são tão eficazes para melhorar a capacidade de pesquisa dos dados. Renomear colunas pode ajudar, mas não oferece o mesmo nível de flexibilidade e centralização que o Cloud Catalog. Exportar dados com nomes descritivos ajuda apenas na localização dos arquivos, não nos dados propriamente ditos. Adicionar uma coluna de descrição pode ser útil, mas é mais difícil de manter e não é tão pesquisável quanto as tags do Cloud Catalog.</p>
 <p>Em resumo, criar tags para entradas de dados no Cloud Catalog é a melhor abordagem para melhorar a capacidade de pesquisa dos dados, pois ele centraliza as informações, facilita a descoberta e melhora a compreensão dos dados.</p>
 <h2 id="problema-06">Problema 06</h2>
-<p>Estou ingerindo dados espalhados por uma ampla variedade de datas no BigQuery em um ritmo rápido. Preciso particionar a tabela para tornar as consultas performáticas. O que você devo fazer?</p>
+<p>Estou ingerindo dados espalhados por uma ampla variedade de datas no BigQuery em um ritmo rápido. Preciso particionar a tabela para tornar as consultas performáticas. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para melhorar o desempenho das consultas ao ingerir dados distribuídos por um amplo intervalo de datas no BigQuery em um ritmo rápido, você deve criar uma tabela particionada por tempo de processamento com tipo de particionamento diário.</p>
 </blockquote>
@@ -2354,7 +2354,7 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </ul>
 <p>Em resumo, para ingerir dados distribuídos por um amplo intervalo de datas no BigQuery, criar uma tabela particionada por tempo de processamento com tipo de particionamento diário é a melhor abordagem para garantir um bom desempenho nas consultas.</p>
 <h2 id="problema-07">Problema 07</h2>
-<p>Tenho dados que são ingeridos diariamente e analisados com frequência no primeiro mês. Depois disso, os dados são retidos apenas para auditorias, que acontecem ocasionalmente a cada poucos anos. Preciso configurar o armazenamento econômico. O que você devo fazer?</p>
+<p>Tenho dados que são ingeridos diariamente e analisados com frequência no primeiro mês. Depois disso, os dados são retidos apenas para auditorias, que acontecem ocasionalmente a cada poucos anos. Preciso configurar o armazenamento econômico. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para configurar um armazenamento econômico para dados que são analisados frequentemente no primeiro mês e depois retidos para auditorias ocasionais, você deve configurar uma política de ciclo de vida no Cloud Storage.</p>
 </blockquote>
@@ -2394,7 +2394,7 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 <p>Outras opções, como criar um bucket no Cloud Storage com o controle de versões de objetos configurado, ou criar um bucket no Cloud Storage com a classe automática configurada não são tão eficazes para gerenciar o ciclo de vida dos dados e otimizar custos nesse caso. O controle de versões de objetos é útil para recuperação de dados, mas não reduz os custos de armazenamento a longo prazo. A classe automática do Cloud Storage, move os dados entre classes de armazenamento de acordo com padrões de acesso, mas você não teria o controle específico que você precisa para gerenciar dados para o cenário em questão.</p>
 <p>Em resumo, configurar uma política de ciclo de vida no Cloud Storage é a melhor abordagem para garantir que seus dados sejam armazenados de forma econômica, movendo os dados para as classes de armazenamento adequadas, com base na sua frequência de acesso e tempo de retenção.</p>
 <h2 id="problema-08">Problema 08</h2>
-<p>Os analistas de dados da organização onde trabalho executam repetidamente as mesmas consultas complexas que combinam e filtram muitos dados no BigQuery. Os dados mudam com frequência. Preciso reduzir o esforço dos analistas. O que você devo fazer?</p>
+<p>Os analistas de dados da organização onde trabalho executam repetidamente as mesmas consultas complexas que combinam e filtram muitos dados no BigQuery. Os dados mudam com frequência. Preciso reduzir o esforço dos analistas. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para reduzir o esforço dos analistas que executam repetidamente as mesmas consultas complexas que combinam e filtram muitos dados no BigQuery, e considerando que os dados mudam com frequência, você deve criar views materializadas.</p>
 </blockquote>
@@ -2446,7 +2446,7 @@ Portanto, a Coldline Storage é a classe de armazenamento mais adequada para seu
 </ul>
 <p>Em resumo, criar visualizações materializadas é a melhor abordagem para reduzir o esforço dos analistas, pois permite que eles consultem dados já processados e atualizados automaticamente, ao mesmo tempo que melhora o desempenho das consultas.</p>
 <h2 id="problema-09">Problema 09</h2>
-<p>Preciso escolher uma solução de armazenamento de dados para dar suporte a um sistema transacional. Meus clientes estão baseados principalmente em uma região. Desejo reduzir suas tarefas de administração e concentrar o esforço de engenharia na criação de seu aplicativo de negócios. O que você devo fazer?</p>
+<p>Preciso escolher uma solução de armazenamento de dados para dar suporte a um sistema transacional. Meus clientes estão baseados principalmente em uma região. Desejo reduzir suas tarefas de administração e concentrar o esforço de engenharia na criação de seu aplicativo de negócios. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para dar suporte a um sistema transacional com clientes baseados principalmente em uma região, e para reduzir as tarefas administrativas, você deve usar o Cloud SQL.</p>
 </blockquote>
@@ -2485,7 +2485,7 @@ Outras opções apresentadas não são recomendadas para o cenário em questão:
 </ul>
 <p>Em resumo, usar o Cloud SQL é a melhor opção para um sistema transacional com clientes em uma região, pois oferece alta disponibilidade e reduz a sobrecarga administrativa, permitindo que você foque no desenvolvimento do aplicativo de negócios.</p>
 <h2 id="problema-10">Problema 10</h2>
-<p>Tenho grandes quantidades de dados armazenados no Cloud Storage e no BigQuery. Parte disso é processado, mas parte ainda não foi processado. Também tenho uma malha de dados criada no Dataplex. Preciso tornar conveniente para os usuários internos dos dados descobrir e usar os dados. O que você devo fazer?</p>
+<p>Tenho grandes quantidades de dados armazenados no Cloud Storage e no BigQuery. Parte disso é processado, mas parte ainda não foi processado. Também tenho uma malha de dados criada no Dataplex. Preciso tornar conveniente para os usuários internos dos dados descobrir e usar os dados. O que devo fazer?</p>
 <blockquote>
 <p>Resposta: Para facilitar o processo de descoberta e uso de dados armazenados no Cloud Storage e no BigQuery, tanto os dados já processados quanto os não processados, dentro de uma malha de dados criada no Dataplex, você deve criar uma zona bruta para dados não processados e uma zona selecionada para dados processados.</p>
 </blockquote>
