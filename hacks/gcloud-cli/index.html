@@ -1150,9 +1150,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#verificar-conta-principal-utilizada" class="md-nav__link">
+  <a href="#verificar-conta-de-autenticacao-utilizada" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar conta principal utilizada
+      Verificar conta de autenticação utilizada
     </span>
   </a>
   
@@ -2052,9 +2052,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#verificar-conta-principal-utilizada" class="md-nav__link">
+  <a href="#verificar-conta-de-autenticacao-utilizada" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar conta principal utilizada
+      Verificar conta de autenticação utilizada
     </span>
   </a>
   
@@ -2141,12 +2141,18 @@
 <p><strong>Tabelas niveladas:</strong> são tabelas resultantes de muitos comandos de lista. Em vez dos recursos consultados que são exibidos em tabelas desenhadas em Unicode, os resultados são renderizados como uma lista simplificada de itens. Além disso, use a sinalização --format para definir seu próprio formato.</p>
 </li>
 </ul>
-<h3 id="verificar-conta-principal-utilizada">Verificar conta principal utilizada</h3>
-<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>info<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;value(config.account)&#39;</span>
+<h3 id="verificar-conta-de-autenticacao-utilizada">Verificar conta de autenticação utilizada</h3>
+<p><div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>info<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;value(config.account)&#39;</span>
 </code></pre></div>
+OU
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>auth<span class="w"> </span>list
+</code></pre></div></p>
 <h3 id="verificar-projeto-principal-utilizado">Verificar projeto principal utilizado</h3>
-<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>projects<span class="w"> </span>list<span class="w"> </span>--format<span class="o">=</span><span class="s2">&quot;value(projectId)&quot;</span>
+<p><div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>projects<span class="w"> </span>list<span class="w"> </span>--format<span class="o">=</span><span class="s2">&quot;value(projectId)&quot;</span>
 </code></pre></div>
+OU
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>config<span class="w"> </span>list<span class="w"> </span>project
+</code></pre></div></p>
 <h3 id="verificar-componentes-instalados">Verificar componentes instalados</h3>
 <div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>components<span class="w"> </span>list
 </code></pre></div>
