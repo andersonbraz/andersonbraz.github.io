@@ -2062,8 +2062,59 @@
 </code></pre></div>
 <h3 id="window">Window</h3>
 <p>Para explorarmos alguns cenários utilizando-se da função Window do PySpark temos que gerar uma amostra de dados e para isso utilizaremos a biblioteca Faker do Python. </p>
-<div class="highlight"><pre><span></span><code>
+<p><strong>Gerando uma amostra de dados Faker</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql.window</span> <span class="kn">import</span> <span class="n">Window</span>
+<span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+
+<span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">(</span><span class="s2">&quot;pt-BR&quot;</span><span class="p">)</span>
+
+<span class="n">disciplinas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Matemática&quot;</span><span class="p">,</span> <span class="s2">&quot;Português&quot;</span><span class="p">,</span> <span class="s2">&quot;Geografia&quot;</span><span class="p">,</span> <span class="s2">&quot;História&quot;</span><span class="p">,</span> <span class="s2">&quot;Física&quot;</span><span class="p">,</span> <span class="s2">&quot;Biologia&quot;</span><span class="p">]</span> 
+<span class="n">anos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2021</span><span class="p">,</span> <span class="mi">2022</span><span class="p">,</span> <span class="mi">2023</span><span class="p">,</span> <span class="mi">2024</span><span class="p">]</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">StructType</span><span class="p">([</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ID&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOME&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ANO&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">IntegerType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">FloatType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>
+        <span class="n">fake</span><span class="o">.</span><span class="n">md5</span><span class="p">(),</span>
+        <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">anos</span><span class="p">),</span>
+        <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">9.99</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">disciplinas</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="n">df_base</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
 </code></pre></div>
+<p>Retornar com a função <strong>Window</strong> a maiores notas por disciplina</p>
+<div class="highlight"><pre><span></span><code><span class="n">win_spec_max</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span>
+
+<span class="n">df_max_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_max</span><span class="p">))</span> \
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
+
+<span class="n">df_max_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p>Retornar com a função <strong>Window</strong> a menores notas por disciplina</p>
+<div class="highlight"><pre><span></span><code><span class="n">win_spec_min</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">asc</span><span class="p">())</span>
+
+<span class="n">df_min_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_min</span><span class="p">))</span> \
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
+
+<span class="n">df_min_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Observação:</strong> Disponibilizei <a href="">aqui</a></p>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <p>Ler arquivo csv e entregar dados em dataframe</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
