@@ -1234,6 +1234,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#window" class="md-nav__link">
     <span class="md-ellipsis">
       Window
@@ -2016,6 +2025,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#window" class="md-nav__link">
     <span class="md-ellipsis">
       Window
@@ -2059,6 +2077,17 @@
 <p>Evitando poluição no manespace global do seu projeto de código</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
 <span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+</code></pre></div>
+<h3 id="select">Select</h3>
+<p>Evite utilizar o withColumn quando necessário.</p>
+<p><strong>RUIM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>BOM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
+    <span class="o">...</span>
+<span class="p">)</span>
 </code></pre></div>
 <h3 id="window">Window</h3>
 <p>Para explorarmos alguns cenários utilizando-se da função Window do PySpark temos que gerar uma amostra de dados e para isso utilizaremos a biblioteca Faker do Python. </p>
