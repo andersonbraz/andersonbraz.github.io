@@ -1204,27 +1204,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-csv" class="md-nav__link">
+  <a href="#lendo-dados-de-um-arquivo-csv" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo CSV
+      Lendo dados de um arquivo CSV
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-excel" class="md-nav__link">
+  <a href="#lendo-dadoso-de-um-arquivo-excel" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo Excel
+      Lendo dadoso de um arquivo Excel
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-excel_1" class="md-nav__link">
+  <a href="#lendo-de-um-banco-mysql" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo Excel
+      Lendo de um Banco MySQL
     </span>
   </a>
   
@@ -2031,27 +2031,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-csv" class="md-nav__link">
+  <a href="#lendo-dados-de-um-arquivo-csv" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo CSV
+      Lendo dados de um arquivo CSV
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-excel" class="md-nav__link">
+  <a href="#lendo-dadoso-de-um-arquivo-excel" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo Excel
+      Lendo dadoso de um arquivo Excel
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lendo-arquivo-excel_1" class="md-nav__link">
+  <a href="#lendo-de-um-banco-mysql" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo arquivo Excel
+      Lendo de um Banco MySQL
     </span>
   </a>
   
@@ -2103,20 +2103,32 @@
 
 <h1 id="pandas">Pandas</h1>
 <h2 id="carregando-dados">Carregando Dados</h2>
-<h3 id="lendo-arquivo-csv">Lendo arquivo CSV</h3>
+<h3 id="lendo-dados-de-um-arquivo-csv">Lendo dados de um arquivo CSV</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="lendo-arquivo-excel">Lendo arquivo Excel</h3>
+<h3 id="lendo-dadoso-de-um-arquivo-excel">Lendo dadoso de um arquivo Excel</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="lendo-arquivo-excel_1">Lendo arquivo Excel</h3>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<h3 id="lendo-de-um-banco-mysql">Lendo de um Banco MySQL</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mysql.connector</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="n">database</span>
+<span class="p">)</span>
+
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SHOW TABLES&quot;</span>
+<span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <h3 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h3>
