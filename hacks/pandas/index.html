@@ -1194,11 +1194,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#carregando-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carregando Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo Excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-excel_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo Excel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funções Úteis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções Úteis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#manipulando-planilhas-do-excel" class="md-nav__link">
     <span class="md-ellipsis">
       Manipulando planilhas do Excel
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1964,11 +2021,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#carregando-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carregando Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo Excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-arquivo-excel_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo arquivo Excel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funções Úteis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções Úteis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#manipulando-planilhas-do-excel" class="md-nav__link">
     <span class="md-ellipsis">
       Manipulando planilhas do Excel
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1988,7 +2102,24 @@
 
 
 <h1 id="pandas">Pandas</h1>
-<h2 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h2>
+<h2 id="carregando-dados">Carregando Dados</h2>
+<h3 id="lendo-arquivo-csv">Lendo arquivo CSV</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="lendo-arquivo-excel">Lendo arquivo Excel</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="lendo-arquivo-excel_1">Lendo arquivo Excel</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="funcoes-uteis">Funções Úteis</h2>
+<h3 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h3>
 <p>A função abaixo compara dois arquivos excel afim de descobrir se a estrutura de colunas (schema) entre os dois arquivos é a mesma.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
