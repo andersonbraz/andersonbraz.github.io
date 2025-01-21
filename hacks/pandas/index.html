@@ -1194,13 +1194,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#carregando-dados" class="md-nav__link">
+  <a href="#carregando-dados-de-arquivos" class="md-nav__link">
     <span class="md-ellipsis">
-      Carregando Dados
+      Carregando Dados de Arquivos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Carregando Dados">
+    <nav class="md-nav" aria-label="Carregando Dados de Arquivos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1221,10 +1221,34 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#lendo-dados-de-um-banco-mysql" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#carregando-dados-de-bancos-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo dados de um Banco MySQL
+      Carregando Dados de Bancos de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados de Bancos de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do MySQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do Microsoft SQL Server
     </span>
   </a>
   
@@ -2021,13 +2045,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#carregando-dados" class="md-nav__link">
+  <a href="#carregando-dados-de-arquivos" class="md-nav__link">
     <span class="md-ellipsis">
-      Carregando Dados
+      Carregando Dados de Arquivos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Carregando Dados">
+    <nav class="md-nav" aria-label="Carregando Dados de Arquivos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2048,10 +2072,34 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#lendo-dados-de-um-banco-mysql" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#carregando-dados-de-bancos-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      Lendo dados de um Banco MySQL
+      Carregando Dados de Bancos de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados de Bancos de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do MySQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do Microsoft SQL Server
     </span>
   </a>
   
@@ -2102,7 +2150,7 @@
 
 
 <h1 id="pandas">Pandas</h1>
-<h2 id="carregando-dados">Carregando Dados</h2>
+<h2 id="carregando-dados-de-arquivos">Carregando Dados de Arquivos</h2>
 <h3 id="lendo-dados-de-um-arquivo-csv">Lendo dados de um arquivo CSV</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -2113,7 +2161,8 @@
 
 <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;file_name.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="lendo-dados-de-um-banco-mysql">Lendo dados de um Banco MySQL</h3>
+<h2 id="carregando-dados-de-bancos-de-dados">Carregando Dados de Bancos de Dados</h2>
+<h3 id="lendo-dados-do-mysql">Lendo dados do MySQL</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mysql.connector</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -2128,6 +2177,15 @@
 <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SHOW TABLES&quot;</span>
 <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
 <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="lendo-dados-do-microsoft-sql-server">Lendo dados do Microsoft SQL Server</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymssql</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">connection</span> <span class="o">=</span> <span class="n">pymssql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="n">database</span><span class="p">)</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM sua_tabela&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
 <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
