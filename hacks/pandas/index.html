@@ -1260,6 +1260,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#inspecoes-basicas-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspeções Básicas dos Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspeções Básicas dos Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mostra-primeiras-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra primeiras linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-ultimas-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra últimas linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-tipos-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra tipos dos dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-sumario-estatistico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra sumário estatistico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-indice-colunas-e-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra indice, colunas e dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -2111,6 +2171,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#inspecoes-basicas-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspeções Básicas dos Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspeções Básicas dos Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mostra-primeiras-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra primeiras linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-ultimas-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra últimas linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-tipos-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra tipos dos dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-sumario-estatistico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra sumário estatistico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-indice-colunas-e-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra indice, colunas e dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -2193,6 +2313,22 @@
 <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM table_name&quot;</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
 <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="inspecoes-basicas-dos-dados">Inspeções Básicas dos Dados</h2>
+<h3 id="mostra-primeiras-linhas">Mostra primeiras linhas</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="mostra-ultimas-linhas">Mostra últimas linhas</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="mostra-tipos-dos-dados">Mostra tipos dos dados</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="mostra-sumario-estatistico">Mostra sumário estatistico</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="mostra-indice-colunas-e-dados">Mostra indice, colunas e dados</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <h3 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h3>
