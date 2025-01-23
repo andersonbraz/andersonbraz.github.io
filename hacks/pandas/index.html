@@ -1320,6 +1320,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#limpeza-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limpeza de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limpeza de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifica-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifica valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preenche-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preenche valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renomeia-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renomeia colunas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove colunas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -2231,6 +2291,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#limpeza-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limpeza de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limpeza de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifica-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifica valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preenche-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preenche valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renomeia-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renomeia colunas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove colunas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#funcoes-uteis" class="md-nav__link">
     <span class="md-ellipsis">
       Funções Úteis
@@ -2329,6 +2449,22 @@
 </code></pre></div>
 <h3 id="mostra-indice-colunas-e-dados">Mostra indice, colunas e dados</h3>
 <div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="limpeza-de-dados">Limpeza de Dados</h2>
+<h3 id="verifica-valores-null">Verifica valores null</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="preenche-valores-null">Preenche valores null</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="remove-valores-null">Remove valores null</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="renomeia-colunas">Renomeia colunas</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;old_name&#39;</span><span class="p">:</span> <span class="s1">&#39;new_name&#39;</span><span class="p">})</span>
+</code></pre></div>
+<h3 id="remove-colunas">Remove colunas</h3>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;column_name&#39;</span><span class="p">])</span>
 </code></pre></div>
 <h2 id="funcoes-uteis">Funções Úteis</h2>
 <h3 id="manipulando-planilhas-do-excel">Manipulando planilhas do Excel</h3>
