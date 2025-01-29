@@ -2001,6 +2001,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <div class="highlight"><pre><span></span><code>git rm -r --cached .
 git add .
 git commit -m &quot;Drop files from .gitignore&quot;
+git push
 </code></pre></div>
 <p>Ou você também pode executar esse comando:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>ls-files<span class="w"> </span>-i<span class="w"> </span>-c<span class="w"> </span>--exclude-from<span class="o">=</span>.gitignore<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>git<span class="w"> </span>rm<span class="w"> </span>--cached
