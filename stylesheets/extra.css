@@ -1,10 +1,9 @@
 
-.img-circular {
+.avatar-circular {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #ccc;
     display: block;
     margin-left: auto;
     margin-right: auto;
