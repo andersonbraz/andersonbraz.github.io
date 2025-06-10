@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Introdução
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Meu nome é Anderson Braz de Sousa, mas pode me chamar de _Braz_, eu tenho um blog no [Hashnode](https://andersonbraz.com){target=_blank} onde gosto de compartilhar conhecimentos e experiências em tecnologia especialmente na minha área de trabalho, dados e inteligência artificial.
 
-## Commands
+Aqui é basicamente um repositório onde tento reunir notas de estudos e informações úteis sobre o ecossistema de dados afim de ajudar pessoas interessadas em estudos, produção, processamento e análise de dados.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Mas você não precisa de nada disso se souber elaborar bons prompts utilizando algum agente de escrita de código dirigido por uma IA.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Fique a vontade para me seguir nas redes e estreitar contato comigo.

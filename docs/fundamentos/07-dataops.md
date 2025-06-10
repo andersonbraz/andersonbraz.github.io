@@ -1,0 +1,3 @@
+# DataOps
+
+**DataOps** é uma metodologia automatizada e orientada a processos, usada por equipes analíticas e de dados, para melhorar a qualidade e reduzir o tempo de ciclo de análise de dados. Embora DataOps tenha começado como um conjunto de práticas recomendadas, agora amadureceu e se tornou uma abordagem nova e independente para análise de dados. DataOps se aplica a todo o ciclo de vida dos dados, desde a preparação até a geração de relatórios, e reconhece a natureza interconectada da equipe de análise de dados e das operações de tecnologia da informação.
