@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../pandas/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../python/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Amazing Things in Data</title>
+        <title>PySpark - Amazing Things in Data</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,14 +46,23 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -67,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyspark" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
@@ -99,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              PySpark
             
           </span>
         </div>
@@ -173,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
@@ -191,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -251,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/01-data-architect/" class="md-nav__link">
+      <a href="../../carreiras/01-data-architect/" class="md-nav__link">
         
   
   
@@ -274,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/02-data-engineer/" class="md-nav__link">
+      <a href="../../carreiras/02-data-engineer/" class="md-nav__link">
         
   
   
@@ -297,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/03-data-scientist/" class="md-nav__link">
+      <a href="../../carreiras/03-data-scientist/" class="md-nav__link">
         
   
   
@@ -320,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/04-data-analyst/" class="md-nav__link">
+      <a href="../../carreiras/04-data-analyst/" class="md-nav__link">
         
   
   
@@ -388,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/01-treinamentos/" class="md-nav__link">
+      <a href="../../estudos/01-treinamentos/" class="md-nav__link">
         
   
   
@@ -411,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/02-livros/" class="md-nav__link">
+      <a href="../../estudos/02-livros/" class="md-nav__link">
         
   
   
@@ -434,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/03-certificacoes/" class="md-nav__link">
+      <a href="../../estudos/03-certificacoes/" class="md-nav__link">
         
   
   
@@ -457,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/04-trilha-aprendizado/" class="md-nav__link">
+      <a href="../../estudos/04-trilha-aprendizado/" class="md-nav__link">
         
   
   
@@ -525,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/apache-airflow/" class="md-nav__link">
+      <a href="../../ferramentas/apache-airflow/" class="md-nav__link">
         
   
   
@@ -548,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/aws/" class="md-nav__link">
+      <a href="../../ferramentas/aws/" class="md-nav__link">
         
   
   
@@ -571,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/azure/" class="md-nav__link">
+      <a href="../../ferramentas/azure/" class="md-nav__link">
         
   
   
@@ -594,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/gcp/" class="md-nav__link">
+      <a href="../../ferramentas/gcp/" class="md-nav__link">
         
   
   
@@ -617,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/hadoop/" class="md-nav__link">
+      <a href="../../ferramentas/hadoop/" class="md-nav__link">
         
   
   
@@ -640,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/hive/" class="md-nav__link">
+      <a href="../../ferramentas/hive/" class="md-nav__link">
         
   
   
@@ -663,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/kafka/" class="md-nav__link">
+      <a href="../../ferramentas/kafka/" class="md-nav__link">
         
   
   
@@ -686,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/kubernetes/" class="md-nav__link">
+      <a href="../../ferramentas/kubernetes/" class="md-nav__link">
         
   
   
@@ -709,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/spark/" class="md-nav__link">
+      <a href="../../ferramentas/spark/" class="md-nav__link">
         
   
   
@@ -732,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/yarn/" class="md-nav__link">
+      <a href="../../ferramentas/yarn/" class="md-nav__link">
         
   
   
@@ -800,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/01-data-literacy/" class="md-nav__link">
+      <a href="../../fundamentos/01-data-literacy/" class="md-nav__link">
         
   
   
@@ -823,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/02-big-data/" class="md-nav__link">
+      <a href="../../fundamentos/02-big-data/" class="md-nav__link">
         
   
   
@@ -846,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/03-data-driven/" class="md-nav__link">
+      <a href="../../fundamentos/03-data-driven/" class="md-nav__link">
         
   
   
@@ -869,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/04-arquiteturas/" class="md-nav__link">
+      <a href="../../fundamentos/04-arquiteturas/" class="md-nav__link">
         
   
   
@@ -892,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/05-pipeline/" class="md-nav__link">
+      <a href="../../fundamentos/05-pipeline/" class="md-nav__link">
         
   
   
@@ -915,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/06-orquestrador/" class="md-nav__link">
+      <a href="../../fundamentos/06-orquestrador/" class="md-nav__link">
         
   
   
@@ -938,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/07-dataops/" class="md-nav__link">
+      <a href="../../fundamentos/07-dataops/" class="md-nav__link">
         
   
   
@@ -961,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/08-inteligencia-artificial/" class="md-nav__link">
+      <a href="../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
         
   
   
@@ -1029,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/glossario/vocabulary/" class="md-nav__link">
+      <a href="../../glossario/vocabulary/" class="md-nav__link">
         
   
   
@@ -1056,18 +1074,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1083,7 +1103,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Hacks
@@ -1097,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/apache-airflow/" class="md-nav__link">
+      <a href="../apache-airflow/" class="md-nav__link">
         
   
   
@@ -1120,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -1143,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/gcloud-cli/" class="md-nav__link">
+      <a href="../gcloud-cli/" class="md-nav__link">
         
   
   
@@ -1166,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -1189,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/jupyter-notebook/" class="md-nav__link">
+      <a href="../jupyter-notebook/" class="md-nav__link">
         
   
   
@@ -1212,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/pandas/" class="md-nav__link">
+      <a href="../pandas/" class="md-nav__link">
         
   
   
@@ -1232,10 +1252,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/hacks/pyspark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    PySpark
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1246,6 +1288,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funções Úteis
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1258,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         
   
   
@@ -1281,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/spark/" class="md-nav__link">
+      <a href="../spark/" class="md-nav__link">
         
   
   
@@ -1304,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/sql/" class="md-nav__link">
+      <a href="../sql/" class="md-nav__link">
         
   
   
@@ -1327,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/wsl/" class="md-nav__link">
+      <a href="../wsl/" class="md-nav__link">
         
   
   
@@ -1395,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/metodologias/01-metodologia-agil/" class="md-nav__link">
+      <a href="../../metodologias/01-metodologia-agil/" class="md-nav__link">
         
   
   
@@ -1418,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/metodologias/02-crisp-dm/" class="md-nav__link">
+      <a href="../../metodologias/02-crisp-dm/" class="md-nav__link">
         
   
   
@@ -1524,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/databricks/01-data-engineer/" class="md-nav__link">
+      <a href="../../trilhas/databricks/01-data-engineer/" class="md-nav__link">
         
   
   
@@ -1631,7 +1744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-01/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-01/" class="md-nav__link">
         
   
   
@@ -1654,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-02/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-02/" class="md-nav__link">
         
   
   
@@ -1677,7 +1790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-03/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-03/" class="md-nav__link">
         
   
   
@@ -1700,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-04/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-04/" class="md-nav__link">
         
   
   
@@ -1723,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-05/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-05/" class="md-nav__link">
         
   
   
@@ -1792,7 +1905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-02/modulo-01/" class="md-nav__link">
+      <a href="../../trilhas/google/step-02/modulo-01/" class="md-nav__link">
         
   
   
@@ -1869,7 +1982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/microsoft/01-data-engineer/" class="md-nav__link">
+      <a href="../../trilhas/microsoft/01-data-engineer/" class="md-nav__link">
         
   
   
@@ -1945,7 +2058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/01-download/" class="md-nav__link">
+      <a href="../../utilidade-publica/01-download/" class="md-nav__link">
         
   
   
@@ -1968,7 +2081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/02-online/" class="md-nav__link">
+      <a href="../../utilidade-publica/02-online/" class="md-nav__link">
         
   
   
@@ -1991,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/03-meus-favoritos/" class="md-nav__link">
+      <a href="../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
         
   
   
@@ -2031,6 +2144,67 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funções Úteis
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2042,8 +2216,190 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="pyspark">PySpark</h1>
+<h2 id="boas-praticas">Boas Práticas</h2>
+<h3 id="imports">Imports</h3>
+<p>Evite poluir o manespace global do seu projeto de código</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+</code></pre></div>
+<h3 id="select">Select</h3>
+<p>Evite usar o withColumnRenamed quando for possível.</p>
+<p><strong>RUIM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>BOM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
+    <span class="o">...</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Evite usar o withColumn quando for possível. Veja alguns exemplos de códigos bem interessantes.</p>
+<p><strong>RUIM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span>\
+    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;months&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">months_between</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;end_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;start_date&quot;</span><span class="p">))))</span>
+    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;days_between&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;open_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;close_date&quot;</span><span class="p">)))</span>
+    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">)))</span>
+</code></pre></div>
+<p><strong>BOM:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">F</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">months_between</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;end_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;start_date&quot;</span><span class="p">)))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;months&quot;</span><span class="p">),</span>
+    <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;open_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;close_date&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;days_between&quot;</span><span class="p">),</span>
+    <span class="n">F</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">))</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="window">Window</h3>
+<p>Para explorarmos alguns cenários utilizando-se da função Window do PySpark temos que gerar uma amostra de dados e para isso utilizaremos a biblioteca Faker do Python. </p>
+<p><strong>Gerando uma amostra de dados Faker</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql.window</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">faker</span><span class="w"> </span><span class="kn">import</span> <span class="n">Faker</span>
+
+<span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">(</span><span class="s2">&quot;pt-BR&quot;</span><span class="p">)</span>
+
+<span class="n">disciplinas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Matemática&quot;</span><span class="p">,</span> <span class="s2">&quot;Português&quot;</span><span class="p">,</span> <span class="s2">&quot;Geografia&quot;</span><span class="p">,</span> <span class="s2">&quot;História&quot;</span><span class="p">,</span> <span class="s2">&quot;Física&quot;</span><span class="p">,</span> <span class="s2">&quot;Biologia&quot;</span><span class="p">]</span> 
+<span class="n">anos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2021</span><span class="p">,</span> <span class="mi">2022</span><span class="p">,</span> <span class="mi">2023</span><span class="p">,</span> <span class="mi">2024</span><span class="p">]</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">StructType</span><span class="p">([</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ID&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOME&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ANO&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">IntegerType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">FloatType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>
+        <span class="n">fake</span><span class="o">.</span><span class="n">md5</span><span class="p">(),</span>
+        <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">anos</span><span class="p">),</span>
+        <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">9.99</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">disciplinas</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="n">df_base</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>Retornar com a função <strong>Window</strong> a maiores notas por disciplina</p>
+<div class="highlight"><pre><span></span><code><span class="n">win_spec_max</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span>
+
+<span class="n">df_max_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_max</span><span class="p">))</span> \
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
+
+<span class="n">df_max_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p>Retornar com a função <strong>Window</strong> a menores notas por disciplina</p>
+<div class="highlight"><pre><span></span><code><span class="n">win_spec_min</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">asc</span><span class="p">())</span>
+
+<span class="n">df_min_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_min</span><span class="p">))</span> \
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
+
+<span class="n">df_min_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Observação:</strong> Disponibilizei <a href="https://colab.research.google.com/drive/1_8AHPsZhM4aoTySOTcZiZqnTsSVMg7u_?usp=sharing" target="_blank">aqui</a></p>
+<h2 id="funcoes-uteis">Funções Úteis</h2>
+<p>Ler arquivo csv e entregar dados em dataframe</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;sep&quot;</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;decimal&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;header&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Ler arquivo json e entregar dados em dataframe</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;multiline&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Retirar colunas duplicadas de um DataFrame</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">drop_cols_duplicates</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="n">dup_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+    <span class="n">dup_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">dup_cols</span> <span class="k">if</span> <span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="o">*</span><span class="n">dup_cols</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Unir vários dataframes</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">reduce</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">union_all_dfs</span><span class="p">(</span><span class="o">*</span><span class="n">dfs</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span><span class="n">Dataframe</span><span class="o">.</span><span class="n">unionAll</span><span class="p">,</span> <span class="n">dfs</span><span class="p">)</span>
+</code></pre></div>
+<p>Converter títulos de colunas para maiusculos</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">uppercase_columns</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Converter títulos de colunas para letras minúsculas</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">lowercase_columns</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Verificar valores nulos</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">check_null_values</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
+
+    <span class="n">columns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">null_counts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">non_null_counts</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+        <span class="n">null_counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">isNull</span><span class="p">())</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+        <span class="n">non_null_counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">isNotNull</span><span class="p">())</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">columns</span><span class="p">,</span> <span class="n">null_counts</span><span class="p">,</span> <span class="n">non_null_counts</span><span class="p">)),</span>
+                        <span class="p">[</span><span class="s2">&quot;Coluna&quot;</span><span class="p">,</span> <span class="s2">&quot;Contagem de Nulos&quot;</span><span class="p">,</span> <span class="s2">&quot;Contagem de Não Nulos&quot;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div>
+<p>Adicionar/Somar meses a uma data</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_months_to_date</span><span class="p">(</span><span class="n">date_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">months</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">date</span><span class="p">:</span>
+
+    <span class="n">input_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">date_str</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">future_date</span> <span class="o">=</span> <span class="n">input_date</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="n">months</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">future_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Verificar registros duplicados a partir de colunas</p>
+<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;count &gt; 1&quot;</span><span class="p">)</span>
+<span class="n">df_output</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">truncate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2159,11 +2515,13 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

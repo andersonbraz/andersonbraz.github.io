@@ -1,0 +1,2907 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../modulo-03/">
+      
+      
+        <link rel="next" href="../modulo-05/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>4. Preparando e Usando Dados Para Anáilse - Amazing Things in Data</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4-preparando-e-usando-dados-para-anailse" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Amazing Things in Data
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Preparando e Usando Dados Para Anáilse
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
+
+    </a>
+    Amazing Things in Data
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Carreiras
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Carreiras
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../carreiras/01-data-architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../carreiras/02-data-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Engineer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../carreiras/03-data-scientist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Scientist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../carreiras/04-data-analyst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Analyst
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Estudos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../estudos/01-treinamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Treinamentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../estudos/02-livros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Livros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../estudos/03-certificacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Certificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../estudos/04-trilha-aprendizado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trilha de Aprendizado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ferramentas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/apache-airflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apache Airflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/azure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/gcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/hadoop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hadoop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/hive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/kafka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kafka
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/spark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ferramentas/yarn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Yarn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Fundamentos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/01-data-literacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Literácia de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/02-big-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Big Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/03-data-driven/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Driven
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/04-arquiteturas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquiteturas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/05-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pipeline de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/06-orquestrador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Orquestração de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/07-dataops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DataOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../fundamentos/08-inteligencia-artificial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inteligência Artificial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Glossario
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Glossario
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../glossario/vocabulary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Siglas e Terminologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hacks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Hacks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/apache-airflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apache Airflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/gcloud-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Google Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/jupyter-notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/pandas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pandas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/pyspark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PySpark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/spark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hacks/wsl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WSL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Metodologias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Metodologias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../metodologias/01-metodologia-agil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia Ágil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../metodologias/02-crisp-dm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CRISP-DM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Trilhas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Trilhas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Databricks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Databricks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../databricks/01-data-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engenheiro de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Google
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            Google
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_2_1" id="__nav_9_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Step 01
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Step 01
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Projetar Sistemas de Processamento de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Ingestão e Processamento de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Armazenamento de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4. Preparando e Usando Dados Para Anáilse
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Preparando e Usando Dados Para Anáilse
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 01
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 02
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 03
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 04
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 05
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulo-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Manutenção e Automação de Cargas de Trabalho
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2_2" id="__nav_9_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Step 02
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Step 02
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../step-02/modulo-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução a Engenharia de Dados no Google Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Microsoft
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            Microsoft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../microsoft/01-data-engineer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engenheiro de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Utilidade publica
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Utilidade publica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../utilidade-publica/01-download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Download
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../utilidade-publica/02-online/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Online
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meus Favoritos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 01
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 02
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 03
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 04
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 05
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 06
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema 10
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="4-preparando-e-usando-dados-para-anailse">4. Preparando e Usando Dados Para Anáilse</h1>
+<p>Aqui temos algumas da minhas anotações da trilha de formação de Engenheiro de Dados com a plataforma da Google Cloud referente ao quarto módulo.</p>
+<h2 id="problema-01">Problema 01</h2>
+<p>Tenho dados de análise armazenados no BigQuery. Preciso de uma maneira eficiente de calcular valores em um grupo de linhas e retornar um único resultado para cada linha. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para calcular valores em um grupo de linhas e retornar um único resultado para cada linha no BigQuery, você deve usar uma função de janela com uma cláusula OVER.</p>
+</blockquote>
+<ul>
+<li>
+<p>Funções de Window: As funções de janela permitem realizar cálculos em um conjunto de linhas relacionadas à linha atual, retornando um único resultado para cada linha. Essas funções são muito úteis para análise de dados, pois permitem calcular totais móveis, médias e outras métricas dentro de um grupo de linhas sem a necessidade de agrupar os dados.</p>
+</li>
+<li>
+<p>Cláusula OVER: A cláusula OVER define o conjunto de linhas (a "janela") sobre o qual a função de janela opera. Você pode usar a cláusula OVER para especificar como os dados serão particionados e ordenados para realizar os cálculos.</p>
+</li>
+<li>
+<p>Implementação:</p>
+</li>
+<li>
+<p>Escolha da Função: Selecione a função de janela apropriada para o cálculo que você deseja realizar. </p>
+<p>Exemplos incluem:</p>
+<ul>
+<li>SUM() para calcular a soma de valores em um grupo.</li>
+<li>AVG() para calcular a média de valores em um grupo.</li>
+<li>RANK() para atribuir uma classificação com base em uma ordenação.</li>
+<li>ROW_NUMBER() para atribuir números sequenciais a cada linha em um grupo.</li>
+</ul>
+</li>
+<li>
+<p>Definição da Janela: Use a cláusula OVER para definir a janela de cálculo. Você pode especificar:</p>
+<ul>
+<li>PARTITION BY: Para dividir os dados em grupos sobre os quais a função deve operar.</li>
+<li>ORDER BY: Para definir a ordem dos dados dentro de cada grupo.</li>
+<li>ROWS ou RANGE: Para definir um tamanho de janela específico para cada linha.</li>
+</ul>
+</li>
+<li>
+<p>Escrita da Consulta: Combine a função de janela com a cláusula OVER em sua consulta SQL para calcular os valores desejados.</p>
+<ul>
+<li>Exemplo:</li>
+<li>Neste exemplo, a função SUM() calcula a soma cumulativa de value para cada grupo de column1, ordenado por column2, e cada linha retornará um valor calculado.
+   Outras opções não são tão adequadas para esse cenário específico:</li>
+<li>Funções Agregadas: Funções agregadas (como SUM, AVG, COUNT) retornam um único resultado para todo o conjunto de dados ou para cada grupo definido pela cláusula GROUP BY, não um resultado para cada linha individual.</li>
+<li>UDFs (Funções Definidas pelo Usuário): UDFs podem ser usadas para cálculos complexos, mas para o cenário apresentado, as funções de janela com a cláusula OVER são mais eficientes, já que o BigQuery otimiza o uso de funções de janela.</li>
+<li>BigQuery ML: BigQuery ML é usado para criar e treinar modelos de machine learning, e não é adequado para cálculos em grupos de linhas.</li>
+<li>Visualizações Materializadas: Visualizações materializadas são usadas para otimizar consultas, armazenando resultados pré-calculados. Embora úteis, não abordam o problema de cálculos por linha em um grupo.
+   Em resumo, usar uma função de janela com uma cláusula OVER é a maneira mais eficiente de calcular valores em um grupo de linhas e retornar um único resultado para cada linha no BigQuery. Isso permite que você realize análises avançadas sem a necessidade de operações mais complexas ou agrupamento excessivo de seus dados.</li>
+</ul>
+</li>
+</ul>
+<h2 id="problema-02">Problema 02</h2>
+<p>Preciso otimizar o desempenho das consultas no BigQuery. Minhas tabelas não são particionadas ou agrupadas. Qual técnica de otimização devo usar?</p>
+<blockquote>
+<p>Resposta: Para otimizar o desempenho das consultas no BigQuery, quando suas tabelas não estão particionadas ou agrupadas, você pode usar a cláusula LIMIT para reduzir a leitura de dados.</p>
+</blockquote>
+<ul>
+<li>
+<p>Cláusula LIMIT: A cláusula LIMIT restringe o número de linhas retornadas por uma consulta. Ao usar LIMIT, o BigQuery não precisa processar ou ler todo o conjunto de dados, o que resulta em um desempenho de consulta mais rápido, especialmente para tabelas grandes.</p>
+</li>
+<li>
+<p>Como usar a cláusula LIMIT:</p>
+</li>
+<li>
+<p>Inclua a cláusula LIMIT no final de sua consulta SQL, especificando o número de linhas que você deseja retornar.</p>
+</li>
+<li>
+<p>Por exemplo, se você quiser apenas as primeiras 100 linhas de uma tabela, use SELECT * FROM your_table LIMIT 100.</p>
+</li>
+<li>
+<p>Casos de uso: A cláusula LIMIT é útil em diversos cenários:</p>
+</li>
+<li>
+<p>Testes e exploração: Quando você precisa visualizar uma amostra dos seus dados sem processar todo o conjunto de dados.</p>
+</li>
+<li>Consultas de amostra: Para obter uma visão geral dos seus dados ou para fins de depuração.</li>
+<li>
+<p>Subqueries: Para restringir o tamanho dos conjuntos de resultados intermediários, melhorando o desempenho da consulta.</p>
+</li>
+<li>
+<p>Outras técnicas de otimização: Embora a cláusula LIMIT possa melhorar o desempenho das consultas, especialmente quando as tabelas não são particionadas ou agrupadas, outras técnicas podem ser mais adequadas para a otimização a longo prazo, como particionamento e agrupamento:</p>
+</li>
+<li>
+<p>Particionamento: Dividir as tabelas em partições menores, com base em uma coluna, como data ou hora. Isso permite que o BigQuery processe apenas as partições relevantes para a consulta, reduzindo o tempo de processamento.</p>
+</li>
+<li>
+<p>Agrupamento: Organizar os dados em blocos, com base em uma ou mais colunas, para otimizar a leitura e o processamento.</p>
+</li>
+<li>
+<p>Próximos Passos:</p>
+</li>
+<li>
+<p>Análise das Consultas: Use a ferramenta de explicação do BigQuery para entender como suas consultas estão sendo processadas e identificar possíveis gargalos.</p>
+</li>
+<li>Implementação: Comece com a cláusula LIMIT para melhorar imediatamente o desempenho das consultas, e em seguida avalie o particionamento e agrupamento de suas tabelas.</li>
+</ul>
+<p>Em resumo, usar a cláusula LIMIT pode melhorar o desempenho das consultas, pois permite que o BigQuery não necessite processar ou ler todos os dados, o que é importante quando suas tabelas não são particionadas ou agrupadas. Para uma otimização mais eficaz e a longo prazo, considere também o particionamento e agrupamento das suas tabelas.</p>
+<h2 id="problema-03">Problema 03</h2>
+<p>Criei modelos de aprendizado de máquina (ML) com base em seus próprios dados. Na produção, os modelos de ML não estão dando resultados satisfatórios. Quando examino os dados, parece que os dados existentes não representam suficientemente as metas de negócios. Preciso criar um modelo de aprendizado de máquina mais preciso. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para criar um modelo de machine learning (ML) mais preciso quando os modelos atuais não estão entregando resultados satisfatórios na produção e os dados não parecem representar adequadamente as metas de negócios, você deve realizar a engenharia de atributos e usar o conhecimento do domínio para aprimorar os dados da coluna.</p>
+</blockquote>
+<ul>
+<li>
+<p>Engenharia de Atributos: A engenharia de atributos envolve a criação de novos atributos ou modificação dos existentes para melhorar o desempenho do modelo de ML. Isso pode incluir:</p>
+</li>
+<li>
+<p>Transformação de atributos existentes: Aplicar funções matemáticas ou lógicas para transformar os dados, como normalização, escala ou criação de dados categóricos a partir de dados numéricos.</p>
+</li>
+<li>Criação de novos atributos: Derivar atributos adicionais a partir de dados existentes usando conhecimento do domínio, como criar um atributo de "taxa de conversão" a partir dos atributos "número de visualizações" e "número de vendas".</li>
+<li>
+<p>Seleção de atributos: Escolher os atributos mais relevantes para o modelo, removendo aqueles que não contribuem para a precisão do modelo ou que introduzem ruído.</p>
+</li>
+<li>
+<p>Conhecimento do Domínio: É crucial usar o conhecimento do domínio para aprimorar os dados, pois isso pode ajudar a:</p>
+</li>
+<li>Identificar atributos relevantes: O conhecimento do domínio pode guiar na identificação de quais atributos são mais relevantes para o problema de negócio em questão, ajudando a criar atributos mais significativos.</li>
+<li>Criar atributos significativos: O conhecimento do domínio pode ser usado para criar atributos que melhor representem o problema, o que pode levar a um modelo mais preciso e relevante.</li>
+<li>Corrigir problemas de dados: O conhecimento do domínio pode ajudar a identificar problemas nos dados que podem estar impactando o desempenho do modelo, como dados incorretos, valores faltantes ou vieses.</li>
+</ul>
+<p>Como Implementar:</p>
+<ol>
+<li>Análise de Dados: Comece analisando seus dados e o desempenho do modelo atual. Identifique quaisquer problemas que possam estar afetando o desempenho.</li>
+<li>Conhecimento do Domínio: Use o conhecimento do domínio e suas metas de negócios para identificar atributos adicionais que podem ser úteis.</li>
+<li>Engenharia de Atributos: Aplique técnicas de engenharia de atributos para criar novos atributos ou modificar os existentes. Você pode fazer isso usando SQL com a cláusula TRANSFORM no BigQuery.</li>
+<li>Treinamento do Modelo: Treine um novo modelo usando os dados aprimorados.</li>
+<li>Avaliação do Modelo: Avalie o desempenho do novo modelo em dados de produção para confirmar se ele atende aos requisitos de precisão.</li>
+</ol>
+<p>Outras abordagens não são tão adequadas para esse cenário específico:</p>
+<ul>
+<li>
+<p>Treinar o modelo com mais dados do mesmo tipo: Se os dados existentes não representam as metas de negócio, adicionar mais dados do mesmo tipo não resolverá o problema subjacente.</p>
+</li>
+<li>
+<p>Realizar a regularização L2: A regularização L2 é uma técnica para evitar o sobreajuste (overfitting) do modelo e não resolverá o problema de dados que não representam o cenário de negócios adequadamente.</p>
+</li>
+<li>
+<p>Treinar o modelo com os mesmos dados, mas com mais épocas: Treinar o modelo com mais épocas (iterações de treinamento) não resolverá o problema se os dados de entrada forem inadequados.</p>
+</li>
+</ul>
+<p>Em resumo, realizar a engenharia de atributos com base no seu conhecimento do domínio é a abordagem mais adequada para criar modelos de machine learning mais precisos. Isso garante que seus modelos usem dados que representem melhor seus objetivos de negócios, melhorando assim o desempenho do seu modelo em produção.</p>
+<h2 id="problema-04">Problema 04</h2>
+<p>Tenho um conjunto complexo de dados que vem de várias fontes. Os analistas da minha equipe precisam analisar os dados, visualizá-los e publicar relatórios para as partes interessadas internas e externas. Preciso tornar as coisas mais fáceis para os analistas trabalharem com os dados, abstraindo as várias fontes de dados. Qual ferramenta é recomendada neste caso?</p>
+<blockquote>
+<p>Resposta: Para facilitar o trabalho dos analistas com um conjunto complexo de dados provenientes de diversas fontes, permitindo que analisem, visualizem e publiquem relatórios para partes interessadas internas e externas, a ferramenta recomendada é o Looker.</p>
+</blockquote>
+<ul>
+<li>
+<p>Looker: O Looker é uma plataforma de business intelligence (BI) e análise incorporada que abstrai diversas fontes de dados, permitindo que os analistas trabalhem com informações complexas de forma mais simples.
+Funcionalidades e Vantagens do Looker:</p>
+</li>
+<li>
+<p>Abstração de Fontes de Dados: O Looker permite conectar-se a várias fontes de dados diferentes e unificá-las em uma única plataforma. Isso simplifica o trabalho dos analistas, que não precisam se preocupar com a complexidade de diferentes formatos e sistemas de armazenamento.</p>
+</li>
+<li>
+<p>Modelagem de Dados: Com o Looker, você pode criar modelos de dados que representam o seu negócio. Esses modelos são definidos usando a linguagem LookML, que permite descrever as relações entre os dados e criar métricas reutilizáveis. Os modelos de dados oferecem uma camada de abstração sobre os dados subjacentes, o que facilita a análise e a geração de relatórios.</p>
+</li>
+<li>
+<p>Visualização e Relatórios: O Looker oferece diversas opções de visualização de dados, como gráficos, tabelas e dashboards, facilitando a análise e a interpretação das informações. Os analistas podem criar seus próprios relatórios e dashboards sem a necessidade de conhecimento técnico profundo em programação ou manipulação de dados.</p>
+</li>
+<li>
+<p>Publicação de Relatórios: O Looker permite compartilhar relatórios e dashboards com as partes interessadas, tanto internas quanto externas. Isso garante que todos tenham acesso às informações mais atualizadas e possam tomar decisões baseadas em dados.</p>
+</li>
+<li>
+<p>Flexibilidade: O Looker pode ser usado tanto para análises exploratórias quanto para a criação de relatórios mais estruturados e personalizados. Com isso, ele atende às necessidades de diferentes tipos de usuários e casos de uso.</p>
+</li>
+<li>
+<p>Colaboração: O Looker facilita a colaboração entre os analistas. Vários analistas podem trabalhar nos mesmos modelos e painéis e compartilhar suas descobertas.
+Comparação com outras opções:</p>
+</li>
+<li>
+<p>Looker Studio: Embora o Looker Studio também seja uma ferramenta de visualização de dados, ele não oferece a mesma capacidade de modelagem e abstração de dados que o Looker. O Looker Studio é mais adequado para análises rápidas e visuais, enquanto o Looker oferece uma solução mais robusta para análise e relatórios complexos.</p>
+</li>
+<li>
+<p>Páginas Conectadas: As páginas conectadas do Google Workspace são úteis para análise e colaboração, mas não oferecem a mesma capacidade de visualização e relatórios avançados que o Looker.</p>
+</li>
+<li>
+<p>Biblioteca D3.js: D3.js é uma biblioteca de visualização de dados muito poderosa, mas exige conhecimento técnico em programação para sua utilização. O Looker é uma solução mais amigável para analistas que não possuem habilidades de programação.
+Em resumo: O Looker é a ferramenta mais recomendada para o seu cenário por causa de suas capacidades de abstração, modelagem de dados, visualização e geração de relatórios, que são ideais para lidar com dados complexos de diversas fontes e atender às necessidades de seus analistas e partes interessadas.</p>
+</li>
+</ul>
+<h2 id="problema-05">Problema 05</h2>
+<p>Meus dados no BigQuery têm algumas colunas extremamente confidenciais. Preciso habilitar apenas alguns usuários para ver determinadas colunas. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: ara restringir o acesso a colunas extremamente confidenciais no BigQuery, permitindo que apenas alguns usuários específicos visualizem determinadas colunas, você deve usar tags de política.</p>
+</blockquote>
+<ul>
+<li>
+<p>Tags de Política: As tags de política permitem que você crie um controle de acesso granular no nível da coluna, atribuindo tags a colunas específicas e, em seguida, definindo permissões de acesso com base nessas tags. Essa abordagem garante que apenas os usuários com as permissões apropriadas possam visualizar dados confidenciais.</p>
+</li>
+<li>
+<p>Como Implementar:</p>
+</li>
+<li>
+<p>Criação de Tags: Crie tags de política que correspondam à classificação de segurança de dados nas colunas. Por exemplo, você pode criar uma tag para "Dados Pessoais" ou "Dados Financeiros".</p>
+</li>
+<li>Atribuição de Tags: Atribua as tags de política apropriadas a cada coluna no BigQuery.</li>
+<li>Configuração de Permissões: Defina permissões de acesso baseadas em tags, especificando quais usuários ou grupos têm permissão para acessar dados associados a cada tag.</li>
+<li>Monitoramento: Monitore e revise regularmente as tags de política e permissões para garantir que o controle de acesso esteja sendo aplicado corretamente e que as políticas de segurança sejam cumpridas.</li>
+</ul>
+<p>Comparação com outras opções:</p>
+<ul>
+<li>
+<p>Conjunto de dados separado ou tabela: Criar um conjunto de dados ou tabela separado para colunas confidenciais pode ajudar a restringir o acesso, mas não é tão eficiente e granular quanto as tags de política. Essa abordagem cria complexidade administrativa e não aproveita os mecanismos de controle de acesso do BigQuery.</p>
+</li>
+<li>
+<p>Permissões do Identity and Access Management (IAM): As permissões do IAM são úteis para conceder acesso a conjuntos de dados ou tabelas inteiras, mas não permitem o controle de acesso no nível da coluna, portanto, não atendem aos seus requisitos. As permissões do IAM são mais adequadas para controlar o acesso a recursos, não a elementos de dados específicos.</p>
+</li>
+<li>
+<p>Funções definidas pelo usuário (UDFs): Embora as UDFs possam ser usadas para mascarar dados, elas não são a solução recomendada para o controle de acesso no nível da coluna. As UDFs são mais apropriadas para transformação de dados e não para controlar quem pode visualizar os dados.</p>
+</li>
+</ul>
+<p>Em resumo: O uso de tags de política é a abordagem mais adequada para restringir o acesso a colunas confidenciais no BigQuery, pois oferece um controle granular e eficiente sobre quem pode visualizar dados específicos, cumprindo as políticas de segurança de dados. As outras abordagens não fornecem o mesmo nível de granularidade ou não são recomendadas para essa finalidade.</p>
+<h2 id="problema-06">Problema 06</h2>
+<p>Tenho dados no PostgreSQL que foram projetados para reduzir a redundância. Estou transferindo esses dados para o BigQuery para análise. Os dados de origem são hierárquicos e frequentemente consultados juntos. Preciso criar um esquema do BigQuery que tenha desempenho. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para criar um esquema eficiente no BigQuery, ao transferir dados hierárquicos do PostgreSQL, que foram projetados para reduzir a redundância e são frequentemente consultados em conjunto, você deve usar campos aninhados e repetidos.</p>
+</blockquote>
+<ul>
+<li>
+<p>Campos Aninhados e Repetidos: Em vez de manter os dados no formato normalizado do PostgreSQL, o BigQuery se beneficia de esquemas desnormalizados com campos aninhados e repetidos. Essa abordagem permite que dados hierárquicos sejam representados de maneira mais compacta e eficiente para consultas analíticas.
+Vantagens de usar campos aninhados e repetidos:</p>
+</li>
+<li>
+<p>Desempenho de Consultas: Ao desnormalizar os dados, você reduz a necessidade de junções complexas (joins) durante as consultas, melhorando significativamente o desempenho. As junções podem ser muito caras em termos de tempo de processamento e consumo de recursos, especialmente ao trabalhar com grandes volumes de dados.</p>
+</li>
+<li>
+<p>Compactação de Dados: Campos aninhados e repetidos podem armazenar informações hierárquicas de forma mais compacta do que tabelas separadas, reduzindo o uso de armazenamento e os custos associados.</p>
+</li>
+<li>
+<p>Facilidade de Uso: Analistas de dados podem trabalhar com dados relacionados de forma mais intuitiva, pois os dados hierárquicos estão agrupados em uma única estrutura.</p>
+</li>
+<li>
+<p>Melhoria na Eficiência: Ao minimizar a necessidade de junções, os campos aninhados e repetidos permitem que o BigQuery processe consultas mais rapidamente, já que o otimizador de consultas do BigQuery pode explorar essa estrutura para melhor desempenho.</p>
+</li>
+</ul>
+<p><strong>Como implementar:</strong></p>
+<ol>
+<li>Análise dos Dados: Analise a estrutura hierárquica dos seus dados no PostgreSQL e identifique quais tabelas e campos são frequentemente consultados em conjunto.</li>
+<li>Desnormalização: Em vez de manter a normalização, desnormalize seus dados criando campos aninhados e repetidos dentro de uma única tabela no BigQuery. Por exemplo, se você tem uma tabela de clientes e outra de pedidos, pode criar uma tabela de clientes no BigQuery com um campo repetido para os pedidos desse cliente.</li>
+<li>Definição do Esquema: Ao criar a tabela no BigQuery, defina os campos que correspondem às tabelas e colunas do PostgreSQL e use tipos de dados adequados, aninhando campos repetidos para representar a hierarquia.</li>
+<li>Migração dos Dados: Transfira os dados do PostgreSQL para o BigQuery, inserindo-os na nova estrutura desnormalizada.</li>
+</ol>
+<p><strong>Comparação com outras abordagens:</strong></p>
+<ul>
+<li>
+<p>Manter os dados sempre no formato normalizado: Manter os dados no formato normalizado do PostgreSQL no BigQuery pode levar a junções complexas (joins), o que pode reduzir o desempenho das consultas. Isso porque o BigQuery é mais eficiente quando os dados são desnormalizados e otimizados para análises.</p>
+</li>
+<li>
+<p>Copiar as tabelas primárias e usar consultas federadas para tabelas secundárias: Consultas federadas podem ser úteis, mas em geral não oferecem o mesmo desempenho que um esquema desnormalizado diretamente no BigQuery, além de adicionar complexidade ao sistema. As consultas federadas introduzem latência adicional, já que os dados precisam ser consultados em tempo real de outros sistemas.</p>
+</li>
+<li>
+<p>Copiar os dados normalizados em partições: Particionar tabelas é uma boa prática para melhorar o desempenho de consultas em grandes tabelas, mas não resolve o problema da necessidade de junções. As partições são otimizações para gerenciar dados no BigQuery, mas o problema é a necessidade de junções, não as partições.</p>
+</li>
+</ul>
+<p>Em resumo, para migrar dados hierárquicos do PostgreSQL para o BigQuery com melhor desempenho, você deve desnormalizar os dados e usar campos aninhados e repetidos. Essa abordagem reduz a necessidade de junções complexas (joins) e melhora o desempenho das consultas analíticas no BigQuery.</p>
+<h2 id="problema-07">Problema 07</h2>
+<p>Na organização onde trabalho usamos o Dataplex para criar lagos e zonas para seus dados de negócios. No entanto, alguns arquivos não estão sendo descobertos. Qual pode ser o problema?</p>
+<blockquote>
+<p>Resposta: O problema de alguns arquivos não serem descobertos no Dataplex, quando você já criou data lakes e zonas, pode ser devido a formatos de arquivo incompatíveis com o Dataplex. Especificamente, o Dataplex pode ter dificuldades em descobrir arquivos que não estejam nos formatos ORC ou Parquet.</p>
+</blockquote>
+<ul>
+<li>Formatos de Arquivo: O Dataplex pode não conseguir descobrir arquivos se eles não estiverem nos formatos ORC ou Parquet. Esses formatos são projetados para um melhor desempenho em consultas e são bem suportados pelo Dataplex.</li>
+</ul>
+<p><strong>Possíveis causas do problema:</strong></p>
+<ol>
+<li>
+<p>Formato de Arquivo Incorreto:</p>
+<ul>
+<li>Se os arquivos que não estão sendo descobertos estiverem em outros formatos (como CSV, JSON ou texto), o Dataplex pode não conseguir identificá-los e catalogá-los automaticamente.</li>
+</ul>
+</li>
+<li>
+<p>Padrão de Exclusão:</p>
+<ul>
+<li>Certifique-se de que não há nenhum padrão de exclusão que corresponda aos arquivos que você espera descobrir.</li>
+</ul>
+</li>
+<li>
+<p>Agendamento de Descoberta:</p>
+<ul>
+<li>Verifique se a descoberta de dados está agendada para ser executada na frequência correta.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Como Resolver o Problema:</strong></p>
+<ol>
+<li>Verificar os Formatos de Arquivo:</li>
+<li>
+<p>Certifique-se de que os arquivos estejam nos formatos ORC ou Parquet. Se não estiverem, converta-os para um desses formatos.</p>
+</li>
+<li>
+<p>Revisar Padrões de Exclusão:</p>
+</li>
+<li>
+<p>Verifique as configurações do Dataplex para garantir que não há padrões de exclusão que impeçam a descoberta dos arquivos desejados.</p>
+</li>
+<li>
+<p>Verificar Agendamento da Descoberta:</p>
+<ul>
+<li>Verifique se a descoberta de dados está agendada para ser executada na frequência correta. Uma configuração de descoberta por hora pode ser muito lenta para seus requisitos.</li>
+</ul>
+</li>
+<li>
+<p>Usar Tags do Data Catalog:</p>
+<ul>
+<li>Se você tem um grande volume de dados e analistas e líderes têm dificuldade de entender o significado de colunas ou quem é o proprietário dos dados, use as tags do Data Catalog para melhorar a capacidade de descoberta dos dados.</li>
+</ul>
+</li>
+<li>
+<p>Criar Tags para as Entradas de Dados no Cloud Catalog:</p>
+<ul>
+<li>Você pode criar tags para as entradas de dados no Cloud Catalog para facilitar a descoberta de dados.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Considerações Adicionais:</strong></p>
+<ul>
+<li>
+<p>Data Catalog: Use o Data Catalog para entender o significado dos seus dados e sua propriedade. O Data Catalog é um serviço para descoberta de dados. O Dataplex usa o Data Catalog para catalogar automaticamente metadados técnicos.</p>
+</li>
+<li>
+<p>Dataplex: O Dataplex possibilita a criação de um data mesh, permitindo a descoberta e o uso mais fácil dos dados. O Dataplex é um serviço de gerenciamento de dados inteligente.
+Em resumo, a razão mais provável para arquivos não serem descobertos no Dataplex é que eles podem não estar nos formatos ORC ou Parquet. É fundamental verificar os formatos de arquivo, padrões de exclusão e agendamento da descoberta para garantir que todos os dados sejam descobertos corretamente.</p>
+</li>
+</ul>
+<h2 id="problema-08">Problema 08</h2>
+<p>Executo repetidamente as mesmas consultas associando várias tabelas. As tabelas originais mudam cerca de dez vezes por dia. Desejo uma abordagem de consulta otimizada. Qual recurso você devo usar?</p>
+<blockquote>
+<p>Resposta: Para otimizar as consultas que você executa repetidamente, associando várias tabelas que mudam cerca de dez vezes por dia, você deve usar visualizações materializadas.</p>
+</blockquote>
+<ul>
+<li>
+<p>Visualizações Materializadas: Visualizações materializadas são tabelas pré-computadas que armazenam os resultados de uma consulta. Ao usar visualizações materializadas, o BigQuery pode ler os resultados pré-computados em vez de executar a consulta original repetidamente, o que melhora o desempenho e reduz os custos.
+Vantagens das Visualizações Materializadas:</p>
+</li>
+<li>
+<p>Otimização de Consultas: As visualizações materializadas otimizam as consultas, pré-calculando e armazenando os resultados das consultas. Isso é especialmente útil quando as mesmas consultas complexas são executadas repetidamente.</p>
+</li>
+<li>
+<p>Desempenho: Ao armazenar os dados já processados, as visualizações materializadas reduzem o tempo de processamento, pois o BigQuery não precisa acessar as tabelas de origem e executar junções e cálculos a cada consulta.</p>
+</li>
+<li>
+<p>Redução de Custos: Como a consulta é executada apenas quando a visualização materializada é criada ou atualizada, há uma redução nos custos de processamento, principalmente para consultas complexas que são executadas com frequência.</p>
+</li>
+<li>
+<p>Atualizações Automáticas: O BigQuery pode atualizar automaticamente as visualizações materializadas quando as tabelas de origem mudam, garantindo que os dados estejam sempre atualizados.</p>
+</li>
+</ul>
+<p><strong>Como Implementar:</strong></p>
+<ol>
+<li>Identifique as Consultas: Identifique as consultas que você executa repetidamente e que envolvem a junção de várias tabelas.</li>
+<li>
+<p>Crie a Visualização Materializada: Use a instrução CREATE MATERIALIZED VIEW no BigQuery para criar uma visualização materializada com base na consulta que você identificou.</p>
+</li>
+<li>
+<p>Agende Atualizações: Configure o BigQuery para atualizar automaticamente a visualização materializada quando as tabelas de origem forem alteradas. O BigQuery oferece a opção de atualização automática, o que é fundamental em cenários onde os dados mudam frequentemente.</p>
+</li>
+<li>
+<p>Consulte a Visualização Materializada: Em vez de executar a consulta original, direcione suas consultas à visualização materializada.
+Comparação com Outras Abordagens:</p>
+</li>
+<li>
+<p>Visualizações: As visualizações são úteis, mas não armazenam os resultados da consulta. As visualizações são essencialmente consultas salvas, que são executadas a cada vez que a visualização é acessada. Ao contrário das visualizações materializadas, as visualizações não oferecem a mesma vantagem de desempenho.</p>
+</li>
+<li>
+<p>Consultas Federadas: Consultas federadas são úteis para acessar dados em outras fontes de dados, mas não são apropriadas para otimizar consultas que acessam tabelas dentro do BigQuery. As consultas federadas também podem não oferecer o melhor desempenho para dados que são consultados com frequência, já que os dados precisam ser consultados em tempo real de outros sistemas.</p>
+</li>
+<li>
+<p>Partições: Particionar tabelas pode melhorar o desempenho de consultas que acessam grandes conjuntos de dados, mas não resolve o problema de consultas repetitivas que envolvem junções. As partições são uma otimização no armazenamento de dados, não no cálculo da consulta.</p>
+</li>
+</ol>
+<p>Em resumo, para otimizar consultas repetitivas que associam várias tabelas no BigQuery, você deve usar visualizações materializadas. As visualizações materializadas armazenam os resultados das consultas, reduzindo o tempo de processamento e os custos, além de garantirem que os dados estejam sempre atualizados com as mudanças nas tabelas de origem.</p>
+<h2 id="problema-09">Problema 09</h2>
+<p>Nossa organização coletou dados relevantes para o setor ao longo de muitos anos. Os dados processados são úteis para nossos parceiros e eles estão dispostos a pagar por seu uso. Preciso garantir o controle de acesso adequado sobre os dados. O que devo fazer?</p>
+<blockquote>
+<p>Resposta: Para garantir o controle de acesso adequado aos dados processados que você deseja compartilhar com seus parceiros, e pelos quais eles estão dispostos a pagar, você deve hospedar os dados no Analytics Hub.
+Analytics Hub</p>
+</blockquote>
+<ul>
+<li>
+<p>O Analytics Hub é uma plataforma que permite o compartilhamento seguro de dados. Ele oferece controle de acesso e permite que você compartilhe dados com parceiros de maneira segura e controlada..</p>
+</li>
+<li>
+<p>O Analytics Hub possibilita a troca e o compartilhamento de dados.</p>
+</li>
+<li>
+<p>Você pode usar o Analytics Hub para hospedar e compartilhar dados processados com parceiros, mantendo o controle de acesso.</p>
+</li>
+</ul>
+<p><strong>Como usar o Analytics Hub:</strong></p>
+<ol>
+<li>Hospede os dados: Carregue os dados que você deseja compartilhar no Analytics Hub.</li>
+<li>Defina permissões: Configure o controle de acesso para que apenas parceiros autorizados possam acessar os dados.</li>
+<li>Compartilhe com parceiros: Permita que seus parceiros acessem os dados de forma segura através do Analytics Hub.</li>
+<li>Monitore o acesso: Monitore o uso dos dados por seus parceiros para garantir o cumprimento das políticas de acesso.</li>
+</ol>
+<p><strong>Comparação com outras abordagens:</strong></p>
+<ul>
+<li>
+<p>Exportar para arquivos ZIP e compartilhar pelo Cloud Storage: Esta abordagem pode ser menos segura e difícil de controlar o acesso, principalmente se os dados forem compartilhados com muitos parceiros. Além disso, o compartilhamento via Cloud Storage não oferece a mesma capacidade de gerenciamento de acesso que o Analytics Hub.</p>
+</li>
+<li>
+<p>Exportar para discos permanentes e compartilhar por FTP: Essa abordagem é menos segura e mais complexa de gerenciar. Além disso, ela não oferece o mesmo nível de controle de acesso e monitoramento que o Analytics Hub.</p>
+</li>
+<li>
+<p>Hospedar os dados no Cloud SQL: O Cloud SQL é mais adequado para dados transacionais e não é a melhor opção para compartilhar dados com parceiros externos, pois é mais difícil de gerenciar o acesso e a segurança.
+Recursos Adicionais:</p>
+</li>
+<li>
+<p>O Analytics Hub é integrado ao BigQuery e pode facilitar o compartilhamento de dados.</p>
+</li>
+<li>
+<p>O Analytics Hub oferece recursos de compartilhamento de dados e troca de dados com segurança.
+Em resumo, hospedar os dados no Analytics Hub é a melhor abordagem para garantir o controle de acesso adequado sobre seus dados e compartilhá-los com seus parceiros de maneira segura e eficiente. O Analytics Hub oferece recursos específicos para compartilhamento seguro de dados, garantindo que você tenha controle sobre quem acessa seus dados e como eles são utilizados..</p>
+</li>
+</ul>
+<h2 id="problema-10">Problema 10</h2>
+<p>A organização onde trabalho usa o Google Workspace e sua equipe de liderança está familiarizada com os apps de negócios e as ferramentas de colaboração. Queremos no momento uma solução econômica que use o conhecimento existente para avaliar, analisar, filtrar e visualizar os dados armazenados no BigQuery. O que devo fazer para criar uma solução para a equipe de liderança?</p>
+<blockquote>
+<p>Resposta: Para criar uma solução econômica para a equipe de liderança da sua organização, que já está familiarizada com o Google Workspace, e que permita avaliar, analisar, filtrar e visualizar dados armazenados no BigQuery, você deve configurar o Looker Studio.</p>
+</blockquote>
+<p><strong>Looker Studio</strong></p>
+<ul>
+<li>
+<p>O Looker Studio é uma ferramenta de business intelligence (BI) que permite criar painéis e relatórios interativos com base em dados armazenados no BigQuery e em outras fontes.</p>
+</li>
+<li>
+<p>É uma solução econômica porque já está incluída no ecossistema do Google Workspace, o que significa que a equipe de liderança já tem familiaridade com a ferramenta e não há necessidade de adquirir soluções de terceiros.</p>
+</li>
+<li>
+<p>O Looker Studio permite que usuários sem conhecimento técnico criem visualizações de dados e compartilhem seus insights.
+Vantagens de usar o Looker Studio:</p>
+</li>
+<li>
+<p>Integração com o Google Workspace: O Looker Studio se integra perfeitamente com os aplicativos do Google Workspace, permitindo que a equipe de liderança use os dados do BigQuery em um ambiente que já conhecem.</p>
+</li>
+<li>
+<p>Facilidade de Uso: A interface intuitiva do Looker Studio permite que os usuários criem painéis e relatórios sem precisar de habilidades técnicas avançadas. Isso é especialmente útil para equipes de liderança que não são especialistas em análise de dados.</p>
+</li>
+<li>
+<p>Visualização de Dados: O Looker Studio oferece diversas opções de visualização, como gráficos de barras, linhas, pizza e tabelas, que facilitam a análise e a compreensão dos dados.</p>
+</li>
+<li>
+<p>Compartilhamento: Os painéis e relatórios criados no Looker Studio podem ser facilmente compartilhados com outras pessoas, permitindo que a equipe de liderança colabore e tome decisões baseadas em dados.</p>
+</li>
+<li>
+<p>Conexão com o BigQuery: O Looker Studio se conecta diretamente ao BigQuery, permitindo o acesso a dados em tempo real e garantindo que as análises sejam feitas com informações atualizadas.
+Comparação com outras abordagens:</p>
+</li>
+<li>
+<p>Looker: O Looker é uma ferramenta de BI mais completa e robusta do que o Looker Studio, adequada para empresas maiores e com necessidades mais complexas de análise de dados. O Looker é uma solução paga, o que o torna menos econômico para o caso de uso apresentado.</p>
+</li>
+<li>
+<p>Páginas Conectadas: As páginas conectadas do Google Sheets podem ser usadas para analisar dados do BigQuery, mas são menos adequadas para criar visualizações e painéis interativos.</p>
+</li>
+<li>
+<p>Tableau: O Tableau é uma ferramenta de BI popular, mas é mais cara do que o Looker Studio e pode não se integrar tão bem com o Google Workspace.</p>
+</li>
+</ul>
+<p><strong>Passos para implementar a solução:</strong></p>
+<ol>
+<li>Conecte o Looker Studio ao BigQuery: Configure uma conexão entre o Looker Studio e o BigQuery para acessar os dados.</li>
+<li>Crie os painéis e relatórios: Desenvolva painéis e relatórios que atendam às necessidades de análise e visualização da equipe de liderança.</li>
+<li>Compartilhe os painéis e relatórios: Compartilhe os painéis e relatórios com a equipe de liderança e forneça treinamento sobre como usá-los.</li>
+</ol>
+<p>Em resumo, para criar uma solução econômica e adequada para a equipe de liderança da sua organização, que já está familiarizada com o Google Workspace, configure o Looker Studio para que possam avaliar, analisar, filtrar e visualizar os dados do BigQuery de maneira eficiente e com pouca necessidade de treinamento. O Looker Studio oferece a integração, facilidade de uso e recursos de visualização e compartilhamento necessários para atender a essas necessidades.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Anderson Braz de Sousa
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/anderson-braz/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.github.com/andersonbraz" target="_blank" rel="noopener" title="www.github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://stackoverflow.com/users/7976603/anderson-braz" target="_blank" rel="noopener" title="stackoverflow.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M290.7 311 95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://andersonbraz.com" target="_blank" rel="noopener" title="andersonbraz.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M35.19 171.1c-46.91 46-46.91 122.9 0 169.8L171.1 476.8c46 46.9 122.9 46.9 169.8 0l135.9-135.9c46.9-46.9 46.9-123.8 0-169.8L340.9 35.19c-46.9-46.91-123.8-46.91-169.8 0zM315.5 315.5c-32.9 32.8-86.1 32.8-118.9 0-32.9-32.9-32.9-86.1 0-118.9 32.8-32.9 86-32.9 118.9 0 32.8 32.8 32.8 86 0 118.9"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://telegram.me/braz_anderson" target="_blank" rel="noopener" title="telegram.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716 43.8 43.8 0 0 1 .417 9.769"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:contato@andersonbraz.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.credly.com/users/andersonbraz" target="_blank" rel="noopener" title="www.credly.com" class="md-social__link">
+      <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+	<path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" fill="#1d9bf0"></path>
+</svg>
+
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../04-arquiteturas/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../06-orquestrador/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Amazing Things in Data</title>
+        <title>Pipeline de Dados - Amazing Things in Data</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,14 +46,23 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -67,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pipeline-de-dados" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../.." title="Amazing Things in Data" class="md-header__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
@@ -99,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Pipeline de Dados
             
           </span>
         </div>
@@ -173,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
+    <a href="../.." title="Amazing Things in Data" class="md-nav__button md-logo" aria-label="Amazing Things in Data" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.9 4.22C18.73 6.84 20 2 20 2s-1.11 6.07-6.21 8.55c-1.04.51-1.69.78-1.69.78L3.73 7.25l8.37-3.43s-.2-.06.8.4M11.12 22l-7.79-4.22V9.07l7.79 3.97zm1.76 0 7.8-4.22V9.07l-7.8 3.97z"/></svg>
@@ -191,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -251,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/01-data-architect/" class="md-nav__link">
+      <a href="../../carreiras/01-data-architect/" class="md-nav__link">
         
   
   
@@ -274,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/02-data-engineer/" class="md-nav__link">
+      <a href="../../carreiras/02-data-engineer/" class="md-nav__link">
         
   
   
@@ -297,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/03-data-scientist/" class="md-nav__link">
+      <a href="../../carreiras/03-data-scientist/" class="md-nav__link">
         
   
   
@@ -320,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/carreiras/04-data-analyst/" class="md-nav__link">
+      <a href="../../carreiras/04-data-analyst/" class="md-nav__link">
         
   
   
@@ -388,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/01-treinamentos/" class="md-nav__link">
+      <a href="../../estudos/01-treinamentos/" class="md-nav__link">
         
   
   
@@ -411,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/02-livros/" class="md-nav__link">
+      <a href="../../estudos/02-livros/" class="md-nav__link">
         
   
   
@@ -434,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/03-certificacoes/" class="md-nav__link">
+      <a href="../../estudos/03-certificacoes/" class="md-nav__link">
         
   
   
@@ -457,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/estudos/04-trilha-aprendizado/" class="md-nav__link">
+      <a href="../../estudos/04-trilha-aprendizado/" class="md-nav__link">
         
   
   
@@ -525,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/apache-airflow/" class="md-nav__link">
+      <a href="../../ferramentas/apache-airflow/" class="md-nav__link">
         
   
   
@@ -548,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/aws/" class="md-nav__link">
+      <a href="../../ferramentas/aws/" class="md-nav__link">
         
   
   
@@ -571,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/azure/" class="md-nav__link">
+      <a href="../../ferramentas/azure/" class="md-nav__link">
         
   
   
@@ -594,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/gcp/" class="md-nav__link">
+      <a href="../../ferramentas/gcp/" class="md-nav__link">
         
   
   
@@ -617,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/hadoop/" class="md-nav__link">
+      <a href="../../ferramentas/hadoop/" class="md-nav__link">
         
   
   
@@ -640,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/hive/" class="md-nav__link">
+      <a href="../../ferramentas/hive/" class="md-nav__link">
         
   
   
@@ -663,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/kafka/" class="md-nav__link">
+      <a href="../../ferramentas/kafka/" class="md-nav__link">
         
   
   
@@ -686,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/kubernetes/" class="md-nav__link">
+      <a href="../../ferramentas/kubernetes/" class="md-nav__link">
         
   
   
@@ -709,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/spark/" class="md-nav__link">
+      <a href="../../ferramentas/spark/" class="md-nav__link">
         
   
   
@@ -732,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ferramentas/yarn/" class="md-nav__link">
+      <a href="../../ferramentas/yarn/" class="md-nav__link">
         
   
   
@@ -759,18 +777,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -786,7 +806,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Fundamentos
@@ -800,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/01-data-literacy/" class="md-nav__link">
+      <a href="../01-data-literacy/" class="md-nav__link">
         
   
   
@@ -823,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/02-big-data/" class="md-nav__link">
+      <a href="../02-big-data/" class="md-nav__link">
         
   
   
@@ -846,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/03-data-driven/" class="md-nav__link">
+      <a href="../03-data-driven/" class="md-nav__link">
         
   
   
@@ -869,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/04-arquiteturas/" class="md-nav__link">
+      <a href="../04-arquiteturas/" class="md-nav__link">
         
   
   
@@ -889,10 +909,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/fundamentos/05-pipeline/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pipeline de Dados
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -903,6 +945,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-processamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Processamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Processamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processamento-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processamento Streaming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -915,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/06-orquestrador/" class="md-nav__link">
+      <a href="../06-orquestrador/" class="md-nav__link">
         
   
   
@@ -938,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/07-dataops/" class="md-nav__link">
+      <a href="../07-dataops/" class="md-nav__link">
         
   
   
@@ -961,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos/08-inteligencia-artificial/" class="md-nav__link">
+      <a href="../08-inteligencia-artificial/" class="md-nav__link">
         
   
   
@@ -1029,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/glossario/vocabulary/" class="md-nav__link">
+      <a href="../../glossario/vocabulary/" class="md-nav__link">
         
   
   
@@ -1097,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/apache-airflow/" class="md-nav__link">
+      <a href="../../hacks/apache-airflow/" class="md-nav__link">
         
   
   
@@ -1120,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/docker/" class="md-nav__link">
+      <a href="../../hacks/docker/" class="md-nav__link">
         
   
   
@@ -1143,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/gcloud-cli/" class="md-nav__link">
+      <a href="../../hacks/gcloud-cli/" class="md-nav__link">
         
   
   
@@ -1166,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/git/" class="md-nav__link">
+      <a href="../../hacks/git/" class="md-nav__link">
         
   
   
@@ -1189,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/jupyter-notebook/" class="md-nav__link">
+      <a href="../../hacks/jupyter-notebook/" class="md-nav__link">
         
   
   
@@ -1212,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/pandas/" class="md-nav__link">
+      <a href="../../hacks/pandas/" class="md-nav__link">
         
   
   
@@ -1235,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/pyspark/" class="md-nav__link">
+      <a href="../../hacks/pyspark/" class="md-nav__link">
         
   
   
@@ -1258,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/python/" class="md-nav__link">
+      <a href="../../hacks/python/" class="md-nav__link">
         
   
   
@@ -1281,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/spark/" class="md-nav__link">
+      <a href="../../hacks/spark/" class="md-nav__link">
         
   
   
@@ -1304,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/sql/" class="md-nav__link">
+      <a href="../../hacks/sql/" class="md-nav__link">
         
   
   
@@ -1327,7 +1413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hacks/wsl/" class="md-nav__link">
+      <a href="../../hacks/wsl/" class="md-nav__link">
         
   
   
@@ -1395,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/metodologias/01-metodologia-agil/" class="md-nav__link">
+      <a href="../../metodologias/01-metodologia-agil/" class="md-nav__link">
         
   
   
@@ -1418,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/metodologias/02-crisp-dm/" class="md-nav__link">
+      <a href="../../metodologias/02-crisp-dm/" class="md-nav__link">
         
   
   
@@ -1524,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/databricks/01-data-engineer/" class="md-nav__link">
+      <a href="../../trilhas/databricks/01-data-engineer/" class="md-nav__link">
         
   
   
@@ -1631,7 +1717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-01/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-01/" class="md-nav__link">
         
   
   
@@ -1654,7 +1740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-02/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-02/" class="md-nav__link">
         
   
   
@@ -1677,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-03/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-03/" class="md-nav__link">
         
   
   
@@ -1700,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-04/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-04/" class="md-nav__link">
         
   
   
@@ -1723,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-01/modulo-05/" class="md-nav__link">
+      <a href="../../trilhas/google/step-01/modulo-05/" class="md-nav__link">
         
   
   
@@ -1792,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/google/step-02/modulo-01/" class="md-nav__link">
+      <a href="../../trilhas/google/step-02/modulo-01/" class="md-nav__link">
         
   
   
@@ -1869,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/trilhas/microsoft/01-data-engineer/" class="md-nav__link">
+      <a href="../../trilhas/microsoft/01-data-engineer/" class="md-nav__link">
         
   
   
@@ -1945,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/01-download/" class="md-nav__link">
+      <a href="../../utilidade-publica/01-download/" class="md-nav__link">
         
   
   
@@ -1968,7 +2054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/02-online/" class="md-nav__link">
+      <a href="../../utilidade-publica/02-online/" class="md-nav__link">
         
   
   
@@ -1991,7 +2077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilidade-publica/03-meus-favoritos/" class="md-nav__link">
+      <a href="../../utilidade-publica/03-meus-favoritos/" class="md-nav__link">
         
   
   
@@ -2031,6 +2117,40 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-processamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Processamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Processamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processamento-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processamento Streaming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2042,8 +2162,29 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="pipeline-de-dados">Pipeline de Dados</h1>
+<p>É importante saber que a <strong>pipeline de dados é uma série de etapas de processamento para preparar dados de uma organização para análise</strong>.</p>
+<p>As organizações possuem um grande volume de dados de várias fontes, como aplicativos, dispositivos de Internet das Coisas (IoT) e outros canais digitais. No entanto, os dados brutos são inúteis; eles devem ser movidos, classificados, filtrados, reformatados e analisados para business intelligence. Um pipeline de dados inclui várias tecnologias para verificar, resumir e encontrar padrões nos dados para informar as decisões de negócios. Pipelines de dados bem organizados oferecem suporte a vários projetos de big data, como visualizações de dados, análises exploratórias de dados e tarefas de machine learning.</p>
+<h2 id="tipos-de-processamento">Tipos de Processamento</h2>
+<h3 id="processamento-streaming">Processamento Streaming</h3>
+<p>O <strong>streaming de dados</strong> é o processo de transmissão de um fluxo contínuo de dados (também conhecido como stream) que normalmente é enviado a um software de processamento de fluxo para gerar informações valiosas.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2159,11 +2300,13 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
