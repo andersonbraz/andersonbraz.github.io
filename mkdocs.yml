@@ -1,0 +1,61 @@
+site_name: Amazing Things in Data
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    logo: material/semantic-web
+  features:
+    - content.code.copy
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - glightbox
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/anderson-braz/
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/andersonbraz
+    - icon: fontawesome/brands/stack-overflow
+      link: "https://stackoverflow.com/users/7976603/anderson-braz"
+    - icon: fontawesome/brands/hashnode
+      link: https://andersonbraz.com
+    - icon: fontawesome/brands/telegram
+      link: https://telegram.me/braz_anderson
+    - icon: material/email
+      link: "mailto:contato@andersonbraz.com"
+    - icon: fontawesome/brands/verified
+      link: "https://www.credly.com/users/andersonbraz"
+
+
+copyright: Copyright &copy; 2025 Anderson Braz de Sousa
