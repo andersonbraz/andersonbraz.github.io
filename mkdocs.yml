@@ -1,4 +1,7 @@
 site_name: Amazing Things in Data
+site_url: https://andersonbraz.github.io
+site_description: A documentation about data, technology, and ai.
+site_author: Anderson Braz de Sousa
 
 extra_css:
  - stylesheets/extra.css
