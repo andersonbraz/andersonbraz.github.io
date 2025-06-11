@@ -4,7 +4,7 @@ site_description: A documentation about data, technology, and ai.
 site_author: Anderson Braz de Sousa
 
 extra_css:
- - stylesheets/extra.css
+ - assets/stylesheets/extra.css
 
 theme:
   name: material
