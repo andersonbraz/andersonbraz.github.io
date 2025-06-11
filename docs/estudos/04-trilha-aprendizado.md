@@ -38,7 +38,7 @@
 
 ## Agilidade
 
-- [Certificação Gratuita Registered Scrum Basic™](https://www.aprendascrum.com.br/){target=_blank}
+- [Certificação Profissional Scrum Foundation - SFPC™ (Gratuita)](https://certiprof.com/pt/products/scrum-foundation-professional-certificate-sfpc-portugues?variant=45056196116734){target=_blank}
 
 ## Projeto Final
 
