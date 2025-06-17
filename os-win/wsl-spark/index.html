@@ -12,9 +12,13 @@
         <meta name="author" content="Anderson Braz de Sousa">
       
       
-        <link rel="canonical" href="https://andersonbraz.github.io/fundamentos/04-arquiteturas/">
+        <link rel="canonical" href="https://andersonbraz.github.io/os-win/wsl-spark/">
       
       
+        <link rel="prev" href="../wsl/">
+      
+      
+        <link rel="next" href="../wsl-n8n/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Arquiteturas - Awesome Data Journey</title>
+        <title>Spark com WSL - Awesome Data Journey</title>
       
     
     
@@ -85,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arquiteturas" class="md-skip">
+        <a href="#spark-com-wsl" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arquiteturas
+              Spark com WSL
             
           </span>
         </div>
@@ -597,18 +601,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -624,7 +630,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Windows
@@ -638,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl/" class="md-nav__link">
+      <a href="../wsl/" class="md-nav__link">
         
   
   
@@ -658,10 +664,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-win/wsl-spark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Spark com WSL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -672,6 +700,197 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-distribuicoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar distribuições disponíveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-distribuicao-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar distribuição Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-alcance-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o alcance de redes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-os-pacotes-de-instalcao-do-linux-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar os pacotes de instalção do Linux Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-venv-para-o-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o VENV para o Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-ferramentas-necessarias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar ferramentas necessárias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-java-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar Java JDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descompactar-java-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar Java JDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incluir-variavel-de-ambiente-java_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incluir variável de ambiente JAVA_HOME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-spark-355" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar Spark 3.5.5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descompactar-spark-355" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar Spark 3.5.5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incluir-variavel-de-ambiente-spark_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incluir variável de ambiente SPARK_HOME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recarregar-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recarregar ambiente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-instalacao-java-e-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar instalação Java e Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizando-meu-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizando meu terminal
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -684,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl-n8n/" class="md-nav__link">
+      <a href="../wsl-n8n/" class="md-nav__link">
         
   
   
@@ -727,6 +946,185 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-distribuicoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar distribuições disponíveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-distribuicao-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar distribuição Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-alcance-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o alcance de redes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-os-pacotes-de-instalcao-do-linux-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar os pacotes de instalção do Linux Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-venv-para-o-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o VENV para o Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-ferramentas-necessarias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar ferramentas necessárias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-java-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar Java JDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descompactar-java-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar Java JDK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incluir-variavel-de-ambiente-java_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incluir variável de ambiente JAVA_HOME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-spark-355" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar Spark 3.5.5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descompactar-spark-355" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar Spark 3.5.5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incluir-variavel-de-ambiente-spark_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incluir variável de ambiente SPARK_HOME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recarregar-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recarregar ambiente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-instalacao-java-e-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar instalação Java e Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizando-meu-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizando meu terminal
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -741,7 +1139,91 @@
 
 
 
-<h1 id="arquiteturas">Arquiteturas</h1>
+<h1 id="spark-com-wsl">Spark com WSL</h1>
+<h2 id="verificar-distribuicoes-disponiveis">Verificar distribuições disponíveis</h2>
+<div class="highlight"><pre><span></span><code>wsl<span class="w"> </span>--list<span class="w"> </span>--online<span class="w"> </span>
+</code></pre></div>
+<h2 id="instalar-distribuicao-debian">Instalar distribuição Debian</h2>
+<div class="highlight"><pre><span></span><code>wsl<span class="w"> </span>--install<span class="w"> </span>-d<span class="w"> </span>Debian<span class="w"> </span>Debian-Spark
+</code></pre></div>
+<h2 id="habilitar-o-alcance-de-redes">Habilitar o alcance de redes</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rm<span class="w"> </span>/etc/resolv.conf
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf&#39;</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;[network]&quot; &gt; /etc/wsl.conf&#39;</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;generateResolvConf = false&quot; &gt;&gt; /etc/wsl.conf&#39;</span>
+sudo<span class="w"> </span>chattr<span class="w"> </span>+i<span class="w"> </span>/etc/resolv.conf
+</code></pre></div>
+<h2 id="atualizar-os-pacotes-de-instalcao-do-linux-debian">Atualizar os pacotes de instalção do Linux Debian</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>full-upgrade
+</code></pre></div>
+<h2 id="instalar-o-python-3">Instalar o Python 3</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python-is-python3<span class="w"> </span>
+</code></pre></div>
+<h2 id="verificar-a-instalacao-do-python-3">Verificar a instalação do Python 3</h2>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>--version
+</code></pre></div>
+<h2 id="instalar-o-pip">Instalar o PIP</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</code></pre></div>
+<h2 id="verificar-a-instalacao-do-pip">Verificar a instalação do PIP</h2>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>--version
+</code></pre></div>
+<h2 id="instalar-o-venv-para-o-python">Instalar o VENV para o Python</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.11-venv
+</code></pre></div>
+<h2 id="instalar-ferramentas-necessarias">Instalar ferramentas necessárias</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>wget<span class="w"> </span>curl<span class="w"> </span>git<span class="w"> </span>unzip
+</code></pre></div>
+<h2 id="baixar-java-jdk">Baixar Java JDK</h2>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/java/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/java/
+wget<span class="w"> </span>https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-x64_bin.tar.gz
+</code></pre></div>
+<h2 id="descompactar-java-jdk">Descompactar Java JDK</h2>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/java/
+tar<span class="w"> </span>-xvf<span class="w"> </span>openjdk-21.0.2_linux-x64_bin.tar.gz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-Rf<span class="w"> </span>openjdk-21.0.2_linux-x64_bin.tar.gz
+</code></pre></div>
+<h2 id="incluir-variavel-de-ambiente-java_home">Incluir variável de ambiente JAVA_HOME</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># JAVA</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>~/java/jdk-21.0.2
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$JAVA_HOME</span>/bin
+</code></pre></div>
+<h2 id="baixar-spark-355">Baixar Spark 3.5.5</h2>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/apache/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/apache/
+wget<span class="w"> </span>https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
+</code></pre></div>
+<h2 id="descompactar-spark-355">Descompactar Spark 3.5.5</h2>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/apache/
+tar<span class="w"> </span>-xvf<span class="w"> </span>spark-3.5.5-bin-hadoop3.tgz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>spark-3.5.5-bin-hadoop3.tgz
+mv<span class="w"> </span>spark-3.5.5-bin-hadoop3<span class="w"> </span>spark-3.5.5
+</code></pre></div>
+<h2 id="incluir-variavel-de-ambiente-spark_home">Incluir variável de ambiente SPARK_HOME</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># SPARK</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SPARK_HOME</span><span class="o">=</span>~/apache/spark-3.5.5
+<span class="nb">export</span><span class="w"> </span><span class="nv">SPARK_LOCAL_IP</span><span class="o">=</span><span class="m">127</span>.0.0.1
+<span class="nb">export</span><span class="w"> </span><span class="nv">HADOOP_HOME</span><span class="o">=</span><span class="nv">$SPARK_HOME</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$SPARK_HOME</span>/python
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$SPARK_HOME</span>/bin
+</code></pre></div>
+<h2 id="recarregar-ambiente">Recarregar ambiente</h2>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+<h2 id="verificar-instalacao-java-e-spark">Verificar instalação Java e Spark</h2>
+<div class="highlight"><pre><span></span><code>java<span class="w"> </span>--version<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pyspark<span class="w"> </span>--version
+</code></pre></div>
+<h2 id="customizando-meu-terminal">Customizando meu terminal</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># CUSTOM WSL PS1</span>
+
+<span class="nv">COMPUTER_NAME</span><span class="o">=</span><span class="s2">&quot;debian-spark&quot;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$color_prompt</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>yes<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="c1"># PS1=&#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;</span>
+<span class="w">    </span><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@$COMPUTER_NAME\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="c1"># PS1=&#39;${debian_chroot:+($debian_chroot)}\u@\h:\w\$ &#39;</span>
+<span class="w">    </span><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;${debian_chroot:+($debian_chroot)}\u@$COMPUTER_NAME:\w\$ &#39;</span>
+<span class="k">fi</span>
+</code></pre></div>
 
 
 

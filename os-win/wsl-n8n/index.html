@@ -12,8 +12,10 @@
         <meta name="author" content="Anderson Braz de Sousa">
       
       
-        <link rel="canonical" href="https://andersonbraz.github.io/fundamentos/04-arquiteturas/">
+        <link rel="canonical" href="https://andersonbraz.github.io/os-win/wsl-n8n/">
       
+      
+        <link rel="prev" href="../wsl-spark/">
       
       
       
@@ -22,7 +24,7 @@
     
     
       
-        <title>Arquiteturas - Awesome Data Journey</title>
+        <title>N8N com WSL - Awesome Data Journey</title>
       
     
     
@@ -85,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arquiteturas" class="md-skip">
+        <a href="#n8n-com-wsl" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arquiteturas
+              N8N com WSL
             
           </span>
         </div>
@@ -597,18 +599,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -624,7 +628,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Windows
@@ -638,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl/" class="md-nav__link">
+      <a href="../wsl/" class="md-nav__link">
         
   
   
@@ -661,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl-spark/" class="md-nav__link">
+      <a href="../wsl-spark/" class="md-nav__link">
         
   
   
@@ -681,10 +685,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-win/wsl-n8n/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    N8N com WSL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -695,6 +721,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-distribuicoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar distribuições disponíveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-distribuicao-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar distribuição Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-alcance-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o alcance de redes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-pacotes-instalados-no-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar pacotes instalados no sistema
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-do-n8n-no-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar do N8N no Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizando-meu-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizando meu terminal
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -727,6 +827,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-distribuicoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar distribuições disponíveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-distribuicao-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar distribuição Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-alcance-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o alcance de redes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-pacotes-instalados-no-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar pacotes instalados no sistema
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-do-n8n-no-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar do N8N no Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizando-meu-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizando meu terminal
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -741,7 +903,46 @@
 
 
 
-<h1 id="arquiteturas">Arquiteturas</h1>
+<h1 id="n8n-com-wsl">N8N com WSL</h1>
+<h2 id="verificar-distribuicoes-disponiveis">Verificar distribuições disponíveis</h2>
+<div class="highlight"><pre><span></span><code>wsl<span class="w"> </span>--list<span class="w"> </span>--online<span class="w"> </span>
+</code></pre></div>
+<h2 id="instalar-distribuicao-debian">Instalar distribuição Debian</h2>
+<div class="highlight"><pre><span></span><code>wsl<span class="w"> </span>--install<span class="w"> </span>-d<span class="w"> </span>Debian<span class="w"> </span>Debian-N8N
+</code></pre></div>
+<h2 id="habilitar-o-alcance-de-redes">Habilitar o alcance de redes</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rm<span class="w"> </span>/etc/resolv.conf
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf&#39;</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;[network]&quot; &gt; /etc/wsl.conf&#39;</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;generateResolvConf = false&quot; &gt;&gt; /etc/wsl.conf&#39;</span>
+sudo<span class="w"> </span>chattr<span class="w"> </span>+i<span class="w"> </span>/etc/resolv.conf
+</code></pre></div>
+<h2 id="atualizar-pacotes-instalados-no-sistema">Atualizar pacotes instalados no sistema</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>full-upgrade
+</code></pre></div>
+<h2 id="instalar-do-n8n-no-debian">Instalar do N8N no Debian</h2>
+<p>Pré-requisitos:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs<span class="w"> </span>npm
+sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>n8n
+</code></pre></div>
+<p>Teste local:</p>
+<div class="highlight"><pre><span></span><code>n8n
+</code></pre></div>
+<p>Ele inicia em <a href="http://localhost:5678">http://localhost:5678</a></p>
+<h2 id="customizando-meu-terminal">Customizando meu terminal</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># CUSTOM WSL PS1</span>
+
+<span class="nv">COMPUTER_NAME</span><span class="o">=</span><span class="s2">&quot;debian-n8n&quot;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$color_prompt</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>yes<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="c1"># PS1=&#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;</span>
+<span class="w">    </span><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@$COMPUTER_NAME\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &#39;</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="c1"># PS1=&#39;${debian_chroot:+($debian_chroot)}\u@\h:\w\$ &#39;</span>
+<span class="w">    </span><span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;${debian_chroot:+($debian_chroot)}\u@$COMPUTER_NAME:\w\$ &#39;</span>
+<span class="k">fi</span>
+</code></pre></div>
 
 
 
