@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://andersonbraz.github.io/hacks/pandas/">
       
       
+        <link rel="prev" href="../python/">
+      
+      
+        <link rel="next" href="../../os-win/wsl/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -597,6 +601,351 @@
       
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hacks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Hacks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pandas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pandas
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#carregando-dados-de-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carregando Dados de Arquivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados de Arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-de-um-arquivo-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados de um arquivo CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-de-um-arquivo-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados de um arquivo Excel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#carregando-dados-de-bancos-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carregando Dados de Bancos de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carregando Dados de Bancos de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do MySQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lendo-dados-do-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lendo dados do Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspecoes-basicas-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspeções Básicas dos Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspeções Básicas dos Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mostra-primeiras-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra primeiras linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-ultimas-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra últimas linhas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-tipos-dos-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra tipos dos dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-sumario-estatistico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra sumário estatistico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostra-indice-colunas-e-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mostra indice, colunas e dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limpeza-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limpeza de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limpeza de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifica-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifica valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifica-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifica valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-valores-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove valores null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renomeia-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renomeia colunas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove colunas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-uteis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funções Úteis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções Úteis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manipulando-planilhas-do-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulando planilhas do Excel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -608,10 +957,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -624,8 +973,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Windows
           </label>
@@ -690,6 +1039,120 @@
   
   <span class="md-ellipsis">
     N8N com WSL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Utilidade Pública
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Utilidade Pública
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilidade-publica/download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Download
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilidade-publica/online/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Online
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilidade-publica/meus-favoritos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meus Favoritos
     
   </span>
   
