@@ -1,4 +1,4 @@
-# Data Scientist
+# Cientista de Dados
 
 ## O que é um Data Scientist?
 

@@ -1,4 +1,6 @@
-# Metodologia Ágil
+# Agile
+
+**Agile**, ou **metodologia ágil**, é um conjunto de abordagens para gestão e desenvolvimento de projetos que prioriza a flexibilidade, a colaboração e a entrega contínua de valor. Em vez de seguir um plano rígido e linear, como nas metodologias tradicionais, o Agile propõe ciclos curtos de trabalho (sprints), revisões frequentes e adaptação constante às mudanças. O foco está em responder rapidamente às necessidades do cliente, promover a comunicação entre as pessoas envolvidas e entregar resultados incrementais, permitindo ajustes ao longo do processo. Essa abordagem é amplamente utilizada em projetos de software, mas seus princípios podem ser aplicados em diversas áreas para tornar equipes e organizações mais adaptáveis e eficientes.
 
 ## Agilidade nos Dados
 

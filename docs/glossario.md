@@ -1,6 +1,6 @@
 # Siglas e Terminologias
 
-Aqui temos um pequeno glossário de termos e siglas presentes no dia a dia de um profissional de dados.
+Aqui temos um pequeno glossário de termos e siglas, muito importantes de saber, que estão presentes no dia a dia de um profissional de dados.
 
 ## ACID
 

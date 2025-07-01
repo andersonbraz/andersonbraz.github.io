@@ -1,4 +1,4 @@
-# Data Analyst
+# Analista de Dados
 
 ## O que é um Data Analyst?
 

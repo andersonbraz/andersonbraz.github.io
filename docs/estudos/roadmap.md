@@ -1,4 +1,75 @@
-# Trilha de Aprendizado
+# Roadmap 2025
+
+!!! tip "Fundamentos"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    | Header 1   |
+    |------------|
+    | Value 1    |
+    | Value 1    |
+    | Value 1    |
+    | Value 1    |
+
+
+
+!!! tip "Programação"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    !!! note "Python"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+        massa, nec semper lorem quam in massa.
+
+    !!! note "Shell Script"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+        massa, nec semper lorem quam in massa.
+
+    !!! note "Git e Github"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+        massa, nec semper lorem quam in massa.
+
+    !!! note "Redes"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+        massa, nec semper lorem quam in massa.
+
+
+
+👩‍💻 Programação
+🧪 Testes
+📊 Fundamentos de Banco de Dados
+🏠 Data warehouses
+📦 Object storage
+⚡ Data processing
+📩 Messaging
+💽 Computação Distribuída
+⏲ Orquestração
+📺 Observabilidade
+👨‍💻 Infraestrutura como Códico
+🛫 CI/CD
+
+| Header 1   | Header 2   | Header 3   |
+|------------|------------|------------|
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| <td colspan="2" align="center">Merged Cell</td> | Row 2 Col 3 |
+| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |
+
+
+
+
+
 
 ## Engenharia de Dados
 

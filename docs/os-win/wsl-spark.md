@@ -1,0 +1,142 @@
+# Spark com WSL
+
+## Verificar distribuições disponíveis
+
+```shell
+wsl --list --online 
+```
+
+## Instalar distribuição Debian
+
+```shell
+wsl --install -d Debian Debian-Spark
+```
+
+## Habilitar o alcance de redes
+
+```shell
+sudo rm /etc/resolv.conf
+sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+sudo bash -c 'echo "[network]" > /etc/wsl.conf'
+sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
+sudo chattr +i /etc/resolv.conf
+```
+
+## Atualizar os pacotes de instalção do Linux Debian
+
+```shell
+sudo apt update && sudo apt full-upgrade
+```
+
+## Instalar o Python 3
+
+```shell
+sudo apt-get install python-is-python3 
+```
+
+## Verificar a instalação do Python 3
+
+```shell
+python --version
+```
+
+## Instalar o PIP
+
+```shell
+sudo apt install python3-pip
+python -m pip install --upgrade pip
+```
+
+## Verificar a instalação do PIP
+
+```shell
+pip --version
+```
+
+## Instalar o VENV para o Python
+ 
+```shell
+sudo apt install python3.11-venv
+```
+
+## Instalar ferramentas necessárias
+
+```shell
+sudo apt install wget curl git unzip
+```
+
+## Baixar Java JDK 
+
+```shell
+mkdir ~/java/ && cd ~/java/
+wget https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-x64_bin.tar.gz
+```
+
+## Descompactar Java JDK 
+
+```shell
+cd ~/java/
+tar -xvf openjdk-21.0.2_linux-x64_bin.tar.gz && rm -Rf openjdk-21.0.2_linux-x64_bin.tar.gz
+```
+
+## Incluir variável de ambiente JAVA_HOME
+
+```shell
+# JAVA
+export JAVA_HOME=~/java/jdk-21.0.2
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+## Baixar Spark 3.5.5
+
+```shell
+mkdir ~/apache/ && cd ~/apache/
+wget https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
+```
+
+## Descompactar Spark 3.5.5
+
+```shell
+cd ~/apache/
+tar -xvf spark-3.5.5-bin-hadoop3.tgz && rm spark-3.5.5-bin-hadoop3.tgz
+mv spark-3.5.5-bin-hadoop3 spark-3.5.5
+```
+
+## Incluir variável de ambiente SPARK_HOME
+
+```shell
+# SPARK
+export SPARK_HOME=~/apache/spark-3.5.5
+export SPARK_LOCAL_IP=127.0.0.1
+export HADOOP_HOME=$SPARK_HOME
+export PYTHONPATH=$SPARK_HOME/python
+export PATH=$PATH:$SPARK_HOME/bin
+```
+
+## Recarregar ambiente
+
+```shell
+source ~/.bashrc
+```
+
+## Verificar instalação Java e Spark
+
+```shell
+java --version && pyspark --version
+```
+
+## Customizando meu terminal
+
+```shell
+# CUSTOM WSL PS1
+
+COMPUTER_NAME="debian-spark"
+
+if [ "$color_prompt" = yes ]; then
+    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@$COMPUTER_NAME\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@$COMPUTER_NAME:\w\$ '
+fi
+```

@@ -1,4 +1,4 @@
-# Data Architect
+# Arquiteto de Dados
 
 ## O que é um Data Architect?
 

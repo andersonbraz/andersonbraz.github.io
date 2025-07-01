@@ -1,7 +1,9 @@
-site_name: Amazing Things in Data
+site_name: Awesome Data Journey
+site_author: Anderson Braz de Sousa
+site_version: 1.0.0
+site_repo: github.com/andersonbraz/andersonbraz.github.io
 site_url: https://andersonbraz.github.io
 site_description: A documentation about data, technology, and ai.
-site_author: Anderson Braz de Sousa
 
 extra_css:
  - assets/stylesheets/extra.css
@@ -61,5 +63,35 @@ extra:
       link: "mailto:contato@andersonbraz.com"
     - icon: fontawesome/brands/verified
       link: "https://www.credly.com/users/andersonbraz"
+
+nav:
+  - Sobre: index.md
+  - Carreiras:
+      - Arquiteto de Dados: carreiras/arquiteto-de-dados.md
+      - Engenheiro de Dados: carreiras/engenheiro-de-dados.md
+      - Cientista de Dados: carreiras/cientista-de-dados.md
+      - Analista de Dados: carreiras/analista-de-dados.md
+  - Estudos:
+      - Treinamentos: estudos/treinamentos.md
+      - Livros: estudos/livros.md
+      - Certificações: estudos/certificacoes.md
+      - Roadmap 2025: estudos/roadmap.md
+  - Metodologias:
+      - Agile: metodologias/agile.md
+      - CRISP-DM: metodologias/crisp-dm.md
+  - Hacks:
+      - Git: hacks/git.md
+      - Python: hacks/python.md
+      - Pandas: hacks/pandas.md
+  - Windows:
+      - WSL: os-win/wsl.md
+      - Spark com WSL: os-win/wsl-spark.md
+      - N8N com WSL: os-win/wsl-n8n.md
+  - Utilidade Pública:
+      - Download: utilidade-publica/download.md
+      - Online: utilidade-publica/online.md
+      - Meus Favoritos: utilidade-publica/meus-favoritos.md
+  - Glossário: glossario.md
+
 
 copyright: Copyright &copy; 2025 Anderson Braz de Sousa
