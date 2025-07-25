@@ -12,9 +12,13 @@
         <meta name="author" content="Anderson Braz de Sousa">
       
       
-        <link rel="canonical" href="https://andersonbraz.github.io/hacks/pyspark/">
+        <link rel="canonical" href="https://andersonbraz.github.io/os-linux/cockpit/">
       
       
+        <link rel="prev" href="../../os-win/wsl-n8n/">
+      
+      
+        <link rel="next" href="../../utilidade-publica/download/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>PySpark - Awesome Data Journey</title>
+        <title>Cockpit - Awesome Data Journey</title>
       
     
     
@@ -85,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyspark" class="md-skip">
+        <a href="#cockpit" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PySpark
+              Cockpit
             
           </span>
         </div>
@@ -638,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../hacks/git/" class="md-nav__link">
         
   
   
@@ -661,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../hacks/python/" class="md-nav__link">
         
   
   
@@ -684,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas/" class="md-nav__link">
+      <a href="../../hacks/pandas/" class="md-nav__link">
         
   
   
@@ -825,18 +829,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -852,7 +858,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Linux
@@ -863,10 +869,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-linux/cockpit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cockpit
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -877,6 +905,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passo-a-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passo a Passo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passo a Passo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-pacotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar Pacotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalar-cockpit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar Cockpit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iniciar-e-habilitar-o-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciar e Habilitar o Serviço
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificar-o-status-do-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar o Status do Serviço
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liberar-e-habilitar-porta-9090-no-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liberar e Habilitar Porta 9090 no Firewall
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTA: Importante
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NOTA: Importante">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ativar-o-systemd-no-wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ativar o systemd no WSL2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reiniciar-o-wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reiniciar o WSL2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciar-servico-do-cockpit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciar Serviço do Cockpit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-inicializacao-automatica-do-cockpit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar Inicialização Automática do Cockpit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1052,37 +1211,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#boas-praticas" class="md-nav__link">
+  <a href="#passo-a-passo" class="md-nav__link">
     <span class="md-ellipsis">
-      Boas Práticas
+      Passo a Passo
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Boas Práticas">
+    <nav class="md-nav" aria-label="Passo a Passo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#imports" class="md-nav__link">
+  <a href="#atualizar-pacotes" class="md-nav__link">
     <span class="md-ellipsis">
-      Imports
+      Atualizar Pacotes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#select" class="md-nav__link">
+  <a href="#instalar-cockpit" class="md-nav__link">
     <span class="md-ellipsis">
-      Select
+      Instalar Cockpit
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#window" class="md-nav__link">
+  <a href="#iniciar-e-habilitar-o-servico" class="md-nav__link">
     <span class="md-ellipsis">
-      Window
+      Iniciar e Habilitar o Serviço
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificar-o-status-do-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar o Status do Serviço
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liberar-e-habilitar-porta-9090-no-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liberar e Habilitar Porta 9090 no Firewall
     </span>
   </a>
   
@@ -1094,9 +1271,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcoes-uteis" class="md-nav__link">
+  <a href="#nota-importante" class="md-nav__link">
     <span class="md-ellipsis">
-      Funções Úteis
+      NOTA: Importante
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NOTA: Importante">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ativar-o-systemd-no-wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ativar o systemd no WSL2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reiniciar-o-wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reiniciar o WSL2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciar-servico-do-cockpit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciar Serviço do Cockpit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-inicializacao-automatica-do-cockpit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar Inicialização Automática do Cockpit
     </span>
   </a>
   
@@ -1118,172 +1337,43 @@
 
 
 
-<h1 id="pyspark">PySpark</h1>
-<h2 id="boas-praticas">Boas Práticas</h2>
-<h3 id="imports">Imports</h3>
-<p>Evite poluir o manespace global do seu projeto de código</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
+<h1 id="cockpit">Cockpit</h1>
+<p>O <a href="https://cockpit-project.org/" target="_blank">Cockpit</a> é uma ferramenta de administração Linux baseada na web que simplifica o gerenciamento de servidores com uma interface amigável. Ele permite gerenciar vários servidores Linux a partir de um único painel, tornando-o ideal para operações cotidianas. Abaixo, você encontrará um guia para instalar e usar o Cockpit no Debian.</p>
+<h2 id="passo-a-passo">Passo a Passo</h2>
+<h3 id="atualizar-pacotes">Atualizar Pacotes</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div>
-<h3 id="select">Select</h3>
-<p>Evite usar o withColumnRenamed quando for possível.</p>
-<p><strong>RUIM:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
+<h3 id="instalar-cockpit">Instalar Cockpit</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cockpit<span class="w"> </span>-y
 </code></pre></div>
-<p><strong>BOM:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
-    <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;fullname&quot;</span><span class="p">)</span>
-    <span class="o">...</span>
-<span class="p">)</span>
+<h3 id="iniciar-e-habilitar-o-servico">Iniciar e Habilitar o Serviço</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>--now<span class="w"> </span>cockpit
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>cockpit.socket
 </code></pre></div>
-<p>Evite usar o withColumn quando for possível. Veja alguns exemplos de códigos bem interessantes.</p>
-<p><strong>RUIM:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span>\
-    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;months&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">months_between</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;end_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;start_date&quot;</span><span class="p">))))</span>
-    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;days_between&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;open_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;close_date&quot;</span><span class="p">)))</span>
-    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">)))</span>
+<h3 id="verificar-o-status-do-servico">Verificar o Status do Serviço</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>cockpit
 </code></pre></div>
-<p><strong>BOM:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
-    <span class="n">F</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">months_between</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;end_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;start_date&quot;</span><span class="p">)))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;months&quot;</span><span class="p">),</span>
-    <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;open_date&quot;</span><span class="p">),</span> <span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;close_date&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;days_between&quot;</span><span class="p">),</span>
-    <span class="n">F</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;company&quot;</span><span class="p">))</span>
-<span class="p">)</span>
+<h3 id="liberar-e-habilitar-porta-9090-no-firewall">Liberar e Habilitar Porta 9090 no Firewall</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">9090</span>/tcp
+sudo<span class="w"> </span>ufw<span class="w"> </span><span class="nb">enable</span>
 </code></pre></div>
-<h3 id="window">Window</h3>
-<p>Para explorarmos alguns cenários utilizando-se da função Window do PySpark temos que gerar uma amostra de dados e para isso utilizaremos a biblioteca Faker do Python. </p>
-<p><strong>Gerando uma amostra de dados Faker</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">F</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">types</span> <span class="k">as</span> <span class="n">T</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql.window</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">faker</span><span class="w"> </span><span class="kn">import</span> <span class="n">Faker</span>
-
-<span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">(</span><span class="s2">&quot;pt-BR&quot;</span><span class="p">)</span>
-
-<span class="n">disciplinas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Matemática&quot;</span><span class="p">,</span> <span class="s2">&quot;Português&quot;</span><span class="p">,</span> <span class="s2">&quot;Geografia&quot;</span><span class="p">,</span> <span class="s2">&quot;História&quot;</span><span class="p">,</span> <span class="s2">&quot;Física&quot;</span><span class="p">,</span> <span class="s2">&quot;Biologia&quot;</span><span class="p">]</span> 
-<span class="n">anos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2021</span><span class="p">,</span> <span class="mi">2022</span><span class="p">,</span> <span class="mi">2023</span><span class="p">,</span> <span class="mi">2024</span><span class="p">]</span>
-
-<span class="n">schema</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">StructType</span><span class="p">([</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ID&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOME&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;ANO&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">IntegerType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">FloatType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">),</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">StructField</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">,</span> <span class="n">T</span><span class="o">.</span><span class="n">StringType</span><span class="p">(),</span> <span class="kc">True</span><span class="p">)</span>
-<span class="p">])</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-
-    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>
-        <span class="n">fake</span><span class="o">.</span><span class="n">md5</span><span class="p">(),</span>
-        <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
-        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">anos</span><span class="p">),</span>
-        <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">9.99</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span>
-        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">disciplinas</span><span class="p">)</span>
-    <span class="p">])</span>
-
-<span class="n">df_base</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+<h2 id="nota-importante">NOTA: Importante</h2>
+<p>O WSL2 não inicia com o systemd, e o Cockpit depende dele para funcionar. Mas a boa notícia é que o WSL2 passou a suportar systemd oficialmente, então dá pra resolver!</p>
+<h3 id="ativar-o-systemd-no-wsl2">Ativar o systemd no WSL2</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/wsl.conf
 </code></pre></div>
-<p>Retornar com a função <strong>Window</strong> a maiores notas por disciplina</p>
-<div class="highlight"><pre><span></span><code><span class="n">win_spec_max</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span>
-
-<span class="n">df_max_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_max</span><span class="p">))</span> \
-    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
-    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
-
-<span class="n">df_max_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<p>Adicione o conteúdo:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>boot<span class="o">]</span>
+<span class="nv">systemd</span><span class="o">=</span><span class="nb">true</span>
 </code></pre></div>
-<p>Retornar com a função <strong>Window</strong> a menores notas por disciplina</p>
-<div class="highlight"><pre><span></span><code><span class="n">win_spec_min</span> <span class="o">=</span> <span class="n">Window</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">&quot;DISCIPLINA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;NOTA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">asc</span><span class="p">())</span>
-
-<span class="n">df_min_notas</span> <span class="o">=</span> <span class="n">df_base</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">row_number</span><span class="p">()</span><span class="o">.</span><span class="n">over</span><span class="p">(</span><span class="n">win_spec_min</span><span class="p">))</span> \
-    <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> \
-    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;row_number&quot;</span><span class="p">)</span>
-
-<span class="n">df_min_notas</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<h3 id="reiniciar-o-wsl2">Reiniciar o WSL2</h3>
+<div class="highlight"><pre><span></span><code>wsl<span class="w"> </span>--shutdown
 </code></pre></div>
-<p><strong>Observação:</strong> Disponibilizei <a href="https://colab.research.google.com/drive/1_8AHPsZhM4aoTySOTcZiZqnTsSVMg7u_?usp=sharing" target="_blank">aqui</a></p>
-<h2 id="funcoes-uteis">Funções Úteis</h2>
-<p>Ler arquivo csv e entregar dados em dataframe</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;sep&quot;</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;decimal&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;header&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">path_filename</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">df</span>
+<h2 id="iniciar-servico-do-cockpit">Iniciar Serviço do Cockpit</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>cockpit
 </code></pre></div>
-<p>Ler arquivo json e entregar dados em dataframe</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;multiline&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>\
-        <span class="o">.</span><span class="n">json</span><span class="p">(</span><span class="n">path_filename</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">df</span>
-</code></pre></div>
-<p>Retirar colunas duplicadas de um DataFrame</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">drop_cols_duplicates</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="n">dup_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
-    <span class="n">dup_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">dup_cols</span> <span class="k">if</span> <span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="o">*</span><span class="n">dup_cols</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">df</span>
-</code></pre></div>
-<p>Unir vários dataframes</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">reduce</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">union_all_dfs</span><span class="p">(</span><span class="o">*</span><span class="n">dfs</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span><span class="n">Dataframe</span><span class="o">.</span><span class="n">unionAll</span><span class="p">,</span> <span class="n">dfs</span><span class="p">)</span>
-</code></pre></div>
-<p>Converter títulos de colunas para maiusculos</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">uppercase_columns</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
-    <span class="k">return</span> <span class="n">df</span>
-</code></pre></div>
-<p>Converter títulos de colunas para letras minúsculas</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">lowercase_columns</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-    <span class="k">return</span> <span class="n">df</span>
-</code></pre></div>
-<p>Verificar valores nulos</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">check_null_values</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataFrame</span><span class="p">:</span>
-
-    <span class="n">columns</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">null_counts</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">non_null_counts</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="n">columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
-        <span class="n">null_counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">isNull</span><span class="p">())</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
-        <span class="n">non_null_counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">isNotNull</span><span class="p">())</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">columns</span><span class="p">,</span> <span class="n">null_counts</span><span class="p">,</span> <span class="n">non_null_counts</span><span class="p">)),</span>
-                        <span class="p">[</span><span class="s2">&quot;Coluna&quot;</span><span class="p">,</span> <span class="s2">&quot;Contagem de Nulos&quot;</span><span class="p">,</span> <span class="s2">&quot;Contagem de Não Nulos&quot;</span><span class="p">])</span>
-
-    <span class="k">return</span> <span class="n">df</span>
-</code></pre></div>
-<p>Adicionar/Somar meses a uma data</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_months_to_date</span><span class="p">(</span><span class="n">date_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">months</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">date</span><span class="p">:</span>
-
-    <span class="n">input_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">date_str</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">future_date</span> <span class="o">=</span> <span class="n">input_date</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="n">months</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">future_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>Verificar registros duplicados a partir de colunas</p>
-<div class="highlight"><pre><span></span><code><span class="n">df_output</span> <span class="o">=</span> <span class="n">df_input</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;count &gt; 1&quot;</span><span class="p">)</span>
-<span class="n">df_output</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">truncate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<h2 id="habilitar-inicializacao-automatica-do-cockpit">Habilitar Inicialização Automática do Cockpit</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>cockpit
 </code></pre></div>
 
 
