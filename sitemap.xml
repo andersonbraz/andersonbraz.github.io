@@ -2,226 +2,226 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://andersonbraz.github.io/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/glossario/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/carreiras/analista-de-dados/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/carreiras/arquiteto-de-dados/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/carreiras/cientista-de-dados/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/carreiras/engenheiro-de-dados/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/estudos/certificacoes/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/estudos/livros/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/estudos/roadmap/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/estudos/treinamentos/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/apache-airflow/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/aws/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/azure/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/gcp/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/hadoop/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/hive/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/kafka/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/kubernetes/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/spark/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/ferramentas/yarn/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/01-data-literacy/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/02-big-data/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/03-data-driven/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/04-arquiteturas/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/05-pipeline/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/06-orquestrador/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/07-dataops/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/fundamentos/08-inteligencia-artificial/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/apache-airflow/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/docker/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/gcloud-cli/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/git/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/jupyter-notebook/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/pandas/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/pyspark/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/python/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/spark/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/sql/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/hacks/wsl/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/metodologias/agile/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/metodologias/crisp-dm/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/os-linux/cockpit/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/os-win/wsl-n8n/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/os-win/wsl-spark/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/os-win/wsl/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/databricks/01-data-engineer/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-01/modulo-01/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-01/modulo-02/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-01/modulo-03/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-01/modulo-04/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-01/modulo-05/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/google/step-02/modulo-01/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/trilhas/microsoft/01-data-engineer/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/utilidade-publica/download/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/utilidade-publica/meus-favoritos/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
     <url>
          <loc>https://andersonbraz.github.io/utilidade-publica/online/</loc>
-         <lastmod>2025-07-25</lastmod>
+         <lastmod>2025-07-29</lastmod>
     </url>
 </urlset>
