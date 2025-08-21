@@ -2,115 +2,21 @@
 
 !!! tip "Fundamentos"
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+    Estudar os fundamentos em engenharia de dados é essencial para construir uma base sólida que permita entender não apenas as ferramentas utilizadas, mas também os princípios que norteiam o tratamento, a modelagem e a governança dos dados.
 
-    | Header 1   |
-    |------------|
-    | Value 1    |
-    | Value 1    |
-    | Value 1    |
-    | Value 1    |
+    Ao dominar conceitos fundamentais como estruturas de dados, algoritmos, arquitetura de sistemas, bancos de dados e princípios de programação, o profissional desenvolve a capacidade de tomar decisões mais eficientes, solucionar problemas complexos e adaptar-se com mais facilidade às rápidas mudanças tecnológicas do setor.
 
+    !!! note "[Introdução ao Mundo dos Dados](https://www.preditiva.ai/curso-mundo-dos-dados-gratuito){target="_blank"}"
+        Caso você esteja fazendo uma transição de carreira, é imprescindível que você comece por esse treinamento.
 
+    !!! note "[Fundamentos de Engenharia de Dados](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados){target="_blank"}"
+        Neste curso você vai aprender os Fundamentos da Engenharia de Dados, principais técnicas, processos e ferramentas.
 
-!!! tip "Programação"
+    !!! note "[Fundamentos de Linguagem Python Para Análise de Dados e Data Science](https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-para-analise-de-dados-e-data-science){target="_blank"}"
+        Neste curso você vai aprender os Fundamentos de Linguagem Python Para Análise de Dados e Data Science.
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+    !!! note "[Fundamentos de Data Science e Inteligência Artificial](https://www.datascienceacademy.com.br/course/fundamentos-de-data-science-e-inteligencia-artificial){target="_blank"}"
+        Neste curso você vai aprender conceitos essenciais e as técnicas modernas utilizadas no campo da Ciência de Dados e IA.
 
-    !!! note "Python"
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-        massa, nec semper lorem quam in massa.
-
-    !!! note "Shell Script"
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-        massa, nec semper lorem quam in massa.
-
-    !!! note "Git e Github"
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-        massa, nec semper lorem quam in massa.
-
-    !!! note "Redes"
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-        massa, nec semper lorem quam in massa.
-
-
-
-👩‍💻 Programação
-🧪 Testes
-📊 Fundamentos de Banco de Dados
-🏠 Data warehouses
-📦 Object storage
-⚡ Data processing
-📩 Messaging
-💽 Computação Distribuída
-⏲ Orquestração
-📺 Observabilidade
-👨‍💻 Infraestrutura como Códico
-🛫 CI/CD
-
-| Header 1   | Header 2   | Header 3   |
-|------------|------------|------------|
-| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
-| <td colspan="2" align="center">Merged Cell</td> | Row 2 Col 3 |
-| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |
-
-
-
-
-
-
-## Engenharia de Dados
-
-- [Fundamentos de Engenharia de Dados](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados)
-- [IBM - Big Data](https://cognitiveclass.ai/learn/big-data-ibm)
-
-## Operacional e Produtividade
-
-- [Introdução ao Subsistema do Windows para Linux (WSL)](https://learn.microsoft.com/pt-br/training/modules/wsl-introduction/){target=_blank}
-- [Instalar e configurar o Visual Studio Code para o desenvolvimento do Python](https://learn.microsoft.com/pt-br/training/modules/python-install-vscode/){target=_blank}
-- [Colaborar com outras pessoas usando as páginas do Markdown e GitHub](https://learn.microsoft.com/pt-br/training/paths/collaborate-markdown-github-pages/){target=_blank}
-
-## SQL
-
-- [Introdução ao Transact-SQL](https://learn.microsoft.com/pt-br/training/modules/introduction-to-transact-sql/){target=_blank}
-- [Começar a consultar com Transact-SQL](https://learn.microsoft.com/pt-br/training/paths/get-started-querying-with-transact-sql/){target=_blank}
-- [Classificar e filtrar resultados no T-SQL](https://learn.microsoft.com/pt-br/training/modules/sort-filter-queries/){target=_blank}
-- [Combinar várias tabelas com JOINs no T-SQL](https://learn.microsoft.com/pt-br/training/modules/query-multiple-tables-with-joins/){target=_blank}
-- [Escrever subconsultas no T-SQL](https://learn.microsoft.com/pt-br/training/modules/write-subqueries/){target=_blank}
-- [Usar funções internas e GROUP BY no Transact-SQL](https://learn.microsoft.com/pt-br/training/modules/use-built-functions-transact-sql/){target=_blank}
-- [Modificar dados com o T-SQL](https://learn.microsoft.com/pt-br/training/modules/modify-data-with-transact-sql/){target=_blank}
-
-## Git
-
-- [Introdução ao controle de versão com o Git](https://learn.microsoft.com/pt-br/training/modules/intro-to-git/){target=_blank}
-- [Como criar e modificar um projeto Git](https://learn.microsoft.com/pt-br/training/modules/create-git-project/){target=_blank}
-- [Colaborar com o Git](https://learn.microsoft.com/pt-br/training/modules/collaborate-with-git/){target=_blank}
-- [Editar código por meio de branches e mesclagem no Git](https://learn.microsoft.com/pt-br/training/modules/branch-merge-git/){target=_blank}
-
-## Visualização de Dados
-
-- [Descrever as funcionalidades do Microsoft Power BI](https://learn.microsoft.com/pt-br/training/modules/introduction-power-bi/){target=_blank}
-- [Criar e compartilhar seu primeiro relatório do Power BI](https://learn.microsoft.com/pt-br/training/modules/build-your-first-power-bi-report/){target=_blank}
-- [Criar relatórios efetivos no Power BI](https://learn.microsoft.com/pt-br/training/paths/power-bi-effective/){target=_blank}
-- [Explorar dados no Power BI](https://learn.microsoft.com/pt-br/training/modules/explore-data-power-bi/){target=_blank}
-- [Modelar dados no Power BI](https://learn.microsoft.com/pt-br/training/modules/model-data-power-bi/){target=_blank}
-
-## Agilidade
-
-- [Certificação Profissional Scrum Foundation - SFPC™ (Gratuita)](https://certiprof.com/pt/products/scrum-foundation-professional-certificate-sfpc-portugues?variant=45056196116734){target=_blank}
-
-## Projeto Final
-
-- Criação de um projeto ETL simples com python e pandas.
+    !!! note "[Microsoft Power BI Para Business Intelligence e Data Science](https://www.datascienceacademy.com.br/course/microsoft-power-bi-para-business-intelligence-e-data-science){target="_blank"}"
+        Neste curso você vai aprender não apenas a utilizar o Microsoft Power BI, mas aplicar técnicas de Data Science para gerar modelos preditivos e extrair insights para a tomada de decisões, integrando o Power BI com Linguagem R e Python.
