@@ -67,3 +67,35 @@
         Git garante controle de versão, colaboração eficiente entre equipes e rastreabilidade de mudanças no código.
 
         [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+!!! tip "Inteligência Artificial"
+
+    Em um cenário onde os modelos de linguagem estão rapidamente se tornando aliados estratégicos na transformação digital, o engenheiro de dados moderno precisa ir além da manipulação de pipelines e bancos de dados. Dominar ferramentas como o ChatGPT e frameworks como LangChain é essencial para criar soluções inteligentes que conectam dados a decisões de negócio de forma ágil e contextualizada.
+
+    A trilha abaixo oferece uma jornada gratuita e prática por três cursos fundamentais que capacitam profissionais a explorar o potencial dos LLMs (Large Language Models)
+
+    **Essa é uma trilha ideal para quem quer deixar entregar valor agregado com inteligência, totalmente gratuita**:
+
+    !!! note "[Python 3 Curso Rápido](https://www.cod3r.com.br/courses/python-3-curso-rapido){target="_blank"}"
+
+        Python oferece flexibilidade para construir pipelines, aplicar lógica de negócios e integrar com bibliotecas de ciência de dados. E caso esse seja o seu primeiro contato com essa linguagem
+
+        [Quero fazer esse curso](https://www.cod3r.com.br/courses/python-3-curso-rapido){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+    !!! note "SQL"
+
+        SQL é indispensável para consultar, unir e analisar dados em bancos relacionais com eficiência.
+
+        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+    !!! note "Shell Script"
+
+        Comandos Shell permitem interações rápidas com o sistema operacional, facilitando tarefas como movimentação de arquivos, execução de scripts e monitoramento de processos. Juntas, essas habilidades garantem agilidade, precisão e autonomia na entrega de soluções robustas e escaláveis.
+
+        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+    !!! note "Git e Github"
+
+        Git garante controle de versão, colaboração eficiente entre equipes e rastreabilidade de mudanças no código.
+
+        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
