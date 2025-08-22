@@ -6,6 +6,8 @@
 
     Ao dominar conceitos fundamentais como estruturas de dados, algoritmos, arquitetura de sistemas, bancos de dados e princípios de programação, o profissional desenvolve a capacidade de tomar decisões mais eficientes, solucionar problemas complexos e adaptar-se com mais facilidade às rápidas mudanças tecnológicas do setor.
 
+    **TODAS AS SUGESTÕES SÃO GRATUITAS**
+
     !!! note "[Introdução ao Mundo dos Dados](https://www.preditiva.ai/curso-mundo-dos-dados-gratuito){target="_blank"}"
     
         Caso você esteja fazendo uma transição de carreira, é imprescindível que você comece por esse treinamento.
