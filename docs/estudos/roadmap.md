@@ -74,13 +74,13 @@
 
     A trilha abaixo oferece uma jornada gratuita e prática por três cursos fundamentais que capacitam profissionais a explorar o potencial dos LLMs (Large Language Models)
 
-    **Essa é uma trilha ideal para quem quer deixar entregar valor agregado com inteligência, totalmente gratuita**:
+    **Essa trilha é ideal para quem quer iniciar e aprofundar em soluções com uso de inteligência artificial, totalmente gratuita**:
 
-    !!! note "[Python 3 Curso Rápido](https://www.cod3r.com.br/courses/python-3-curso-rapido){target="_blank"}"
+    !!! note "[ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/){target="_blank"}"
 
-        Python oferece flexibilidade para construir pipelines, aplicar lógica de negócios e integrar com bibliotecas de ciência de dados. E caso esse seja o seu primeiro contato com essa linguagem
+        Este curso é altamente relevante para engenheiros de dados, pois ensina como estruturar prompts eficazes para extrair o máximo valor de modelos de linguagem como o ChatGPT. Ao dominar essa habilidade, o engenheiro de dados pode acelerar tarefas como geração de código, documentação, análise exploratória, explicações de métricas e até simulações de cenários, tornando a comunicação com stakeholders mais fluida e inteligente. Isso fortalece sua atuação como ponte entre dados e decisões estratégicas, elevando a qualidade e a velocidade das entregas em produtos de dados.
 
-        [Quero fazer esse curso](https://www.cod3r.com.br/courses/python-3-curso-rapido){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/){ .md-button .md-button--primary .md-button--large target="_blank"}
 
     !!! note "SQL"
 
