@@ -48,7 +48,7 @@
 
         Python oferece flexibilidade para construir pipelines, aplicar lógica de negócios e integrar com bibliotecas de ciência de dados. E caso esse seja o seu primeiro contato com essa linguagem
 
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://www.cod3r.com.br/courses/python-3-curso-rapido){ .md-button .md-button--primary .md-button--large target="_blank"}
 
     !!! note "SQL"
 
