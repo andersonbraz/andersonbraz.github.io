@@ -10,3 +10,14 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
+.md-button--large {
+    font-size: 1.1em;
+    padding: 0.8em 1.5em;
+    min-width: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto */
+    display: block; /* Garante que o botão ocupe toda a largura */
+}
