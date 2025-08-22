@@ -34,7 +34,7 @@
 
         Neste curso você vai aprender não apenas a utilizar o Microsoft Power BI, mas aplicar técnicas de Data Science para gerar modelos preditivos e extrair insights para a tomada de decisões, integrando o Power BI com Linguagem R e Python.
 
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/microsoft-power-bi-para-business-intelligence-e-data-science){ .md-button .md-button--primary .md-button--large target="_blank"}
 
 !!! tip "Programação"
 
