@@ -93,3 +93,29 @@
         Este curso ensina como construir aplicações inteligentes com modelos de linguagem integrados a dados corporativos. Ele aborda conceitos como Retrieval Augmented Generation (RAG), agentes autônomos e orquestração de componentes como vetores, embeddings e APIs, permitindo que o engenheiro crie soluções que respondem perguntas com base em documentos internos, automatizam análises e otimizam a interação entre dados e usuários. Isso potencializa a entrega de valor ao negócio, tornando os produtos de dados mais acessíveis, dinâmicos e estratégicos.
 
         [Quero fazer esse curso](https://learn.deeplearning.ai/courses/langchain/){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+!!! tip "Agilidade"
+
+    O conhecimento em metodologias ágeis é essencial para profissionais que atuam em projetos de dados, pois permite maior alinhamento com equipes multidisciplinares, adaptação rápida a mudanças de requisitos e entregas incrementais que geram valor contínuo ao negócio.
+
+    Ao dominar práticas como sprints, reuniões diárias e retrospectivas, o engenheiro de dados contribui para ciclos de desenvolvimento mais curtos, maior colaboração com stakeholders e melhor priorização de tarefas, o que é crucial em ambientes dinâmicos onde decisões baseadas em dados precisam ser tomadas com agilidade e precisão.
+
+    **Assim também indico essa trilha, totalmente gratuita:**
+
+    !!! note "[Introdução ao Scrum](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/){target="_blank"}"
+
+         Pela plataforma de **Educação Executiva da FGV** temos o curso **Introdução ao Scrum**; introduz e revisa o histórico da agilidade e dos seus conceitos básicos, além de analisar a origem, a teoria, os pilares e os valores associados a essa metodologia.
+
+        [Quero fazer esse curso](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+    !!! note "[Kanban e Ferramentas Ágeis de Gestão de Projetos](https://educacao-executiva.fgv.br/cursos/online/curta-media-duracao-online/kanban-e-ferramentas-ageis/){target="_blank"}"
+
+        Pela plataforma de **Educação Executiva da FGV** temos o curso **Kanban e Ferramentas Ágeis de Gestão de Projetos**; apresenta o método Kanban, as suas aplicações e as suas ferramentas. Faremos também uma comparação entre Scrum e Kanban, buscando perceber em que pontos eles são distintos e como podem ser, ao mesmo tempo, complementares.
+
+        [Quero fazer esse curso](https://educacao-executiva.fgv.br/cursos/online/curta-media-duracao-online/kanban-e-ferramentas-ageis/){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+    !!! note "[Certificação Profissional Scrum Foundation - SFPC™](https://certiprof.com/pt/products/scrum-foundation-professional-certificate-sfpc-portugues/){target="_blank"}"
+
+        Programa de preparação, **totalmente gratuito**, para a **Certificação Profissional Scrum Foundation (SFPC) da Certiprof®** é ideal para indivíduos que estão iniciando sua jornada na metodologia ágil e buscam dominar a estrutura Scrum e mostrar para ao mercado que possui tal conhecimento.
+
+        [Quero fazer esse curso](https://certiprof.com/pt/products/scrum-foundation-professional-certificate-sfpc-portugues/){ .md-button .md-button--primary .md-button--large target="_blank"}
