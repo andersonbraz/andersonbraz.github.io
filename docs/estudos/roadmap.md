@@ -82,20 +82,14 @@
 
         [Quero fazer esse curso](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/){ .md-button .md-button--primary .md-button--large target="_blank"}
 
-    !!! note "SQL"
+    !!! note "[Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/){target="_blank"}"
 
-        SQL é indispensável para consultar, unir e analisar dados em bancos relacionais com eficiência.
+        Este curso ensina como integrar modelos de linguagem em sistemas reais, com foco em design modular, segurança, escalabilidade e uso de ferramentas como APIs e agentes. Ao dominar esses conceitos, o engenheiro de dados pode criar soluções inteligentes que automatizam análises, geram insights sob demanda e melhoram a interação entre dados e usuários finais, tornando os produtos de dados mais acessíveis, eficientes e alinhados às necessidades estratégicas da empresa.
 
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://learn.deeplearning.ai/courses/chatgpt-building-system/){ .md-button .md-button--primary .md-button--large target="_blank"}
 
-    !!! note "Shell Script"
+    !!! note "[LangChain for LLM Application Development](https://learn.deeplearning.ai/courses/langchain/){target="_blank"}"
 
-        Comandos Shell permitem interações rápidas com o sistema operacional, facilitando tarefas como movimentação de arquivos, execução de scripts e monitoramento de processos. Juntas, essas habilidades garantem agilidade, precisão e autonomia na entrega de soluções robustas e escaláveis.
+        Este curso ensina como construir aplicações inteligentes com modelos de linguagem integrados a dados corporativos. Ele aborda conceitos como Retrieval Augmented Generation (RAG), agentes autônomos e orquestração de componentes como vetores, embeddings e APIs, permitindo que o engenheiro crie soluções que respondem perguntas com base em documentos internos, automatizam análises e otimizam a interação entre dados e usuários. Isso potencializa a entrega de valor ao negócio, tornando os produtos de dados mais acessíveis, dinâmicos e estratégicos.
 
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
-
-    !!! note "Git e Github"
-
-        Git garante controle de versão, colaboração eficiente entre equipes e rastreabilidade de mudanças no código.
-
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://learn.deeplearning.ai/courses/langchain/){ .md-button .md-button--primary .md-button--large target="_blank"}
