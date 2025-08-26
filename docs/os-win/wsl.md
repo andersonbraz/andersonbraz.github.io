@@ -1,5 +1,7 @@
 # WSL
 
+Este tutorial mostra um passo a passo para montarmos um ambiente [MDS -Modern Data Stack](https://kondado.com.br/blog/blog/2023/05/09/o-que-e-modern-data-stack-mds/){target=_blank} para nossa jornada de estudos.
+
 ## Habilitar o WSL
 
 <p align="center">
@@ -27,7 +29,7 @@ wsl --install Debian --name <Nome-Computador>
 **Exemplo:**
 
 ```shell
-wsl --install Debian --name my-debian
+wsl --install Debian --name Debian-MDS
 ```
 
 ## Habilitar o alcance de redes
@@ -51,7 +53,7 @@ sudo apt update && sudo apt full-upgrade
 ```shell
 # CUSTOM WSL PS1
 
-COMPUTER_NAME="my-debian"
+COMPUTER_NAME="debian-mds"
 
 if [ "$color_prompt" = yes ]; then
     # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
@@ -60,4 +62,41 @@ else
     # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     PS1='${debian_chroot:+($debian_chroot)}\u@$COMPUTER_NAME:\w\$ '
 fi
+```
+
+## Instalar o Python 3
+
+```shell
+sudo apt-get install python-is-python3 
+```
+
+## Verificar a instalação do Python 3
+
+```shell
+python --version
+```
+
+## Instalar o PIP
+
+```shell
+sudo apt install python3-pip
+python -m pip install --upgrade pip
+```
+
+## Verificar a instalação do PIP
+
+```shell
+pip --version
+```
+
+## Instalar o VENV para o Python
+
+```shell
+sudo apt install python3.13-venv
+```
+
+## Instalar ferramentas necessárias
+
+```shell
+sudo apt install wget curl git unzip
 ```
