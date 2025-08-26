@@ -100,3 +100,41 @@ sudo apt install python3.13-venv
 ```shell
 sudo apt install wget curl git unzip
 ```
+
+## Iniciar um projeto Python
+
+### Criar diretório do projeto
+
+```shell
+mkdir -p ~/projects/hands-on-python
+```
+
+### Abrir o diretório do projeto
+
+```shell
+code ~/projects/hands-on-python
+```
+
+### Criar ambiente Python do projeto
+
+Via terminal:
+
+```shell
+python -m venv .venv
+```
+
+### Ativar ambiente Python do projeto
+
+Via terminal:
+
+```shell
+. .venv/bin/activate
+```
+
+### Atualizar pip no ambiente Python do projeto
+
+Via terminal:
+
+```shell
+python -m pip install --upgrade pip
+```
