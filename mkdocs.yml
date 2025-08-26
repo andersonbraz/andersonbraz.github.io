@@ -3,7 +3,7 @@ site_author: Anderson Braz de Sousa
 site_version: 1.0.0
 site_repo: github.com/andersonbraz/andersonbraz.github.io
 site_url: https://andersonbraz.github.io
-site_description: A documentation about data, technology, and ai.
+site_description: Experiências e estudos na área de dados e inteligência artificial.
 
 extra_css:
  - assets/stylesheets/extra.css
