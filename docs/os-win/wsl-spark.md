@@ -9,7 +9,7 @@ wsl --list --online
 ## Instalar distribuição Debian
 
 ```shell
-wsl --install -d Debian Debian-Spark
+wsl --install Debian --name Debian-Spark
 ```
 
 ## Habilitar o alcance de redes

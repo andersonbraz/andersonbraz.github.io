@@ -119,3 +119,4 @@
         Programa de preparação, **totalmente gratuito**, para a **Certificação Profissional Scrum Foundation (SFPC) da Certiprof®** é ideal para indivíduos que estão iniciando sua jornada na metodologia ágil e buscam dominar a estrutura Scrum e mostrar para ao mercado que possui tal conhecimento.
 
         [Quero fazer esse curso](https://certiprof.com/pt/products/scrum-foundation-professional-certificate-sfpc-portugues/){ .md-button .md-button--primary .md-button--large target="_blank"}
+        

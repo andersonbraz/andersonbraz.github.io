@@ -21,13 +21,13 @@ wsl --list --online
 ## Instalar distribuição Debian
 
 ```shell
-wsl --install -d Debian <Nome-Computador>
+wsl --install Debian --name <Nome-Computador>
 ```
 
 **Exemplo:**
 
 ```shell
-wsl --install -d Debian my-debian
+wsl --install Debian --name my-debian
 ```
 
 ## Habilitar o alcance de redes

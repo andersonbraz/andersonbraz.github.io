@@ -9,7 +9,7 @@ wsl --list --online
 ## Instalar distribuição Debian
 
 ```shell
-wsl --install -d Debian Debian-N8N
+wsl --install Debian --name Debian-N8N
 ```
 
 ## Habilitar o alcance de redes
