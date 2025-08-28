@@ -50,16 +50,32 @@ sudo apt update && sudo apt full-upgrade
 
 ## Customizando meu terminal
 
+Abra o arquivo de configuração de startup do seu linux com o comando:
+
+```shell
+code ~/.baschrc
+```
+
+Identifique as linhas onde temos:
+
+```shell
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+```
+
+E substitua por:
+
 ```shell
 # CUSTOM WSL PS1
 
 COMPUTER_NAME="debian-mds"
 
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@$COMPUTER_NAME\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     PS1='${debian_chroot:+($debian_chroot)}\u@$COMPUTER_NAME:\w\$ '
 fi
 ```
