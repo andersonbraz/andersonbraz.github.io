@@ -78,5 +78,5 @@ git push origin --delete [nome_da_branch]
 Create .gitignore para projeto Python
 
 ```shell
-curl -o .gitignore https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,pycharm+all
+curl -o .gitignore https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,pycharm+all,jupyternotebooks
 ```
