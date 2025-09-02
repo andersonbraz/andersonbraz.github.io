@@ -20,7 +20,6 @@
 
         [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados){ .md-button .md-button--primary .md-button--large target="_blank"}
 
-
     !!! note "[Fundamentos de Data Science e Inteligência Artificial](https://www.datascienceacademy.com.br/course/fundamentos-de-data-science-e-inteligencia-artificial){target="_blank"}"
 
         Neste curso você vai aprender conceitos essenciais e as técnicas modernas utilizadas no campo da Ciência de Dados e IA.

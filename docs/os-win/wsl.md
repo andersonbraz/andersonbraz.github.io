@@ -83,7 +83,7 @@ fi
 Para validar a alteração digite o comando:
 
 ```shell
-source ~/.baschrc
+source ~/.bashrc
 ```
 
 ## Instalar o Python 3
