@@ -12,13 +12,9 @@
         <meta name="author" content="Anderson Braz de Sousa">
       
       
-        <link rel="canonical" href="https://andersonbraz.github.io/hacks/git/">
+        <link rel="canonical" href="https://andersonbraz.github.io/ferramentas/elastic-kibana/">
       
       
-        <link rel="prev" href="../../metodologias/crisp-dm/">
-      
-      
-        <link rel="next" href="../python/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Git - Awesome Data Journey</title>
+        <title>HandsOn Elastic Search e Kibana - Awesome Data Journey</title>
       
     
     
@@ -89,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git" class="md-skip">
+        <a href="#handson-elastic-search-e-kibana" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              HandsOn Elastic Search e Kibana
             
           </span>
         </div>
@@ -601,20 +597,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -630,7 +624,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Hacks
@@ -641,32 +635,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Git
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hacks/git/" class="md-nav__link">
         
   
   
@@ -677,35 +649,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#comandos-importantes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comandos importantes
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -718,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../hacks/python/" class="md-nav__link">
         
   
   
@@ -741,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas/" class="md-nav__link">
+      <a href="../../hacks/pandas/" class="md-nav__link">
         
   
   
@@ -1064,11 +1007,131 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comandos-importantes" class="md-nav__link">
+  <a href="#elastic-search" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos importantes
+      Elastic Search
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-e-acessar-o-diretorio-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criar e Acessar o diretório Apps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Criar e Acessar o diretório Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baixar-pacote-do-elastic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar pacote do Elastic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descompactar-pacote-do-elastic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar pacote do Elastic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-variaveis-de-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definir variáveis de ambiente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-funcionamento-do-servico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teste de funcionamento do serviço
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kibana
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kibana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baixar-pacote-do-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar pacote do Kibana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descompactar-pacote-do-elastic-search_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descompactar pacote do Elastic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renomear-diretorio-nome-mais-curto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renomear diretório (nome mais curto)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definir-variaveis-de-ambiente_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definir variáveis de ambiente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levantar-o-servico-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Levantar o serviço Kibana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-funcionamento-do-servico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teste de funcionamento do serviço
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1088,53 +1151,50 @@
 
 
 
-<h1 id="git">Git</h1>
-<h2 id="comandos-importantes">Comandos importantes</h2>
-<p>Configurar identificação de usuário git</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Anderson Braz de Sousa&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.mail<span class="w"> </span><span class="s2">&quot;contato@andersonbraz.com&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>push.defaul<span class="w"> </span>matching
+<h1 id="handson-elastic-search-e-kibana">HandsOn Elastic Search e Kibana</h1>
+<h2 id="elastic-search">Elastic Search</h2>
+<h2 id="criar-e-acessar-o-diretorio-apps">Criar e Acessar o diretório Apps</h2>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/Apps
+<span class="nb">cd</span><span class="w"> </span>~/Apps
 </code></pre></div>
-<p>Configurar o Visual Studio Code como editor padrão do git</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s1">&#39;code --wait&#39;</span>
+<h3 id="baixar-pacote-do-elastic-search">Baixar pacote do Elastic Search</h3>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.2-darwin-x86_64.tar.gz
 </code></pre></div>
-<p>Excluir arquivos referenciados no .gitignore</p>
-<div class="highlight"><pre><span></span><code>git rm -r --cached .
-git add .
-git commit -m &quot;Drop files from .gitignore&quot;
-git push
+<h3 id="descompactar-pacote-do-elastic-search">Descompactar pacote do Elastic Search</h3>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>elasticsearch-7.16.2-darwin-x86_64.tar.gz
 </code></pre></div>
-<p>Ou você também pode executar esse comando:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>ls-files<span class="w"> </span>-i<span class="w"> </span>-c<span class="w"> </span>--exclude-from<span class="o">=</span>.gitignore<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>git<span class="w"> </span>rm<span class="w"> </span>--cached
+<h3 id="definir-variaveis-de-ambiente">Definir variáveis de ambiente</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># ELASTIC-SEARCH LOCAL-MACHINE</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ES_HOME</span><span class="o">=</span>~/Apps/elasticsearch-7.16.2
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$ES_HOME</span>/bin
 </code></pre></div>
-<p>Corrigir mensagem do último commit</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>--amend
+<h3 id="teste-de-funcionamento-do-servico">Teste de funcionamento do serviço</h3>
+<p>Execute o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://127.0.0.1:9200
 </code></pre></div>
-<p>Criar uma branch completamente vazia num projeto existente</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>--orphan<span class="w"> </span>nova-branch
-git<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>--allow-empty<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Mensagem da nova branch vazia&quot;</span>
-git<span class="w"> </span>status
+<p>ou acesse a url:</p>
+<p><a href="http://127.0.0.1:9200">http://127.0.0.1:9200</a></p>
+<h2 id="kibana">Kibana</h2>
+<h3 id="baixar-pacote-do-kibana">Baixar pacote do Kibana</h3>
+<div class="highlight"><pre><span></span><code>wget https://artifacts.elastic.co/downloads/kibana/kibana-7.16.2-darwin-x86_64.tar.gz
 </code></pre></div>
-<p>Submeter primeiro commit para uma nova branch</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Mensagem do primeiro commit&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>nova-branch
+<h3 id="descompactar-pacote-do-elastic-search_1">Descompactar pacote do Elastic Search</h3>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>kibana-7.16.2-darwin-x86_64.tar.gz
 </code></pre></div>
-<p>Fazer merge da minha branch develop para a master</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>master
-git<span class="w"> </span>merge<span class="w"> </span>develop
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
+<h3 id="renomear-diretorio-nome-mais-curto">Renomear diretório (nome mais curto)</h3>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>kibana-7.16.2-darwin-x86_64<span class="w"> </span>kibana-7.16.2
 </code></pre></div>
-<p>Deletar uma branch local</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>--delete<span class="w"> </span><span class="o">[</span>nome_da_branch<span class="o">]</span>
+<h3 id="definir-variaveis-de-ambiente_1">Definir variáveis de ambiente</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># KIBANA-SEARCH LOCAL-MACHINE</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">KIBANA_HOME</span><span class="o">=</span>~/Apps/kibana-7.16.2
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$KIBANA_HOME</span>/bin
 </code></pre></div>
-<p>Deletar uma branch remota</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--delete<span class="w"> </span><span class="o">[</span>nome_da_branch<span class="o">]</span>
+<h3 id="levantar-o-servico-kibana">Levantar o serviço Kibana</h3>
+<div class="highlight"><pre><span></span><code>kibana
 </code></pre></div>
-<p>Create .gitignore para projeto Python</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-o<span class="w"> </span>.gitignore<span class="w"> </span>https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,pycharm+all,jupyternotebooks
-</code></pre></div>
+<h3 id="teste-de-funcionamento-do-servico_1">Teste de funcionamento do serviço</h3>
+<p>Acesse a url:</p>
+<p><a href="http://127.0.0.1:5601">http://127.0.0.1:5601</a></p>
 
 
 

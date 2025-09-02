@@ -1142,6 +1142,58 @@
 <h2 id="referencias-e-fontes">Referências e Fontes</h2>
 <p><a href="https://cloud.google.com/learn/what-is-apache-kafka?hl=pt-br">Google Cloud</a></p>
 <p><a href="https://github.com/topics/kafka-python?o=desc&amp;s=updated">Projects Kafka Python</a></p>
+<h1 id="handson-confluent">HandsOn Confluent</h1>
+<h2 id="criar-um-diretorio-especial-de-apps">Criar um diretório especial de apps</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/Apps/
+<span class="nb">cd</span><span class="w"> </span>~/Apps/
+</code></pre></div>
+<h2 id="baixar-o-pacote-do-confluent-700">Baixar o pacote do Confluent 7.0.0</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://packages.confluent.io/archive/7.0/confluent-7.0.0.tar.gz
+</code></pre></div>
+<h2 id="descompactar-o-pacote">Descompactar o pacote</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>confluent-7.0.0.tar.gz
+</code></pre></div>
+<h2 id="incluir-variaveis-de-ambiente-em-zshrc-ou-bashrc">Incluir variáveis de ambiente em .zshrc (ou .bashrc)</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>~/.zshrc
+</code></pre></div>
+<p>ou </p>
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>~/.bashrc
+</code></pre></div>
+<p>Adicionar o seguinte conteúdo:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># CONFLUENT LOCAL-MACHINE</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">CONFLUENT_HOME</span><span class="o">=</span>~/Apps/confluent-7.0.0
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$CONFLUENT_HOME</span>/bin
+</code></pre></div>
+<h2 id="recarregar-variaveis-de-ambiente">Recarregar variáveis de ambiente</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.zshrc
+</code></pre></div>
+<h2 id="teste-confluent-local">Teste Confluent Local</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>confluent<span class="w"> </span>--help
+</code></pre></div>
+<h2 id="iniciar-confluent-local">Iniciar Confluent Local</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>confluent<span class="w"> </span><span class="nb">local</span><span class="w"> </span>services<span class="w"> </span>start
+</code></pre></div>
+<h2 id="parar-confluent-local">Parar Confluent Local</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>confluent<span class="w"> </span><span class="nb">local</span><span class="w"> </span>services<span class="w"> </span>stop
+</code></pre></div>
+<h2 id="analisar-log-confluent-local">Analisar Log Confluent Local</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>confluent<span class="w"> </span><span class="nb">local</span><span class="w"> </span>services<span class="w"> </span>connect<span class="w"> </span>log
+</code></pre></div>
+<h2 id="desmontar-confluent-local">Desmontar Confluent Local</h2>
+<p>Execute o comando:</p>
+<div class="highlight"><pre><span></span><code>confluent<span class="w"> </span><span class="nb">local</span><span class="w"> </span>destroy
+</code></pre></div>
+<h2 id="acessar-control-center-do-confluent-local">Acessar Control Center do Confluent Local</h2>
+<p><a href="http://127.0.0.1:9021/">http://127.0.0.1:9021/</a></p>
 
 
 
