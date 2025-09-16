@@ -16,19 +16,25 @@
 
     !!! note "[Fundamentos de Engenharia de Dados](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados){target="_blank"}"
 
-        Neste curso você vai aprender os Fundamentos da Engenharia de Dados, principais técnicas, processos e ferramentas.
+        Conheça os fundamentos da engenharia de dados, principais técnicas, processos e ferramentas.
 
         [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados){ .md-button .md-button--primary .md-button--large target="_blank"}
 
     !!! note "[Fundamentos de Data Science e Inteligência Artificial](https://www.datascienceacademy.com.br/course/fundamentos-de-data-science-e-inteligencia-artificial){target="_blank"}"
 
-        Neste curso você vai aprender conceitos essenciais e as técnicas modernas utilizadas no campo da Ciência de Dados e IA.
+        As empresas estão em busca de profissionais que dominem a Ciência de Dados e a Inteligência Artificial para resolver problemas de negócio. Este curso é seu ponto de partida para conseguir as melhores vagas do mercado!
 
-        [Quero fazer esse curso](#){ .md-button .md-button--primary .md-button--large target="_blank"}
+        [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/fundamentos-de-data-science-e-inteligencia-artificial){ .md-button .md-button--primary .md-button--large target="_blank"}
+
+        !!! note "[Fundamentos de Linguagem Python - Do Básico a Aplicações de IA](https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia){target="_blank"}"
+
+        Prepare-se para dominar a linguagem de programação que é a espinha dorsal da revolução tecnológica 4.0. Este curso é a sua trilha de aprendizado completa e definitiva, projetada para levar você do zero absoluto à criação de soluções de Inteligência Artificial.
+
+        [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia){ .md-button .md-button--primary .md-button--large target="_blank"}
 
     !!! note "[Microsoft Power BI Para Business Intelligence e Data Science](https://www.datascienceacademy.com.br/course/microsoft-power-bi-para-business-intelligence-e-data-science){target="_blank"}"
 
-        Neste curso você vai aprender não apenas a utilizar o Microsoft Power BI, mas aplicar técnicas de Data Science para gerar modelos preditivos e extrair insights para a tomada de decisões, integrando o Power BI com Linguagem R e Python.
+        Desenvolva suas habilidades de análise e visualização de dados com o Microsoft Power BI.
 
         [Quero fazer esse curso](https://www.datascienceacademy.com.br/course/microsoft-power-bi-para-business-intelligence-e-data-science){ .md-button .md-button--primary .md-button--large target="_blank"}
 
