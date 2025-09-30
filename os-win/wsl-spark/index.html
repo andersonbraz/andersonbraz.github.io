@@ -948,18 +948,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#baixar-spark-355" class="md-nav__link">
+  <a href="#baixar-spark-357" class="md-nav__link">
     <span class="md-ellipsis">
-      Baixar Spark 3.5.5
+      Baixar Spark 3.5.7
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#descompactar-spark-355" class="md-nav__link">
+  <a href="#descompactar-spark-357" class="md-nav__link">
     <span class="md-ellipsis">
-      Descompactar Spark 3.5.5
+      Descompactar Spark 3.5.7
     </span>
   </a>
   
@@ -1343,18 +1343,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#baixar-spark-355" class="md-nav__link">
+  <a href="#baixar-spark-357" class="md-nav__link">
     <span class="md-ellipsis">
-      Baixar Spark 3.5.5
+      Baixar Spark 3.5.7
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#descompactar-spark-355" class="md-nav__link">
+  <a href="#descompactar-spark-357" class="md-nav__link">
     <span class="md-ellipsis">
-      Descompactar Spark 3.5.5
+      Descompactar Spark 3.5.7
     </span>
   </a>
   
@@ -1461,18 +1461,18 @@ tar<span class="w"> </span>-xvf<span class="w"> </span>openjdk-21.0.2_linux-x64_
 <span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>~/java/jdk-21.0.2
 <span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$JAVA_HOME</span>/bin
 </code></pre></div>
-<h2 id="baixar-spark-355">Baixar Spark 3.5.5</h2>
+<h2 id="baixar-spark-357">Baixar Spark 3.5.7</h2>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/apache/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/apache/
-wget<span class="w"> </span>https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
+wget<span class="w"> </span>https://dlcdn.apache.org/spark/spark-3.5.7/spark-3.5.7-bin-hadoop3.tgz
 </code></pre></div>
-<h2 id="descompactar-spark-355">Descompactar Spark 3.5.5</h2>
+<h2 id="descompactar-spark-357">Descompactar Spark 3.5.7</h2>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/apache/
-tar<span class="w"> </span>-xvf<span class="w"> </span>spark-3.5.5-bin-hadoop3.tgz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>spark-3.5.5-bin-hadoop3.tgz
-mv<span class="w"> </span>spark-3.5.5-bin-hadoop3<span class="w"> </span>spark-3.5.5
+tar<span class="w"> </span>-xvf<span class="w"> </span>spark-3.5.7-bin-hadoop3.tgz<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>spark-3.5.7-bin-hadoop3.tgz
+mv<span class="w"> </span>spark-3.5.7-bin-hadoop3<span class="w"> </span>spark-3.5.7
 </code></pre></div>
 <h2 id="incluir-variavel-de-ambiente-spark_home">Incluir variável de ambiente SPARK_HOME</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># SPARK</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SPARK_HOME</span><span class="o">=</span>~/apache/spark-3.5.5
+<span class="nb">export</span><span class="w"> </span><span class="nv">SPARK_HOME</span><span class="o">=</span>~/apache/spark-3.5.7
 <span class="nb">export</span><span class="w"> </span><span class="nv">SPARK_LOCAL_IP</span><span class="o">=</span><span class="m">127</span>.0.0.1
 <span class="nb">export</span><span class="w"> </span><span class="nv">HADOOP_HOME</span><span class="o">=</span><span class="nv">$SPARK_HOME</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$SPARK_HOME</span>/python
