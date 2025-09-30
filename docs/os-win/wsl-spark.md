@@ -87,26 +87,26 @@ export JAVA_HOME=~/java/jdk-21.0.2
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
-## Baixar Spark 3.5.5
+## Baixar Spark 3.5.7
 
 ```shell
 mkdir ~/apache/ && cd ~/apache/
-wget https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
+wget https://dlcdn.apache.org/spark/spark-3.5.7/spark-3.5.7-bin-hadoop3.tgz
 ```
 
-## Descompactar Spark 3.5.5
+## Descompactar Spark 3.5.7
 
 ```shell
 cd ~/apache/
-tar -xvf spark-3.5.5-bin-hadoop3.tgz && rm spark-3.5.5-bin-hadoop3.tgz
-mv spark-3.5.5-bin-hadoop3 spark-3.5.5
+tar -xvf spark-3.5.7-bin-hadoop3.tgz && rm spark-3.5.7-bin-hadoop3.tgz
+mv spark-3.5.7-bin-hadoop3 spark-3.5.7
 ```
 
 ## Incluir variável de ambiente SPARK_HOME
 
 ```shell
 # SPARK
-export SPARK_HOME=~/apache/spark-3.5.5
+export SPARK_HOME=~/apache/spark-3.5.7
 export SPARK_LOCAL_IP=127.0.0.1
 export HADOOP_HOME=$SPARK_HOME
 export PYTHONPATH=$SPARK_HOME/python
