@@ -83,9 +83,9 @@ nav:
       - Git: notas/git.md
       - Python: notas/python.md
       - Pandas: notas/pandas.md
-      - WSL: notas/wsl.md
-      - Spark com WSL: notas/wsl-spark.md
-      - N8N com WSL: notas/wsl-n8n.md
+      - WSL + Python: notas/wsl.md
+      - WSL + Spark: notas/wsl-spark.md
+      - WSL + N8N: notas/wsl-n8n.md
       - Download: notas/download.md
       - Online: notas/online.md
       - Meus Favoritos: notas/meus-favoritos.md
