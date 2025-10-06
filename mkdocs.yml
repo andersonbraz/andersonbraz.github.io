@@ -80,18 +80,16 @@ nav:
       - Agile: metodologias/agile.md
       - CRISP-DM: metodologias/crisp-dm.md
   - Notas:
-      - Git: hacks/git.md
-      - Python: hacks/python.md
-      - Pandas: hacks/pandas.md
-  - Windows:
-      - WSL: os-win/wsl.md
-      - Spark com WSL: os-win/wsl-spark.md
-      - N8N com WSL: os-win/wsl-n8n.md
-  - Utilidade Pública:
-      - Download: utilidade-publica/download.md
-      - Online: utilidade-publica/online.md
-      - Meus Favoritos: utilidade-publica/meus-favoritos.md
-      - Interessantes: utilidade-publica/interessantes.md
+      - Git: notas/git.md
+      - Python: notas/python.md
+      - Pandas: notas/pandas.md
+      - WSL: notas/wsl.md
+      - Spark com WSL: notas/wsl-spark.md
+      - N8N com WSL: notas/wsl-n8n.md
+      - Download: notas/download.md
+      - Online: notas/online.md
+      - Meus Favoritos: notas/meus-favoritos.md
+      - Interessantes: notas/interessantes.md
   - Glossário: glossario.md
 
 
