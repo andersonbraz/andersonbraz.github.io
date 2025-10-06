@@ -1,4 +1,4 @@
-# WSL
+# WSL + Python
 
 Este tutorial mostra um passo a passo para montarmos um ambiente [MDS -Modern Data Stack](https://kondado.com.br/blog/blog/2023/05/09/o-que-e-modern-data-stack-mds/){target=_blank} para nossa jornada de estudos.
 

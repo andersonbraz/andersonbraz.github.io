@@ -1,4 +1,4 @@
-# Spark com WSL
+# WSL + Spark
 
 ## Verificar distribuições disponíveis
 

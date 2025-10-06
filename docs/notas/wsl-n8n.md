@@ -1,4 +1,4 @@
-# N8N com WSL
+# WSL + N8N
 
 ## Verificar distribuições disponíveis
 
