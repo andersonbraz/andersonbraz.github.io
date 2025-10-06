@@ -84,8 +84,6 @@ nav:
       - CRISP-DM: metodologias/crisp-dm.md
   - Notas:
       - Git: notas/git.md
-      - Python: notas/python.md
-      - Pandas: notas/pandas.md
       - WSL + Python: notas/wsl-python.md
       - WSL + Spark: notas/wsl-spark.md
       - WSL + N8N: notas/wsl-n8n.md
