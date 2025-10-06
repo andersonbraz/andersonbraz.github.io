@@ -79,7 +79,7 @@ nav:
   - Metodologias:
       - Agile: metodologias/agile.md
       - CRISP-DM: metodologias/crisp-dm.md
-  - Hacks:
+  - Notas:
       - Git: hacks/git.md
       - Python: hacks/python.md
       - Pandas: hacks/pandas.md
