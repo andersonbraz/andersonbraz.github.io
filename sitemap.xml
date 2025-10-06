@@ -25,6 +25,50 @@
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
+         <loc>https://andersonbraz.github.io/data-stack/apache-airflow/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/aws/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/azure/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/elastic-kibana/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/gcp/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/hadoop/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/hive/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/kafka/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/kubernetes/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/spark/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://andersonbraz.github.io/data-stack/yarn/</loc>
+         <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
          <loc>https://andersonbraz.github.io/estudos/certificacoes/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
@@ -41,47 +85,11 @@
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://andersonbraz.github.io/ferramentas/apache-airflow/</loc>
+         <loc>https://andersonbraz.github.io/ferramentas/download/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://andersonbraz.github.io/ferramentas/aws/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/azure/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/elastic-kibana/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/gcp/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/hadoop/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/hive/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/kafka/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/kubernetes/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/spark/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/ferramentas/yarn/</loc>
+         <loc>https://andersonbraz.github.io/ferramentas/online/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
@@ -133,10 +141,6 @@
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://andersonbraz.github.io/notas/download/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
          <loc>https://andersonbraz.github.io/notas/gcloud-cli/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
@@ -154,10 +158,6 @@
     </url>
     <url>
          <loc>https://andersonbraz.github.io/notas/meus-favoritos/</loc>
-         <lastmod>2025-10-06</lastmod>
-    </url>
-    <url>
-         <loc>https://andersonbraz.github.io/notas/online/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
