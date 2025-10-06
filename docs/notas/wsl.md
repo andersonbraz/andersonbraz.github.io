@@ -53,7 +53,7 @@ sudo apt update && sudo apt full-upgrade
 Abra o arquivo de configuração de startup do seu linux com o comando:
 
 ```shell
-code ~/.baschrc
+code ~/.bashrc
 ```
 
 Identifique as linhas onde temos:
