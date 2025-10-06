@@ -89,8 +89,6 @@ nav:
       - WSL + Python: notas/wsl-python.md
       - WSL + Spark: notas/wsl-spark.md
       - WSL + N8N: notas/wsl-n8n.md
-      - Download: notas/download.md
-      - Online: notas/online.md
       - Meus Favoritos: notas/meus-favoritos.md
       - Interessantes: notas/interessantes.md
   - Glossário: glossario.md
