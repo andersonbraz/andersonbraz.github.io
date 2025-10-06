@@ -40,12 +40,13 @@ Alguns blogs interessantes com bons conteúdos para o seu dia a dia:
 
 Alguns youtuber's interessantes com bons conteúdos para o seu dia a dia:
 
-| Canal           | Idioma | Url                                                                              |
-| --------------- | ------ | -------------------------------------------------------------------------------- |
-| Codifike        | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Codifike){target=\_blank}          |
-| Data Viking     | pt-br  | [:octicons-link-24:](https://www.youtube.com/@DataVikingx){target=\_blank}       |
-| Dunossauro      | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Dunossauro){target=\_blank}        |
-| Luan Moreno     | pt-br  | [:octicons-link-24:](https://www.youtube.com/@LuanMorenoMMaciel){target=\_blank} |
-| Rodolfo Moreira | pt-br  | [:octicons-link-24:](https://www.youtube.com/@RodolfoMoreira){target=\_blank}    |
-| Stack           | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Stack_tecnologias){target=\_blank} |
-| Téo Me Why      | pt-br  | [:octicons-link-24:](https://www.youtube.com/@teomewhy){target=\_blank}          |
+| Canal               | Idioma | Url                                                                              |
+| ------------------- | ------ | -------------------------------------------------------------------------------- |
+| Codifike            | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Codifike){target=\_blank}          |
+| Data Viking         | pt-br  | [:octicons-link-24:](https://www.youtube.com/@DataVikingx){target=\_blank}       |
+| Dunossauro          | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Dunossauro){target=\_blank}        |
+| Luan Moreno         | pt-br  | [:octicons-link-24:](https://www.youtube.com/@LuanMorenoMMaciel){target=\_blank} |
+| Luciano Vasconcelos | pt-br  | [:octicons-link-24:](https://www.youtube.com/@JornadaDeDados){target=\_blank}    |
+| Rodolfo Moreira     | pt-br  | [:octicons-link-24:](https://www.youtube.com/@RodolfoMoreira){target=\_blank}    |
+| Stack               | pt-br  | [:octicons-link-24:](https://www.youtube.com/@Stack_tecnologias){target=\_blank} |
+| Téo Me Why          | pt-br  | [:octicons-link-24:](https://www.youtube.com/@teomewhy){target=\_blank}          |
