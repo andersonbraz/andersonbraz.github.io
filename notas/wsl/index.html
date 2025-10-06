@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://andersonbraz.github.io/notas/wsl/">
       
       
+        <link rel="prev" href="../pandas/">
+      
+      
+        <link rel="next" href="../wsl-spark/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -597,18 +601,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -624,7 +630,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Notas
@@ -638,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hacks/git.md" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -661,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hacks/python.md" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         
   
   
@@ -684,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hacks/pandas.md" class="md-nav__link">
+      <a href="../pandas/" class="md-nav__link">
         
   
   
@@ -700,59 +706,36 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Windows
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Windows
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-win/wsl.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    WSL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -763,6 +746,203 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o WSL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o WSL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-distribuicoes-disponiveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar distribuições disponíveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-distribuicao-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar distribuição Debian
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitar-o-alcance-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Habilitar o alcance de redes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizar-pacotes-instalados-no-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar pacotes instalados no sistema
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizando-meu-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizando meu terminal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-python-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do Python 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-a-instalacao-do-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar a instalação do PIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-o-venv-para-o-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar o VENV para o Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-ferramentas-necessarias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar ferramentas necessárias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciar-um-projeto-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciar um projeto Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iniciar um projeto Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criar-diretorio-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criar diretório do projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abrir-o-diretorio-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abrir o diretório do projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criar-ambiente-python-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criar ambiente Python do projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ativar-ambiente-python-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ativar ambiente Python do projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atualizar-pip-no-ambiente-python-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizar pip no ambiente Python do projeto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -775,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl-spark.md" class="md-nav__link">
+      <a href="../wsl-spark/" class="md-nav__link">
         
   
   
@@ -798,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-win/wsl-n8n.md" class="md-nav__link">
+      <a href="../wsl-n8n/" class="md-nav__link">
         
   
   
@@ -814,51 +994,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Utilidade Pública
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Utilidade Pública
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -866,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/download.md" class="md-nav__link">
+      <a href="../download/" class="md-nav__link">
         
   
   
@@ -889,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/online.md" class="md-nav__link">
+      <a href="../online/" class="md-nav__link">
         
   
   
@@ -912,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/meus-favoritos.md" class="md-nav__link">
+      <a href="../meus-favoritos/" class="md-nav__link">
         
   
   
@@ -935,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilidade-publica/interessantes.md" class="md-nav__link">
+      <a href="../interessantes/" class="md-nav__link">
         
   
   
