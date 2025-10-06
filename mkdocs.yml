@@ -76,6 +76,9 @@ nav:
       - Livros: estudos/livros.md
       - Certificações: estudos/certificacoes.md
       - Roadmap 2025: estudos/roadmap.md
+  - Ferramentas:
+      - Download: ferramentas/download.md
+      - Online: ferramentas/online.md
   - Metodologias:
       - Agile: metodologias/agile.md
       - CRISP-DM: metodologias/crisp-dm.md
