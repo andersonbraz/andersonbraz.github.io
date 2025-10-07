@@ -89,6 +89,7 @@ nav:
       - WSL + N8N: notas/wsl-n8n.md
       - Meus Favoritos: notas/meus-favoritos.md
       - Interessantes: notas/interessantes.md
+      - PySpark: notas/pyspark.md
   - Glossário: glossario.md
 
 
