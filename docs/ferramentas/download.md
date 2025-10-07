@@ -18,6 +18,6 @@
 
 ## Produtividade
 
-| Ferramenta | Descrição            | Url                                                                |
-| ---------- | -------------------- | ------------------------------------------------------------------ |
+| Ferramenta | Descrição             | Url                                                                 |
+| ---------- | --------------------- | ------------------------------------------------------------------- |
 | Obsidian   | Organizador de notas. | [:octicons-link-24:](https://obsidian.md/download/){target=\_blank} |
