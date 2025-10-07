@@ -20,4 +20,4 @@
 
 | Ferramenta | Descrição            | Url                                                                |
 | ---------- | -------------------- | ------------------------------------------------------------------ |
-| Obsidian   | Oranizador de notas. | [:octicons-link-24:](https://obsidian.md/download/){target=\_blank} |
+| Obsidian   | Organizador de notas. | [:octicons-link-24:](https://obsidian.md/download/){target=\_blank} |
