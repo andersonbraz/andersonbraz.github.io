@@ -1,6 +1,6 @@
 # PySpark
 
-## Boas Práticas
+## 💡 Boas Práticas 💡
 
 ### Imports
 
@@ -15,7 +15,7 @@ from pyspark.sql import types as T
 
 Evite usar o withColumnRenamed quando for possível.
 
-**RUIM:**
+❌ **RUIM:**
 
 ```python
 
@@ -23,7 +23,7 @@ df_output = df_input.withColumnRenamed("name", "fullname")
 
 ```
 
-**BOM:**
+✅ **BOM:**
 
 ```python
 df_output = df_input.select(
@@ -34,7 +34,7 @@ df_output = df_input.select(
 
 Evite usar o withColumn quando for possível. Veja alguns exemplos de códigos bem interessantes.
 
-**RUIM:**
+❌ **RUIM:**
 
 ```python
 
@@ -45,7 +45,7 @@ df_output = df_input\
 
 ```
 
-**BOM:**
+✅ **BOM:**
 
 ```python
 df_output = df_input.select(
@@ -123,7 +123,60 @@ df_min_notas.show()
 
 **Observação:** Disponibilizei [aqui](https://colab.research.google.com/drive/1_8AHPsZhM4aoTySOTcZiZqnTsSVMg7u_?usp=sharing){target=_blank}
 
-## Funções Úteis
+___
+
+## ⚠️ Pontos de Atenção ⚠️
+
+___
+
+### Collect
+
+Usar .collect() em PySpark pode parecer simples, mas traz riscos importantes, especialmente em ambientes distribuídos. Aqui estão os principais:
+
+---
+
+⚠️ Riscos de usar .collect() em PySpark
+
+### 1. Carga de memória no driver
+
+- .collect() transfere todos os dados do DataFrame para o driver (máquina local que coordena o job).
+- Se o DataFrame for grande, isso pode estourar a memória do driver, causando falhas ou lentidão.
+
+### 2. Perda de paralelismo
+
+- Spark é projetado para processar dados em paralelo nos workers.
+- .collect() centraliza os dados, quebrando esse modelo distribuído e tornando o processamento não escalável.
+
+### 3. Baixa performance
+
+- Operações distribuídas são otimizadas para grandes volumes.
+- .collect() pode comprometer a performance do pipeline, especialmente em clusters com muitos nós.
+
+### 4. Risco de falha em produção
+
+- Em ambientes de produção, .collect() pode causar interrupções inesperadas, principalmente se o volume de dados crescer com o tempo.
+
+### 5. Uso indevido em lógica de negócio
+
+- Trazer dados para o driver para aplicar lógica pode ser ineficiente e inseguro.
+- É melhor aplicar transformações e filtros dentro do contexto distribuído do Spark.
+
+___
+
+✅ Boas práticas alternativas
+
+- Use select + crossJoin para aplicar valores agregados sem coletar.
+- Use join com DataFrames agregados.
+- Use broadcast para pequenas tabelas de referência.
+- Use first() ou take(1) com cautela, apenas quando o volume é garantidamente pequeno.
+
+___
+
+## 🧩 Funções Úteis 🧩
+
+___
+
+### Funções Auxiliares
 
 Ler arquivo csv e entregar dados em dataframe
 
@@ -166,7 +219,6 @@ def drop_cols_duplicates(df: DataFrame) -> DataFrame:
     return df
 ```
 
-
 Unir vários dataframes
 
 ```python
@@ -196,6 +248,25 @@ def lowercase_columns(df: DataFrame) -> DataFrame:
     return df
 ```
 
+Adicionar/Somar meses a uma data
+
+```python
+def add_months_to_date(date_str: str, months: int) -> date:
+
+    input_date = datetime.strftime(date_str, "%Y-%m-%d")
+    future_date = input_date + timedelta(days=30 * months)
+    return future_date.strftime("%Y-%m-%d")
+```
+
+### Funções de Verificação
+
+Verificar registros duplicados a partir de colunas
+
+```python
+df_output = df_input.groupBy("name", "email").count().filter("count > 1")
+df_output.show(truncate=False)
+```
+
 Verificar valores nulos
 
 ```python
@@ -215,21 +286,4 @@ def check_null_values(df: DataFrame) -> DataFrame:
 
     return df
     
-```
-
-Adicionar/Somar meses a uma data
-
-```python
-def add_months_to_date(date_str: str, months: int) -> date:
-
-    input_date = datetime.strftime(date_str, "%Y-%m-%d")
-    future_date = input_date + timedelta(days=30 * months)
-    return future_date.strftime("%Y-%m-%d")
-```
-
-Verificar registros duplicados a partir de colunas
-
-```python
-df_output = df_input.groupBy("name", "email").count().filter("count > 1")
-df_output.show(truncate=False)
 ```
